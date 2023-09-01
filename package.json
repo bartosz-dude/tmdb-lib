@@ -12,10 +12,19 @@
   "keywords": [
     "tmdb",
     "library",
-    "wrapper"
+    "wrapper",
+    "api"
   ],
   "author": "Bartosz Dudziński",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bartosz-dude/tmdb-lib/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bartosz-dude/tmdb-lib"
+  },
+  "homepage": "https://github.com/bartosz-dude/tmdb-lib#readme",
   "devDependencies": {
     "typescript": "^5.2.2"
   }
