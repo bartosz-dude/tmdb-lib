@@ -1,6 +1,6 @@
 {
   "name": "tmdb-lib-js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "library for using tmdb with javascript",
   "main": "./dist/index.js",
   "type": "module",
