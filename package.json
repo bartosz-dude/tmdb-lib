@@ -1,5 +1,5 @@
 {
-  "name": "tmdb-lib",
+  "name": "tmdb-lib-js",
   "version": "0.1.0",
   "description": "library for using tmdb with javascript",
   "main": "./dist/index.js",
@@ -19,13 +19,13 @@
   "author": "Bartosz Dudziński",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bartosz-dude/tmdb-lib/issues"
+    "url": "https://github.com/bartosz-dude/tmdb-lib-js/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bartosz-dude/tmdb-lib"
+    "url": "https://github.com/bartosz-dude/tmdb-lib-js"
   },
-  "homepage": "https://github.com/bartosz-dude/tmdb-lib#readme",
+  "homepage": "https://github.com/bartosz-dude/tmdb-lib-js#readme",
   "devDependencies": {
     "typescript": "^5.2.2"
   }

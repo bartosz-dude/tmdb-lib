@@ -1,4 +1,4 @@
-# tmdb-lib
+# tmdb-lib-js
 
 ---
 
@@ -19,14 +19,14 @@ After implementing all endpoints I plan on making React version of this library.
 ## Installation
 
 ~~~terminal
-npm instal tmdb-lib
+npm instal tmdb-lib-js
 ~~~
 
 ## Usage
 
 ### API Endpoints
 
-`tmdb-lib` follows [TMDB official documentation](https://developer.themoviedb.org/reference/intro/getting-started) organization of API endpoints. You access them like this:
+`tmdb-lib-js` follows [TMDB official documentation](https://developer.themoviedb.org/reference/intro/getting-started) organization of API endpoints. You access them like this:
 
 ~~~typescript
 const details = await TMDB.networks.details({network_id: 123}, "readAccessToken")
@@ -34,7 +34,7 @@ const details = await TMDB.networks.details({network_id: 123}, "readAccessToken"
 
 Fully supports types for each endpoint `request` and `response`.
 
-`tmdb-lib` has built-in fetcher for each endpint. The fetcher injects the TMDB API Read Access Token into the request. To use it, you set Access Token in the method. Also you can use custom fetcher by passing it instead of Access Token.
+`tmdb-lib-js` has built-in fetcher for each endpint. The fetcher injects the TMDB API Read Access Token into the request. To use it, you set Access Token in the method. Also you can use custom fetcher by passing it instead of Access Token.
 
 If you are implementing this library client side (eg. in firebase app) I reccomend implementing custom fetcher that is executed server side (eg. cloud functions in firebase) to not expose Access Token to client.
 
