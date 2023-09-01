@@ -17,6 +17,7 @@ jobs:
         with:
           token: ${{secrets.PAT}}
           node-version: 16
+      - run: npm build
       - run: npm ci
       - run: npm test
 
@@ -30,6 +31,7 @@ jobs:
           token: ${{secrets.PAT}}
           node-version: 16
           registry-url: https://registry.npmjs.org/
+      - run: npm build
       - run: npm ci
       - run: npm publish
         env:
