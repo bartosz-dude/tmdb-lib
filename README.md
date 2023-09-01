@@ -8,7 +8,7 @@ Unofficial Javascript wrapper / library for [The Movie Database](https://www.the
 
 ---
 
-## About
+## Info
 
 Currently library implements only `v3` of The Movie Database API.
 
