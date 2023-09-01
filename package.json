@@ -1,0 +1,22 @@
+{
+  "name": "tmdb-lib",
+  "version": "1.0.0",
+  "description": "library for using tmdb with javascript",
+  "main": "dist/index.js",
+  "module": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "build --watch": "tsc --watch"
+  },
+  "keywords": [
+    "tmdb",
+    "library",
+    "wrapper"
+  ],
+  "author": "Bartosz Dudziński",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
