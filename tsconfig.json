@@ -3,22 +3,26 @@
 		"target": "ES2020",
 		"useDefineForClassFields": true,
 		"lib": [
-			"ES2020"
+			"ES2020",
+			"DOM"
 		],
 		"module": "ESNext",
 		"skipLibCheck": true,
 		/* Bundler mode */
-		"moduleResolution": "bundler",
-		"isolatedModules": true,
+		"moduleResolution": "Bundler",
+		"baseUrl": "",
+		"rootDir": "src",
+		// "isolatedModules": true,
 		"outDir": "dist",
 		"declaration": true,
 		/* Linting */
 		"strict": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"noFallthroughCasesInSwitch": true
+		// "noUnusedLocals": true,
+		// "noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+		"esModuleInterop": true,
 	},
 	"include": [
 		"src"
-	]
+	],
 }
