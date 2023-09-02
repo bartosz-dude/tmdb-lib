@@ -1,7 +1,7 @@
 import { URLPaths } from "./tmdb"
 
 interface Params {
-	[ name: string ]: string | number | Date
+	[ name: string ]: string | number | boolean | Date
 }
 
 export default function TMDBUrlParser<PathParams extends (Params | null), QueryParams extends (Params | null)>(tmdbBasePath: Exclude<URLPaths, URLPaths.TMDB>, path: string, params?: { path?: PathParams, query?: QueryParams }): URL {
@@ -18,7 +18,9 @@ export default function TMDBUrlParser<PathParams extends (Params | null), QueryP
 							return param[ 1 ].toString()
 						}
 						// case "bigint":
-						// case "boolean":
+						case "boolean": {
+							return param[ 1 ] ? "true" : "false"
+						}
 						// case "symbol":
 						// case "undefined":
 						case "object": {
