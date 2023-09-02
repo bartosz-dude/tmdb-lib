@@ -30,5 +30,5 @@ Completed | API Category | Endpoints | API version
 ❌ | Tv Series | | v3
 ❌ | Tv Seasons | | v3
 ❌ | Tv Episodes | | v3
-❌ | Tv Episodes Groups | | v3
+✔️ | Tv Episode Groups | all | v3
 ❌ | Watch Providers | | v3

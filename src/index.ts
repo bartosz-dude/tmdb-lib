@@ -16,6 +16,7 @@ import { TMDBPeopleLists } from "./api/v3/peopleLists";
 import { TMDBReviews } from "./api/v3/reviews";
 import { TMDBSearch } from "./api/v3/search";
 import { TMDBTrending } from "./api/v3/trending";
+import { TMDBTvEpisodeGroups } from "./api/v3/tvEpisodeGroups";
 
 export const TMDB = {
 	account: TMDBAccount,
@@ -35,5 +36,6 @@ export const TMDB = {
 	peopleLists: TMDBPeopleLists,
 	search: TMDBSearch,
 	trending: TMDBTrending,
-	reviews: TMDBReviews
+	reviews: TMDBReviews,
+	tvEpisodeGroups: TMDBTvEpisodeGroups
 }
