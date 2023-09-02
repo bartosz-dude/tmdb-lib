@@ -4,10 +4,10 @@ import TMDBUrlParser from "../../../urlParser"
 
 interface Request {
 	account_id: number,
-	language: string,
-	page: number,
-	session_id: string,
-	sort_by: "created_at.asc" | "created_at.desc"
+	language?: string,
+	page?: number,
+	session_id?: string,
+	sort_by?: "created_at.asc" | "created_at.desc"
 }
 
 type PathParams = {
@@ -15,10 +15,10 @@ type PathParams = {
 }
 
 type QueryParams = {
-	language: string,
-	page: number,
-	session_id: string,
-	sort_by: "created_at.asc" | "created_at.desc"
+	language?: string,
+	page?: number,
+	session_id?: string,
+	sort_by?: "created_at.asc" | "created_at.desc"
 }
 
 interface Response {
