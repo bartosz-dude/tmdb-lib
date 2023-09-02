@@ -7,7 +7,7 @@ Completed | API Category | Endpoints | API version
 ✔️ | Account | all | v3
 ✔️ | Authentication | all | v3
 ✔️ | Certification | all | v3
-❌ | Changes | | v3
+✔️ | Changes | all | v3
 ❌ | Collections | | v3
 ❌ | Companies | | v3
 ❌ | Configuration | | v3
