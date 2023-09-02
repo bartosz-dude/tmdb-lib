@@ -8,6 +8,7 @@ import { TMDBConfiguration } from "./api/v3/configuration";
 import { TMDBCredits } from "./api/v3/credits";
 import { TMDBDiscover } from "./api/v3/discover";
 import { TMDBFind } from "./api/v3/find";
+import { TMDBGenres } from "./api/v3/genres";
 import { TMDBNetworks } from "./api/v3/networks/index";
 import { TMDBPeopleLists } from "./api/v3/peopleLists";
 
@@ -22,6 +23,7 @@ export const TMDB = {
 	credits: TMDBCredits,
 	discover: TMDBDiscover,
 	find: TMDBFind,
+	genres: TMDBGenres,
 	networks: TMDBNetworks,
 	peopleLists: TMDBPeopleLists
 }

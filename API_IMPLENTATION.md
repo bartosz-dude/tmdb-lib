@@ -14,7 +14,7 @@ Completed | API Category | Endpoints | API version
 ✔️ | Credits | all | v3
 ✔️ | Discover | all | v3
 ✔️ | Find | | v3
-❌ | Genres | | v3
+✔️ | Genres | | v3
 ❌ | Guest Sessions | | v3
 ❌ | Keywords | | v3
 ❌ | Lists | | v3
