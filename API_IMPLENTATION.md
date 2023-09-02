@@ -15,7 +15,7 @@ Completed | API Category | Endpoints | API version
 ✔️ | Discover | all | v3
 ✔️ | Find | | v3
 ✔️ | Genres | | v3
-❌ | Guest Sessions | | v3
+✔️ | Guest Sessions | | v3
 ❌ | Keywords | | v3
 ❌ | Lists | | v3
 ❌ | Movie Lists | | v3
