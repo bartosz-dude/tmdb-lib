@@ -13,6 +13,7 @@ import { TMDBGuestSessions } from "./api/v3/guestSessions";
 import { TMDBKeywords } from "./api/v3/keywords";
 import { TMDBNetworks } from "./api/v3/networks/index";
 import { TMDBPeopleLists } from "./api/v3/peopleLists";
+import { TMDBReviews } from "./api/v3/reviews";
 
 export const TMDB = {
 	account: TMDBAccount,
@@ -29,5 +30,6 @@ export const TMDB = {
 	guestSessions: TMDBGuestSessions,
 	keywords: TMDBKeywords,
 	networks: TMDBNetworks,
-	peopleLists: TMDBPeopleLists
+	peopleLists: TMDBPeopleLists,
+	reviews: TMDBReviews
 }
