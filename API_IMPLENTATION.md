@@ -17,7 +17,7 @@ Completed | API Category | Endpoints | API version
 ✔️ | Genres | all | v3
 ✔️ | Guest Sessions | all | v3
 ✔️ | Keywords | all | v3
-❌ | Lists | | v3
+✔️ | Lists | all | v3
 ❌ | Movie Lists | | v3
 ❌ | Movies | | v3
 ✔️ | Networks | all | v3
@@ -32,3 +32,7 @@ Completed | API Category | Endpoints | API version
 ❌ | Tv Episodes | | v3
 ✔️ | Tv Episode Groups | all | v3
 ✔️ | Watch Providers | all | v3
+|
+❌ | Account | | v4
+❌ | Auth | | v4
+❌ | Lists | | v4
