@@ -5,7 +5,7 @@ Organized according to [The Movie Database Api Documentation](https://developer.
 Completed | API Category | Endpoints | API version
 ----------|--------------|-----------|--------
 ✔️ | Account | all | v3
-❌ | Authentication | | v3
+✔️ | Authentication | all | v3
 ❌ | Certification | | v3
 ❌ | Changes | | v3
 ❌ | Collections | | v3
