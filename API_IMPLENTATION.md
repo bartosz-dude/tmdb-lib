@@ -16,7 +16,7 @@ Completed | API Category | Endpoints | API version
 ✔️ | Find | | v3
 ✔️ | Genres | | v3
 ✔️ | Guest Sessions | | v3
-❌ | Keywords | | v3
+✔️ | Keywords | | v3
 ❌ | Lists | | v3
 ❌ | Movie Lists | | v3
 ❌ | Movies | | v3

@@ -10,6 +10,7 @@ import { TMDBDiscover } from "./api/v3/discover";
 import { TMDBFind } from "./api/v3/find";
 import { TMDBGenres } from "./api/v3/genres";
 import { TMDBGuestSessions } from "./api/v3/guestSessions";
+import { TMDBKeywords } from "./api/v3/keywords";
 import { TMDBNetworks } from "./api/v3/networks/index";
 import { TMDBPeopleLists } from "./api/v3/peopleLists";
 
@@ -26,6 +27,7 @@ export const TMDB = {
 	find: TMDBFind,
 	genres: TMDBGenres,
 	guestSessions: TMDBGuestSessions,
+	keywords: TMDBKeywords,
 	networks: TMDBNetworks,
 	peopleLists: TMDBPeopleLists
 }
