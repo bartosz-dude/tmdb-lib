@@ -10,7 +10,7 @@ Completed | API Category | Endpoints | API version
 ✔️ | Changes | all | v3
 ✔️ | Collections | all | v3
 ✔️ | Companies | all | v3
-❌ | Configuration | | v3
+✔️ | Configuration | all | v3
 ✔️ | Credits | all | v3
 ❌ | Discover | | v3
 ❌ | Find | | v3
