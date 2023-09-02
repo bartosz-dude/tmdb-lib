@@ -7,6 +7,7 @@ Unofficial Javascript wrapper / library for [The Movie Database](https://www.the
 <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_long_1-8ba2ac31f354005783fab473602c34c3f4fd207150182061e425d366e4f34596.svg" alt="The Movie Database Logo" width="400"/>
 
 ---
+## Result types are based on Official [Api Reference](https://developer.themoviedb.org/reference/intro/getting-started) Response definitions, but some of them are missing or incorrect in official definitions. It's more likely in responses with multiple types of data. If encounter one, please [rise an issue here](https://github.com/bartosz-dude/tmdb-lib-js/issues).
 
 ## Info
 
