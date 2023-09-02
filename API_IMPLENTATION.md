@@ -12,7 +12,7 @@ Completed | API Category | Endpoints | API version
 ✔️ | Companies | all | v3
 ✔️ | Configuration | all | v3
 ✔️ | Credits | all | v3
-❌ | Discover | | v3
+✔️ | Discover | all | v3
 ❌ | Find | | v3
 ❌ | Genres | | v3
 ❌ | Guest Sessions | | v3
