@@ -28,7 +28,16 @@ export default async function TMDBFetcher<Response>(requestURL: URL, readAccessT
 			}
 
 			case "DELETE": {
-				return undefined
+				const deleteRequest: RequestInit = {
+					method: 'DELETE',
+					headers: {
+						accept: 'application/json',
+						'content-type': 'application/json',
+						Authorization: `Bearer ${readAccessToken}`
+					},
+					body: request.rawBody ? JSON.stringify(request.rawBody) : ""
+				}
+				return deleteRequest
 			}
 
 			case "GET":
@@ -38,7 +47,8 @@ export default async function TMDBFetcher<Response>(requestURL: URL, readAccessT
 					headers: {
 						accept: 'application/json',
 						Authorization: `Bearer ${readAccessToken}`
-					}
+					},
+					body: request?.rawBody ? JSON.stringify(request.rawBody) : ""
 				}
 			}
 		}
