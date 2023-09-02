@@ -13,19 +13,19 @@ Completed | API Category | Endpoints | API version
 ✔️ | Configuration | all | v3
 ✔️ | Credits | all | v3
 ✔️ | Discover | all | v3
-✔️ | Find | | v3
-✔️ | Genres | | v3
-✔️ | Guest Sessions | | v3
-✔️ | Keywords | | v3
+✔️ | Find | all | v3
+✔️ | Genres | all | v3
+✔️ | Guest Sessions | all | v3
+✔️ | Keywords | all | v3
 ❌ | Lists | | v3
 ❌ | Movie Lists | | v3
 ❌ | Movies | | v3
 ✔️ | Networks | all | v3
 ✔️ | People Lists | all | v3
 ❌ | People | | v3
-✔️ | Reviews | | v3
-❌ | Search | | v3
-✔️ | Trending | | v3
+✔️ | Reviews | all | v3
+✔️ | Search | all | v3
+✔️ | Trending | all | v3
 ❌ | Tv Series Lists | | v3
 ❌ | Tv Series | | v3
 ❌ | Tv Seasons | | v3
