@@ -18,6 +18,7 @@ export enum URLPaths {
 	LIST = "3/list/",
 	NETWORK = "3/network/",
 	REVIEW = "3/review/",
+	SEARCH = "3/search",
 	TRENDING = "3/trending/",
 	WATCH = "3/watch/"
 }

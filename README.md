@@ -8,6 +8,8 @@ Unofficial Javascript wrapper / library for [The Movie Database](https://www.the
 
 ---
 
+## Result types are based on [Official Api Reference](https://developer.themoviedb.org/reference/intro/getting-started) Responses definitions, but some of them are missing or incorrect in official definitions. It's more likely to happen in responses with multiple types of data. If you encounter one, please [rise an issue here](https://github.com/bartosz-dude/tmdb-lib-js/issues).
+
 ## Info
 
 Currently library implements only `v3` of The Movie Database API.

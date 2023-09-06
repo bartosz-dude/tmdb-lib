@@ -4,8 +4,8 @@ import TMDBUrlParser from "../../../urlParser"
 
 interface Request {
 	account_id: number,
-	session_id: string,
-	page: number
+	session_id?: string,
+	page?: number
 }
 
 type PathParams = {
@@ -13,8 +13,8 @@ type PathParams = {
 }
 
 type QueryParams = {
-	session_id: string,
-	page: number
+	session_id?: string,
+	page?: number
 }
 
 interface Response {
