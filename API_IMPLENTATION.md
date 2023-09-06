@@ -19,7 +19,7 @@ Completed | API Category | Endpoints | API version
 ✔️ | Keywords | all | v3
 ✔️ | Lists | all | v3
 ✔️ | Movie Lists | all | v3
-❌ | Movies | | v3
+✔️ | Movies | all | v3
 ✔️ | Networks | all | v3
 ✔️ | People Lists | all | v3
 ❌ | People | | v3
@@ -32,7 +32,7 @@ Completed | API Category | Endpoints | API version
 ❌ | Tv Episodes | | v3
 ✔️ | Tv Episode Groups | all | v3
 ✔️ | Watch Providers | all | v3
-|
+| | | |
 ❌ | Account | | v4
 ❌ | Auth | | v4
 ❌ | Lists | | v4
