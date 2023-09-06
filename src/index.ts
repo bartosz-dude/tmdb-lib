@@ -12,6 +12,7 @@ import { TMDBGenres } from "./api/v3/genres";
 import { TMDBGuestSessions } from "./api/v3/guestSessions";
 import { TMDBKeywords } from "./api/v3/keywords";
 import { TMDBLists } from "./api/v3/lists";
+import { TMDBMovieLists } from "./api/v3/movieLists";
 import { TMDBNetworks } from "./api/v3/networks/index";
 import { TMDBPeopleLists } from "./api/v3/peopleLists";
 import { TMDBReviews } from "./api/v3/reviews";
@@ -35,7 +36,7 @@ export const TMDB = {
 	guestSessions: TMDBGuestSessions,
 	keywords: TMDBKeywords,
 	lists: TMDBLists,
-	networks: TMDBNetworks,
+	movieLists: TMDBMovieLists,
 	peopleLists: TMDBPeopleLists,
 	search: TMDBSearch,
 	trending: TMDBTrending,

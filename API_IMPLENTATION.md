@@ -18,7 +18,7 @@ Completed | API Category | Endpoints | API version
 ✔️ | Guest Sessions | all | v3
 ✔️ | Keywords | all | v3
 ✔️ | Lists | all | v3
-❌ | Movie Lists | | v3
+✔️ | Movie Lists | all | v3
 ❌ | Movies | | v3
 ✔️ | Networks | all | v3
 ✔️ | People Lists | all | v3
