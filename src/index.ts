@@ -21,6 +21,7 @@ import { TMDBReviews } from "./api/v3/reviews";
 import { TMDBSearch } from "./api/v3/search";
 import { TMDBTrending } from "./api/v3/trending";
 import { TMDBTvEpisodeGroups } from "./api/v3/tvEpisodeGroups";
+import { TMDBTvSeriesLists } from "./api/v3/tvSeriesLists";
 import { TMDBWatchProviders } from "./api/v3/watchProviders";
 
 export const TMDB = {
@@ -42,10 +43,11 @@ export const TMDB = {
 	movies: TMDBMovies,
 	networks: TMDBNetworks,
 	peopleLists: TMDBPeopleLists,
-	search: TMDBSearch,
-	trending: TMDBTrending,
 	people: TMDBPeople,
 	reviews: TMDBReviews,
+	search: TMDBSearch,
+	trending: TMDBTrending,
+	tvSeriesLists: TMDBTvSeriesLists,
 	tvEpisodeGroups: TMDBTvEpisodeGroups,
 	watchProviders: TMDBWatchProviders
 }

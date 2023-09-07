@@ -26,7 +26,7 @@ Completed | API Category | Endpoints | API version
 ✔️ | Reviews | all | v3
 ✔️ | Search | all | v3
 ✔️ | Trending | all | v3
-❌ | Tv Series Lists | | v3
+✔️ | Tv Series Lists | all | v3
 ❌ | Tv Series | | v3
 ❌ | Tv Seasons | | v3
 ❌ | Tv Episodes | | v3
