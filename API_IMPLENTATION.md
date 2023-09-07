@@ -22,7 +22,7 @@ Completed | API Category | Endpoints | API version
 ✔️ | Movies | all | v3
 ✔️ | Networks | all | v3
 ✔️ | People Lists | all | v3
-❌ | People | | v3
+✔️ | People | all | v3
 ✔️ | Reviews | all | v3
 ✔️ | Search | all | v3
 ✔️ | Trending | all | v3
