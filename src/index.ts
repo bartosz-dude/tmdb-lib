@@ -15,6 +15,7 @@ import { TMDBLists } from "./api/v3/lists";
 import { TMDBMovieLists } from "./api/v3/movieLists";
 import { TMDBMovies } from "./api/v3/movies";
 import { TMDBNetworks } from "./api/v3/networks/index";
+import { TMDBPeople } from "./api/v3/people";
 import { TMDBPeopleLists } from "./api/v3/peopleLists";
 import { TMDBReviews } from "./api/v3/reviews";
 import { TMDBSearch } from "./api/v3/search";
@@ -43,6 +44,7 @@ export const TMDB = {
 	peopleLists: TMDBPeopleLists,
 	search: TMDBSearch,
 	trending: TMDBTrending,
+	people: TMDBPeople,
 	reviews: TMDBReviews,
 	tvEpisodeGroups: TMDBTvEpisodeGroups,
 	watchProviders: TMDBWatchProviders
