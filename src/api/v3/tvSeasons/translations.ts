@@ -1,7 +1,7 @@
 import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
 import TMDBUrlParser from "../../../urlParser"
-import { OmitOptionalKeys, OmitRequiredKeys } from "../../../utilityTypes"
+import { OmitOptionalKeys, OmitRequiredKeys, DeepReadonly } from "../../../utilityTypes"
 
 interface Request {
 	series_id: number,
@@ -25,7 +25,7 @@ interface Response {
 type PathParams = OmitOptionalKeys<Request>
 type QueryParams = OmitRequiredKeys<Request>
 
-type ReturnResponse = Promise<Readonly<Response>>
+type ReturnResponse = Promise<DeepReadonly<Response>>
 
 export function TMDBTvSeasonsTranslations(request: Request, fetcher: Fetcher): ReturnResponse
 export function TMDBTvSeasonsTranslations(request: Request, readAccessToken: string): ReturnResponse
