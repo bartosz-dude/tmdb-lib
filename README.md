@@ -14,9 +14,11 @@ Unofficial Javascript wrapper / library for [The Movie Database](https://www.the
 
 This library implements only `v3` of The Movie Database API. If requested I'll implement `v4` too.
 
-This library is currently being written. You can check implemented endpoints in [this list](API_IMPLENTATION.md).
+You can check implemented endpoints in [this list](API_IMPLENTATION.md).
 
 After implementing all endpoints I plan on making React version of this library.
+
+I am not planning on implementing image fetcher in this library, because fetching images does not require Access Token or API key to be in request. I'll be providing one in React version.
 
 ## Installation
 
@@ -28,7 +30,7 @@ npm instal tmdb-lib-js
 
 ### API Endpoints
 
-`tmdb-lib-js` follows [TMDB official documentation](https://developer.themoviedb.org/reference/intro/getting-started) organization of API endpoints. You access them like this:
+`tmdb-lib-js` follows [TMDB official documentation](https://developer.themoviedb.org/reference/intro/getting-started) organization of API endpoints. You can access them like this:
 
 ~~~typescript
 const details = await TMDB.networks.details({network_id: 123}, "readAccessToken")
@@ -78,7 +80,3 @@ According to this type, custom fetcher must implement `GET`, `POST` and `DELETE`
 ~~~
 
 I recommend looking into [build-in fetcher](./src/fetcher.ts) as a reference for making custom fetcher.
-
-### Images
-
-not implemented yet.
