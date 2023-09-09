@@ -4,7 +4,7 @@ interface Params {
 	[ name: string ]: string | number | boolean | Date
 }
 
-export default function TMDBUrlParser<PathParams extends (Params | null), QueryParams extends (Params | null)>(tmdbBasePath: Exclude<URLPaths, URLPaths.TMDB>, path: string, params?: { path?: PathParams, query?: QueryParams }): URL {
+export default function TMDBUrlParser<PathParams extends (Params | {}), QueryParams extends Partial<(Params | {})>>(tmdbBasePath: Exclude<URLPaths, URLPaths.TMDB>, path: string, params?: { path?: PathParams, query?: QueryParams }): URL {
 	let filledPath = path
 
 	if (params?.path) {

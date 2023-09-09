@@ -56,14 +56,14 @@ export default async function TMDBFetcher<Response>(requestURL: URL, readAccessT
 	})()
 
 
-	const response = await fetch(requestURL, options)
+	const response = await fetch(requestURL.toString(), options)
 
 	if (!response.ok) {
 		const notOkResponse = await response.json() as NotOKResponse
 		throw new Error(`"TMDB Code: ${notOkResponse.status_code} Message: ${notOkResponse.status_message}`)
 	}
 
-	const okResponse = await response.json() as Response
+	const okResponse = await response.json() as DeepReadonly<Response>
 
 	return okResponse
 }
