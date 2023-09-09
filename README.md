@@ -8,11 +8,11 @@ Unofficial Javascript wrapper / library for [The Movie Database](https://www.the
 
 ---
 
-## Result types are based on [Official Api Reference](https://developer.themoviedb.org/reference/intro/getting-started) Responses definitions, but some of them are missing or incorrect in official definitions. It's more likely to happen in responses with multiple types of data. If you encounter one, please [rise an issue here](https://github.com/bartosz-dude/tmdb-lib-js/issues).
+## Result types are based on [Official Api Reference](https://developer.themoviedb.org/reference/intro/getting-started) Responses definitions, but some of them are missing or incorrect in official definitions. It's more likely to happen in responses with multiple types of data. If you encounter one, please [rise an issue here](https://github.com/bartosz-dude/tmdb-lib-js/issues)
 
 ## Info
 
-Currently library implements only `v3` of The Movie Database API.
+This library implements only `v3` of The Movie Database API. If requested I'll implement `v4` too.
 
 This library is currently being written. You can check implemented endpoints in [this list](API_IMPLENTATION.md).
 
@@ -36,7 +36,7 @@ const details = await TMDB.networks.details({network_id: 123}, "readAccessToken"
 
 Fully supports types for each endpoint `request` and `response`.
 
-`tmdb-lib-js` has built-in fetcher for each endpint. The fetcher injects the TMDB API Read Access Token into the request. To use it, you set Access Token in the method. Also you can use custom fetcher by passing it instead of Access Token.
+`tmdb-lib-js` has built-in fetcher for each endpint. The fetcher injects the TMDB API Read Access Token into the request. To use it, you set Access Token in the method. Also you can use custom fetcher by passing fetcher function instead of Access Token.
 
 If you are implementing this library client side (eg. in firebase app) I reccomend implementing custom fetcher that is executed server side (eg. cloud functions in firebase) to not expose Access Token to client.
 
