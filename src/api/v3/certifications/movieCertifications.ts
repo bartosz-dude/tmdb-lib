@@ -7,10 +7,6 @@ interface Request {
 
 }
 
-
-
-
-
 type Certifications = Certification[]
 
 interface Certification {
@@ -74,11 +70,11 @@ type QueryParams = OmitRequiredKeys<Request>
 
 type ReturnResponse = Promise<DeepReadonly<Response>>
 
-export function TMDBCertificationTvCertifications(request: Request, fetcher: Fetcher): ReturnResponse
-export function TMDBCertificationTvCertifications(request: Request, readAccessToken: string): ReturnResponse
+export function TMDBCertificationMovieCertifications(request: Request, fetcher: Fetcher): ReturnResponse
+export function TMDBCertificationMovieCertifications(request: Request, readAccessToken: string): ReturnResponse
 
-export default function TMDBCertificationTvCertifications(request: Request, fetcherOrApi: Fetcher | string): ReturnResponse {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.CERTIFICATION, "tv/list")
+export default function TMDBCertificationMovieCertifications(request: Request, fetcherOrApi: Fetcher | string): ReturnResponse {
+	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.CERTIFICATION, "movie/list")
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
