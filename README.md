@@ -1,103 +1,82 @@
-# TSDX User Guide
+# tmdb-lib-js
 
-Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
+---
 
-> This TSDX setup is meant for developing libraries (not apps!) that can be published to NPM. If you’re looking to build a Node app, you could use `ts-node-dev`, plain `ts-node`, or simple `tsc`.
+Unofficial Javascript wrapper / library for [The Movie Database](https://www.themoviedb.org/) API.
 
-> If you’re new to TypeScript, checkout [this handy cheatsheet](https://devhints.io/typescript)
+<img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_long_1-8ba2ac31f354005783fab473602c34c3f4fd207150182061e425d366e4f34596.svg" alt="The Movie Database Logo" width="400"/>
 
-## Commands
+---
 
-TSDX scaffolds your new library inside `/src`.
+## Result types are based on [Official Api Reference](https://developer.themoviedb.org/reference/intro/getting-started) Responses definitions, but some of them are missing or incorrect in official definitions. It's more likely to happen in responses with multiple types of data. If you encounter one, please [rise an issue here](https://github.com/bartosz-dude/tmdb-lib-js/issues)
 
-To run TSDX, use:
+## Info
 
-```bash
-npm start # or yarn start
-```
+This library implements only `v3` of The Movie Database API. If requested I'll implement `v4` too.
 
-This builds to `/dist` and runs the project in watch mode so any edits you save inside `src` causes a rebuild to `/dist`.
+You can check implemented endpoints in [this list](API_IMPLENTATION.md).
 
-To do a one-off build, use `npm run build` or `yarn build`.
+After implementing all endpoints I plan on making React version of this library.
 
-To run tests, use `npm test` or `yarn test`.
+I am not planning on implementing image fetcher in this library, because fetching images does not require Access Token or API key to be in request. I'll be providing one in React version.
 
-## Configuration
+## Installation
 
-Code quality is set up for you with `prettier`, `husky`, and `lint-staged`. Adjust the respective fields in `package.json` accordingly.
+~~~terminal
+npm instal tmdb-lib-js
+~~~
 
-### Jest
+## Usage
 
-Jest tests are set up to run with `npm test` or `yarn test`.
+### API Endpoints
 
-### Bundle Analysis
+`tmdb-lib-js` follows [TMDB official documentation](https://developer.themoviedb.org/reference/intro/getting-started) organization of API endpoints. You can access them like this:
 
-[`size-limit`](https://github.com/ai/size-limit) is set up to calculate the real cost of your library with `npm run size` and visualize the bundle with `npm run analyze`.
+~~~typescript
+const details = await TMDB.networks.details({network_id: 123}, "readAccessToken")
+~~~
 
-#### Setup Files
+Fully supports types for each endpoint `request` and `response`.
 
-This is the folder structure we set up for you:
+`tmdb-lib-js` has built-in fetcher for each endpint. The fetcher injects the TMDB API Read Access Token into the request. To use it, you set Access Token in the method. Also you can use custom fetcher by passing fetcher function instead of Access Token.
 
-```txt
-/src
-  index.tsx       # EDIT THIS
-/test
-  blah.test.tsx   # EDIT THIS
-.gitignore
-package.json
-README.md         # EDIT THIS
-tsconfig.json
-```
+If you are implementing this library client side (eg. in firebase app) I reccomend implementing custom fetcher that is executed server side (eg. cloud functions in firebase) to not expose Access Token to client.
 
-### Rollup
+### Custom Fetcher
 
-TSDX uses [Rollup](https://rollupjs.org) as a bundler and generates multiple rollup configs for various module formats and build settings. See [Optimizations](#optimizations) for details.
+To work correctly custom fetcher must satisfy its type in endpint methods.
 
-### TypeScript
+According to this type, custom fetcher must implement `GET`, `POST` and `DELETE` html requests like this:
 
-`tsconfig.json` is set up to interpret `dom` and `esnext` types, as well as `react` for `jsx`. Adjust according to your needs.
+~~~typescript
+    {
+     method: 'GET',
+     headers: {
+      accept: 'application/json',
+      Authorization: `Bearer ${readAccessToken}`
+     }
+    }
+    
+    {
+     method: 'POST',
+     headers: {
+      accept: 'application/json',
+      "content-type": 'application/json',
+      Authorization: `Bearer ${readAccessToken}`
+     },
+     body: request.rawBody ? JSON.stringify(request.rawBody) : ""
+    }
 
-## Continuous Integration
+    {
+     method: 'DELETE',
+     headers: {
+      accept: 'application/json',
+      "content-type": 'application/json',
+      Authorization: `Bearer ${readAccessToken}`
+     },
+     body: request.rawBody ? JSON.stringify(request.rawBody) : ""
+    }
+    
+~~~
 
-### GitHub Actions
-
-Two actions are added by default:
-
-- `main` which installs deps w/ cache, lints, tests, and builds on all pushes against a Node and OS matrix
-- `size` which comments cost comparison of your library on every pull request using [`size-limit`](https://github.com/ai/size-limit)
-
-## Optimizations
-
-Please see the main `tsdx` [optimizations docs](https://github.com/palmerhq/tsdx#optimizations). In particular, know that you can take advantage of development-only optimizations:
-
-```js
-// ./types/index.d.ts
-declare var __DEV__: boolean;
-
-// inside your code...
-if (__DEV__) {
-  console.log('foo');
-}
-```
-
-You can also choose to install and use [invariant](https://github.com/palmerhq/tsdx#invariant) and [warning](https://github.com/palmerhq/tsdx#warning) functions.
-
-## Module Formats
-
-CJS, ESModules, and UMD module formats are supported.
-
-The appropriate paths are configured in `package.json` and `dist/index.js` accordingly. Please report if any issues are found.
-
-## Named Exports
-
-Per Palmer Group guidelines, [always use named exports.](https://github.com/palmerhq/typescript#exports) Code split inside your React app instead of your React library.
-
-## Including Styles
-
-There are many ways to ship styles, including with CSS-in-JS. TSDX has no opinion on this, configure how you like.
-
-For vanilla CSS, you can include it at the root directory and add it to the `files` section in your `package.json`, so that it can be imported separately by your users and run through their bundler's loader.
-
-## Publishing to NPM
-
-We recommend using [np](https://github.com/sindresorhus/np).
+I recommend looking into [build-in fetcher](./src/fetcher.ts) as a reference for making custom fetcher.
