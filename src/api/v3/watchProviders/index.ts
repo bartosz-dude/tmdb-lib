@@ -1,9 +1,9 @@
-import { TMDBWatchProvidersAvailableRegions } from "./availableRegions";
-import { TMDBWatchProvidersMovieProviders } from "./movieProviders";
-import { TMDBWatchProvidersTvProviders } from "./tvProviders";
+import TMDBWatchProvidersAvailableRegions from "./availableRegions";
+import TMDBWatchProvidersMovieProviders from "./movieProviders";
+import TMDBWatchProvidersTvProviders from "./tvProviders";
 
-export const TMDBWatchProviders = {
-	availableRegions: TMDBWatchProvidersAvailableRegions,
-	movieProviders: TMDBWatchProvidersMovieProviders,
-	tvProviers: TMDBWatchProvidersTvProviders
+export namespace TMDBWatchProviders {
+	export const availableRegions = TMDBWatchProvidersAvailableRegions
+	export const movieProviders = TMDBWatchProvidersMovieProviders
+	export const tvProviers = TMDBWatchProvidersTvProviders
 }

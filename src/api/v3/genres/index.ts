@@ -1,7 +1,7 @@
-import { TMDBGenresMovieList } from "./movieList";
-import { TMDBGenresTvList } from "./tvList";
+import TMDBGenresMovieList from "./movieList";
+import TMDBGenresTvList from "./tvList";
 
-export const TMDBGenres = {
-	movieList: TMDBGenresMovieList,
-	tvList: TMDBGenresTvList
+export namespace TMDBGenres {
+	export const movieList = TMDBGenresMovieList
+	export const tvList = TMDBGenresTvList
 }

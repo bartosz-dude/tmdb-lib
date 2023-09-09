@@ -1,5 +1,5 @@
-import { TMDBFingFindById } from "./findById";
+import TMDBFingFindById from "./findById";
 
-export const TMDBFind = {
-	findById: TMDBFingFindById
+export namespace TMDBFind {
+	export const findById = TMDBFingFindById
 }

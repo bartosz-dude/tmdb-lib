@@ -1,5 +1,5 @@
-import { TMDBCreditsDetails } from "./details";
+import TMDBCreditsDetails from "./details";
 
-export const TMDBCredits = {
-	details: TMDBCreditsDetails
+export namespace TMDBCredits {
+	export const details = TMDBCreditsDetails
 }

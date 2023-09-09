@@ -1,5 +1,5 @@
-import { TMDBPeopleListsPopular } from "./popular";
+import TMDBPeopleListsPopular from "./popular";
 
-export const TMDBPeopleLists = {
-	popular: TMDBPeopleListsPopular
+export namespace TMDBPeopleLists {
+	export const popular = TMDBPeopleListsPopular
 }

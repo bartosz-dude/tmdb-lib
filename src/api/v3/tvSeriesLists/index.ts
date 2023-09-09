@@ -1,11 +1,11 @@
-import { TMDBTvSeriesListsAiringToday } from "./airingToday";
-import { TMDBTvSeriesListsOnTheAir } from "./onTheAir";
-import { TMDBTvSeriesListsPopular } from "./popular";
-import { TMDBTvSeriesListsTopRated } from "./topRated";
+import TMDBTvSeriesListsAiringToday from "./airingToday";
+import TMDBTvSeriesListsOnTheAir from "./onTheAir";
+import TMDBTvSeriesListsPopular from "./popular";
+import TMDBTvSeriesListsTopRated from "./topRated";
 
-export const TMDBTvSeriesLists = {
-	airingToday: TMDBTvSeriesListsAiringToday,
-	onTheAir: TMDBTvSeriesListsOnTheAir,
-	popular: TMDBTvSeriesListsPopular,
-	topRated: TMDBTvSeriesListsTopRated
+export namespace TMDBTvSeriesLists {
+	export const airingToday = TMDBTvSeriesListsAiringToday
+	export const onTheAir = TMDBTvSeriesListsOnTheAir
+	export const popular = TMDBTvSeriesListsPopular
+	export const topRated = TMDBTvSeriesListsTopRated
 }

@@ -1,9 +1,9 @@
-import { TMDBGuestSessionsRatedMovies } from "./ratedMovies";
-import { TMDBGuestSessionsRatedTv } from "./ratedTv";
-import { TMDBGuestSessionsRatedTvEpisodes } from "./ratedTvEpisodes";
+import TMDBGuestSessionsRatedMovies from "./ratedMovies";
+import TMDBGuestSessionsRatedTv from "./ratedTv";
+import TMDBGuestSessionsRatedTvEpisodes from "./ratedTvEpisodes";
 
-export const TMDBGuestSessions = {
-	ratedMovies: TMDBGuestSessionsRatedMovies,
-	ratedTv: TMDBGuestSessionsRatedTv,
-	ratedTvEpisodes: TMDBGuestSessionsRatedTvEpisodes
+export namespace TMDBGuestSessions {
+	export const ratedMovies = TMDBGuestSessionsRatedMovies
+	export const ratedTv = TMDBGuestSessionsRatedTv
+	export const ratedTvEpisodes = TMDBGuestSessionsRatedTvEpisodes
 }
