@@ -1,6 +1,27 @@
-export const sum = (a: number, b: number) => {
-  if ('development' === process.env.NODE_ENV) {
-    console.log('boop');
-  }
-  return a + b;
-};
+export { TMDBAccount as account } from "./api/v3/account";
+export { TMDBAuthentication as authentication } from "./api/v3/authentication";
+export { TMDBCertifications as certifications } from "./api/v3/certifications";
+export { TMDBChanges as changes } from "./api/v3/changes";
+export { TMDBCollections as collections } from "./api/v3/collections";
+export { TMDBCompanies as companies } from "./api/v3/companies";
+export { TMDBConfiguration as configuration } from "./api/v3/configuration";
+export { TMDBCredits as credits } from "./api/v3/credits";
+export { TMDBDiscover as discover } from "./api/v3/discover";
+export { TMDBFind as find } from "./api/v3/find";
+export { TMDBGenres as genres } from "./api/v3/genres";
+export { TMDBGuestSessions as guestSessions } from "./api/v3/guestSessions";
+export { TMDBKeywords as keywords } from "./api/v3/keywords";
+export { TMDBLists as lists } from "./api/v3/lists";
+export { TMDBMovieLists as movieLists } from "./api/v3/movieLists";
+export { TMDBMovies as movies } from "./api/v3/movies";
+export { TMDBNetworks as networks } from "./api/v3/networks";
+export { TMDBPeople as people } from "./api/v3/people";
+export { TMDBPeopleLists as peopleLists } from "./api/v3/peopleLists";
+export { TMDBReviews as reviews } from "./api/v3/reviews";
+export { TMDBSearch as search } from "./api/v3/search";
+export { TMDBTrending as trending } from "./api/v3/trending";
+export { TMDBTvEpisodes as tvEpisodes } from "./api/v3/tvEpisodes";
+export { TMDBTvSeasons as tvSeasons } from "./api/v3/tvSeasons";
+export { TMDBTvSeries as tvSeries } from "./api/v3/tvSeries";
+export { TMDBTvSeriesLists as tvSeriesLists } from "./api/v3/tvSeriesLists";
+export { TMDBWatchProviders as watchProviders } from "./api/v3/watchProviders";
