@@ -1,33 +1,36 @@
 {
-  "name": "tmdb-lib-js",
-  "version": "0.2.0",
-  "description": "library for using tmdb with javascript",
-  "main": "./dist/index.js",
-  "type": "module",
-  "exports": "./dist/index.js",
-  "scripts": {
-    "build": "tsc",
-    "build --watch": "tsc --watch",
-    "test": "echo no test configured"
-  },
-  "keywords": [
-    "themoviedb",
-    "tmdb",
-    "library",
-    "wrapper",
-    "api"
-  ],
-  "author": "Bartosz Dudziński",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bartosz-dude/tmdb-lib-js/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bartosz-dude/tmdb-lib-js"
-  },
-  "homepage": "https://github.com/bartosz-dude/tmdb-lib-js#readme",
-  "devDependencies": {
-    "typescript": "^5.2.2"
-  }
+	"name": "tmdb-lib-js",
+	"version": "0.2.0",
+	"author": "Bartosz Dudziński",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bartosz-dude/tmdb-lib-js"
+	},
+	"main": "./dist/index.js",
+	"devDependencies": {
+		"@types/node": "^22.5.0",
+		"prettier": "3.3.3",
+		"typescript": "^5.2.2",
+		"vitest": "^2.0.5"
+	},
+	"exports": "./dist/index.js",
+	"bugs": {
+		"url": "https://github.com/bartosz-dude/tmdb-lib-js/issues"
+	},
+	"description": "library for using tmdb with javascript",
+	"homepage": "https://github.com/bartosz-dude/tmdb-lib-js#readme",
+	"keywords": [
+		"themoviedb",
+		"tmdb",
+		"library",
+		"wrapper",
+		"api"
+	],
+	"license": "ISC",
+	"scripts": {
+		"build": "tsc",
+		"build --watch": "tsc --watch",
+		"test": "echo no test configured"
+	},
+	"type": "module"
 }
