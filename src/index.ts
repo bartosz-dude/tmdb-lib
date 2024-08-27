@@ -1,4 +1,4 @@
-import { TMDBAccount } from "./api/v3/account";
+import TMDBAccount from "./api/v3/account"
 import { TMDBAuthentication } from "./api/v3/authentication"
 import { TMDBCertifications } from "./api/v3/certification"
 import { TMDBChanges } from "./api/v3/changes"
