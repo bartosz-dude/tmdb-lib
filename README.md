@@ -34,7 +34,7 @@ npm instal tmdb-lib-js
 const details = await TMDB.networks.details(
 	{ network_id: 123 },
 	"readAccessToken",
-);
+)
 ```
 
 Fully supports types for each endpoint `request` and `response`.
