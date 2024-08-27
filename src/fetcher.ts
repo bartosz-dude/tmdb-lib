@@ -1,41 +1,49 @@
 interface NotOKResponse {
-	success: false,
-	status_code: number,
+	success: false
+	status_code: number
 	status_message: string
 }
 
 interface CustomRequest {
-	method: "GET" | "POST" | "DELETE",
+	method: "GET" | "POST" | "DELETE"
 	rawBody?: any
 }
 
-export type Fetcher = <Response>(url: URL, request?: CustomRequest, readAccessToken?: string) => Promise<Response>
+export type Fetcher = <Response>(
+	url: URL,
+	request?: CustomRequest,
+	readAccessToken?: string,
+) => Promise<Response>
 
-export default async function TMDBFetcher<Response>(requestURL: URL, readAccessToken: string, request?: CustomRequest): Promise<Response> {
+export default async function TMDBFetcher<Response>(
+	requestURL: URL,
+	readAccessToken: string,
+	request?: CustomRequest,
+): Promise<Response> {
 	const options: RequestInit | undefined = (() => {
 		switch (request?.method) {
 			case "POST": {
 				const post: RequestInit = {
-					method: 'POST',
+					method: "POST",
 					headers: {
-						accept: 'application/json',
-						"content-type": 'application/json',
-						Authorization: `Bearer ${readAccessToken}`
+						accept: "application/json",
+						"content-type": "application/json",
+						Authorization: `Bearer ${readAccessToken}`,
 					},
-					body: request.rawBody ? JSON.stringify(request.rawBody) : ""
+					body: request.rawBody ? JSON.stringify(request.rawBody) : "",
 				}
 				return post
 			}
 
 			case "DELETE": {
 				const deleteRequest: RequestInit = {
-					method: 'DELETE',
+					method: "DELETE",
 					headers: {
-						accept: 'application/json',
-						'content-type': 'application/json',
-						Authorization: `Bearer ${readAccessToken}`
+						accept: "application/json",
+						"content-type": "application/json",
+						Authorization: `Bearer ${readAccessToken}`,
 					},
-					body: request.rawBody ? JSON.stringify(request.rawBody) : ""
+					body: request.rawBody ? JSON.stringify(request.rawBody) : "",
 				}
 				return deleteRequest
 			}
@@ -43,26 +51,27 @@ export default async function TMDBFetcher<Response>(requestURL: URL, readAccessT
 			case "GET":
 			default: {
 				return {
-					method: 'GET',
+					method: "GET",
 					headers: {
-						accept: 'application/json',
-						Authorization: `Bearer ${readAccessToken}`
+						accept: "application/json",
+						Authorization: `Bearer ${readAccessToken}`,
 					},
-					body: request?.rawBody ? JSON.stringify(request.rawBody) : ""
+					body: request?.rawBody ? JSON.stringify(request.rawBody) : "",
 				}
 			}
 		}
 	})()
 
-
 	const response = await fetch(requestURL, options)
 
 	if (!response.ok) {
-		const notOkResponse = await response.json() as NotOKResponse
-		throw new Error(`"TMDB Code: ${notOkResponse.status_code} Message: ${notOkResponse.status_message}`)
+		const notOkResponse = (await response.json()) as NotOKResponse
+		throw new Error(
+			`"TMDB Code: ${notOkResponse.status_code} Message: ${notOkResponse.status_message}`,
+		)
 	}
 
-	const okResponse = await response.json() as Response
+	const okResponse = (await response.json()) as Response
 
 	return okResponse
 }
