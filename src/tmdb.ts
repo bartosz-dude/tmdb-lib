@@ -20,5 +20,17 @@ export enum URLPaths {
 	REVIEW = "3/review/",
 	SEARCH = "3/search",
 	TRENDING = "3/trending/",
-	WATCH = "3/watch/"
+	WATCH = "3/watch/",
+	/**
+	 * TMDB v4 api
+	 */
+	ACCOUNT4 = "4/account",
+	/**
+	 * TMDB v4 api
+	 */
+	AUTH4 = "4/auth",
+	/**
+	 * TMDB v4 api
+	 */
+	LIST4 = "4/list"
 }
