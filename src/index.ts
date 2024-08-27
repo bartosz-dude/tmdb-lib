@@ -23,6 +23,11 @@ import { TMDBTvEpisodeGroups } from "./api/v3/tvEpisodeGroups"
 import { TMDBWatchProviders } from "./api/v3/watchProviders"
 import TMDB4Auth from "./api/v4/auth"
 
+/**
+ * Wrapper for [TMDB API](https://developer.themoviedb.org/reference/intro/getting-started)
+ * 
+ * Follows docs structure in organization of methods
+ */
 export const TMDB = {
 	account: TMDBAccount,
 	authentication: TMDBAuthentication,
