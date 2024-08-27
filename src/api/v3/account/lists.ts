@@ -2,9 +2,19 @@ import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
 import TMDBUrlParser from "../../../urlParser"
 
-interface Request {
-	account_id: number,
-	session_id?: string,
+/**
+ * @link https://developer.themoviedb.org/reference/account-lists
+ */
+export interface TMDBAccountListsRequest {
+	/**
+	 * @type int32
+	 */
+	account_id: number
+	session_id?: string
+	/**
+	 * @type int32
+	 * @default 1
+	 */
 	page?: number
 }
 
@@ -13,44 +23,92 @@ type PathParams = {
 }
 
 type QueryParams = {
-	session_id?: string,
+	session_id?: string
 	page?: number
 }
 
-interface Response {
-	avatar: {
-		gravatar: {
-			hash: string
-		},
-		tmdb: {
-			avatar_path: string
-		}
-	}
-	id: number,
-	iso_639_1: string,
-	iso_3166_1: string,
-	name: string,
-	include_adult: string,
-	username: string
+/**
+ * @link https://developer.themoviedb.org/reference/account-lists
+ */
+export interface TMDBAccountListsResponse {
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	page: number
+	results: {
+		description: string
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		favorite_count: number
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		id: number
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		item_count: number
+		iso_639_1: string
+		list_type: string
+		name: string
+		poster_path: string
+	}[]
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	total_pages: number
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	total_results: number
 }
 
-export function TMDBAccountLists(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBAccountLists(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * @link https://developer.themoviedb.org/reference/account-lists
+ */
+export function TMDBAccountLists(
+	request: TMDBAccountListsRequest,
+	fetcher: Fetcher,
+): Promise<TMDBAccountListsResponse>
+/**
+ * @link https://developer.themoviedb.org/reference/account-lists
+ */
+export function TMDBAccountLists(
+	request: TMDBAccountListsRequest,
+	readAccessToken: string,
+): Promise<TMDBAccountListsResponse>
 
-export default function TMDBAccountLists(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.ACCOUNT, "{account_id}/lists", {
-		path: {
-			account_id: request.account_id
+/**
+ * @link https://developer.themoviedb.org/reference/account-lists
+ */
+export default function TMDBAccountLists(
+	request: TMDBAccountListsRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBAccountListsResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.ACCOUNT,
+		"{account_id}/lists",
+		{
+			path: {
+				account_id: request.account_id,
+			},
+			query: {
+				session_id: request.session_id,
+				page: request.page,
+			},
 		},
-		query: {
-			session_id: request.session_id,
-			page: request.page
-		}
-	})
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBAccountListsResponse>(url)
 	}
 }
