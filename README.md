@@ -8,7 +8,7 @@ Unofficial Javascript wrapper / library for [The Movie Database](https://www.the
 
 ---
 
-## Result types are based on [Official Api Reference](https://developer.themoviedb.org/reference/intro/getting-started) Responses definitions, but some of them are missing or incorrect in official definitions. It's more likely to happen in responses with multiple types of data. If you encounter one, please [rise an issue here](https://github.com/bartosz-dude/tmdb-lib-js/issues).
+## Result types are based on [Official Api Reference](https://developer.themoviedb.org/reference/intro/getting-started) Responses definitions, but some of them are missing or incorrect in official definitions. It's more likely to happen in responses with multiple types of data. If you encounter one, please [rise an issue here](https://github.com/bartosz-dude/tmdb-lib-js/issues)
 
 ## Info
 
@@ -20,9 +20,9 @@ After implementing all endpoints I plan on making React version of this library.
 
 ## Installation
 
-~~~terminal
+```terminal
 npm instal tmdb-lib-js
-~~~
+```
 
 ## Usage
 
@@ -30,9 +30,12 @@ npm instal tmdb-lib-js
 
 `tmdb-lib-js` follows [TMDB official documentation](https://developer.themoviedb.org/reference/intro/getting-started) organization of API endpoints. You access them like this:
 
-~~~typescript
-const details = await TMDB.networks.details({network_id: 123}, "readAccessToken")
-~~~
+```typescript
+const details = await TMDB.networks.details(
+	{ network_id: 123 },
+	"readAccessToken",
+);
+```
 
 Fully supports types for each endpoint `request` and `response`.
 
@@ -46,7 +49,7 @@ To work correctly custom fetcher must satisfy its type in endpint methods.
 
 According to this type, custom fetcher must implement `GET`, `POST` and `DELETE` html requests like this:
 
-~~~typescript
+```typescript
     {
      method: 'GET',
      headers: {
@@ -54,7 +57,7 @@ According to this type, custom fetcher must implement `GET`, `POST` and `DELETE`
       Authorization: `Bearer ${readAccessToken}`
      }
     }
-    
+
     {
      method: 'POST',
      headers: {
@@ -74,8 +77,8 @@ According to this type, custom fetcher must implement `GET`, `POST` and `DELETE`
      },
      body: request.rawBody ? JSON.stringify(request.rawBody) : ""
     }
-    
-~~~
+
+```
 
 I recommend looking into [build-in fetcher](./src/fetcher.ts) as a reference for making custom fetcher.
 
