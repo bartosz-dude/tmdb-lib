@@ -32,5 +32,5 @@ export enum URLPaths {
 	/**
 	 * TMDB v4 api
 	 */
-	LIST4 = "4/list"
+	LIST4 = "4/list",
 }
