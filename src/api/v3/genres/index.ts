@@ -1,7 +1,19 @@
-import { TMDBGenresMovieList } from "./movieList";
-import { TMDBGenresTvList } from "./tvList";
+import { TMDBGenresMovieList } from "./movieList"
+import { TMDBGenresTvList } from "./tvList"
 
-export const TMDBGenres = {
+const TMDBGenres = {
+	/**
+	 * Get the list of official genres for movies.
+	 *
+	 * @link https://developer.themoviedb.org/reference/genre-movie-list
+	 */
 	movieList: TMDBGenresMovieList,
-	tvList: TMDBGenresTvList
+	/**
+	 * Get the list of official genres for TV shows.
+	 *
+	 * @link https://developer.themoviedb.org/reference/genre-tv-list
+	 */
+	tvList: TMDBGenresTvList,
 }
+
+export default TMDBGenres

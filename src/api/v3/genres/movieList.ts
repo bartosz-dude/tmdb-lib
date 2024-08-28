@@ -2,7 +2,13 @@ import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
 import TMDBUrlParser from "../../../urlParser"
 
-interface Request {
+/**
+ * @link https://developer.themoviedb.org/reference/genre-movie-list
+ */
+export interface TMDBGenresMovieListRequest {
+	/**
+	 * @default "en"
+	 */
 	language?: string
 }
 
@@ -12,26 +18,61 @@ type QueryParams = {
 	language?: string
 }
 
-interface Response {
+/**
+ * @link https://developer.themoviedb.org/reference/genre-movie-list
+ */
+export interface TMDBGenresMovieListResponse {
 	genres: {
-		id: number,
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		id: number
 		name: string
 	}[]
 }
 
-export function TMDBGenresMovieList(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBGenresMovieList(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Get the list of official genres for movies.
+ *
+ * @link https://developer.themoviedb.org/reference/genre-movie-list
+ */
+export function TMDBGenresMovieList(
+	request: TMDBGenresMovieListRequest,
+	fetcher: Fetcher,
+): Promise<TMDBGenresMovieListResponse>
+/**
+ * Get the list of official genres for movies.
+ *
+ * @link https://developer.themoviedb.org/reference/genre-movie-list
+ */
+export function TMDBGenresMovieList(
+	request: TMDBGenresMovieListRequest,
+	readAccessToken: string,
+): Promise<TMDBGenresMovieListResponse>
 
-export default function TMDBGenresMovieList(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.GENRE, "movie/list", {
-		query: {
-			language: request.language
-		}
-	})
+/**
+ * Get the list of official genres for movies.
+ *
+ * @link https://developer.themoviedb.org/reference/genre-movie-list
+ */
+export default function TMDBGenresMovieList(
+	request: TMDBGenresMovieListRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBGenresMovieListResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.GENRE,
+		"movie/list",
+		{
+			query: {
+				language: request.language,
+			},
+		},
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBGenresMovieListResponse>(url)
 	}
 }
