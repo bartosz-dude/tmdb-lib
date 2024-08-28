@@ -22,9 +22,10 @@ import { TMDBTrending } from "./api/v3/trending"
 import { TMDBTvEpisodeGroups } from "./api/v3/tvEpisodeGroups"
 import { TMDBWatchProviders } from "./api/v3/watchProviders"
 import TMDB4Auth from "./api/v4/auth"
+import { TMDB_CONFIGURATION } from "./constants"
 
 /**
- * Wrapper for [TMDB API](https://developer.themoviedb.org/reference/intro/getting-started)
+ * Wrapper for [TMDB Api](https://developer.themoviedb.org/reference/intro/getting-started)
  *
  * Follows docs structure in organization of methods
  */
@@ -35,6 +36,9 @@ export const TMDB = {
 	changes: TMDBChanges,
 	collections: TMDBCollections,
 	companies: TMDBCompanies,
+	/**
+	 * @see `TMDB_CONFIGURATION` constant provides the same information as default requests to endpoints in this category as of 08/2024
+	 */
 	configuration: TMDBConfiguration,
 	credits: TMDBCredits,
 	discover: TMDBDiscover,
@@ -58,3 +62,4 @@ export const TMDB = {
 }
 
 export default TMDB
+export { TMDB_CONFIGURATION }
