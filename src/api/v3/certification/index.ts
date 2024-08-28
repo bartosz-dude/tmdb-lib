@@ -1,7 +1,17 @@
-import { TMDBCertificationMovieCertifications } from "./movieCertifications";
-import { TMDBCertificationTvCertifications } from "./tvCertifications";
+import { TMDBCertificationMovieCertifications } from "./movieCertifications"
+import { TMDBCertificationTvCertifications } from "./tvCertifications"
 
-export const TMDBCertifications = {
+const TMDBCertifications = {
+	/**
+	 * Get an up to date list of the officially supported movie certifications on TMDB.
+	 *
+	 * @link https://developer.themoviedb.org/reference/certification-movie-list
+	 */
 	movieCertifications: TMDBCertificationMovieCertifications,
-	tvCertifications: TMDBCertificationTvCertifications
+	/**
+	 * @link https://developer.themoviedb.org/reference/certifications-tv-list
+	 */
+	tvCertifications: TMDBCertificationTvCertifications,
 }
+
+export default TMDBCertifications

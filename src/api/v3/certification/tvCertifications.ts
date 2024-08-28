@@ -2,9 +2,10 @@ import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
 import TMDBUrlParser from "../../../urlParser"
 
-interface Request {
-
-}
+/**
+ * @link https://developer.themoviedb.org/reference/certifications-tv-list
+ */
+export interface TMDBCertificationTvCertificationsRequest {}
 
 type PathParams = null
 
@@ -13,70 +14,98 @@ type QueryParams = null
 type Certifications = Certification[]
 
 interface Certification {
-	certification: string,
-	meaning: string,
+	certification: string
+	meaning: string
+	/**
+	 * @type int
+	 * @default 0
+	 */
 	order: number
 }
 
-interface Response {
+/**
+ * @link https://developer.themoviedb.org/reference/certifications-tv-list
+ */
+export interface TMDBCertificationTvCertificationsResponse {
 	certifications: {
-		AU: Certifications,
-		BG: Certifications,
-		BR: Certifications,
-		CA: Certifications,
-		"CA-QC": Certifications,
-		DE: Certifications,
-		DK: Certifications,
-		ES: Certifications,
-		FI: Certifications,
-		FR: Certifications,
-		GB: Certifications,
-		HU: Certifications,
-		IN: Certifications,
-		IT: Certifications,
-		LT: Certifications,
-		MY: Certifications,
-		NL: Certifications,
-		NO: Certifications,
-		NZ: Certifications,
-		PH: Certifications,
-		PT: Certifications,
-		RU: Certifications,
-		SE: Certifications,
-		US: Certifications,
-		KR: Certifications,
-		SK: Certifications,
-		TH: Certifications,
-		MX: Certifications,
-		ID: Certifications,
-		TR: Certifications,
-		AR: Certifications,
-		GR: Certifications,
-		TW: Certifications,
-		ZA: Certifications,
-		SG: Certifications,
-		IE: Certifications,
-		PR: Certifications,
-		JP: Certifications,
-		VI: Certifications,
-		CH: Certifications,
-		IL: Certifications,
-		HK: Certifications,
-		MO: Certifications,
-		LV: Certifications,
+		AU: Certifications
+		BG: Certifications
+		BR: Certifications
+		CA: Certifications
+		"CA-QC": Certifications
+		DE: Certifications
+		DK: Certifications
+		ES: Certifications
+		FI: Certifications
+		FR: Certifications
+		GB: Certifications
+		HU: Certifications
+		IN: Certifications
+		IT: Certifications
+		LT: Certifications
+		MY: Certifications
+		NL: Certifications
+		NO: Certifications
+		NZ: Certifications
+		PH: Certifications
+		PT: Certifications
+		RU: Certifications
+		SE: Certifications
+		US: Certifications
+		KR: Certifications
+		SK: Certifications
+		TH: Certifications
+		MX: Certifications
+		ID: Certifications
+		TR: Certifications
+		AR: Certifications
+		GR: Certifications
+		TW: Certifications
+		ZA: Certifications
+		SG: Certifications
+		IE: Certifications
+		PR: Certifications
+		JP: Certifications
+		VI: Certifications
+		CH: Certifications
+		IL: Certifications
+		HK: Certifications
+		MO: Certifications
+		LV: Certifications
 		LU: Certifications
 	}
 }
 
-export function TMDBCertificationTvCertifications(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBCertificationTvCertifications(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * @link https://developer.themoviedb.org/reference/certifications-tv-list
+ */
+export function TMDBCertificationTvCertifications(
+	request: TMDBCertificationTvCertificationsRequest,
+	fetcher: Fetcher,
+): Promise<TMDBCertificationTvCertificationsResponse>
+/**
+ * @link https://developer.themoviedb.org/reference/certifications-tv-list
+ */
+export function TMDBCertificationTvCertifications(
+	request: TMDBCertificationTvCertificationsRequest,
+	readAccessToken: string,
+): Promise<TMDBCertificationTvCertificationsResponse>
 
-export default function TMDBCertificationTvCertifications(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.CERTIFICATION, "tv/list")
+/**
+ * @link https://developer.themoviedb.org/reference/certifications-tv-list
+ */
+export default function TMDBCertificationTvCertifications(
+	request: TMDBCertificationTvCertificationsRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBCertificationTvCertificationsResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.CERTIFICATION,
+		"tv/list",
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBCertificationTvCertificationsResponse>(url)
 	}
 }

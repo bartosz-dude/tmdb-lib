@@ -1,6 +1,6 @@
 import TMDBAccount from "./api/v3/account"
 import TMDBAuthentication from "./api/v3/authentication"
-import { TMDBCertifications } from "./api/v3/certification"
+import TMDBCertifications from "./api/v3/certification"
 import { TMDBChanges } from "./api/v3/changes"
 import { TMDBCollections } from "./api/v3/collections"
 import { TMDBCompanies } from "./api/v3/companies"
@@ -25,7 +25,7 @@ import TMDB4Auth from "./api/v4/auth"
 
 /**
  * Wrapper for [TMDB API](https://developer.themoviedb.org/reference/intro/getting-started)
- * 
+ *
  * Follows docs structure in organization of methods
  */
 export const TMDB = {
