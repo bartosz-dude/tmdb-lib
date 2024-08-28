@@ -2,9 +2,21 @@ import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
 import TMDBUrlParser from "../../../urlParser"
 
-interface Request {
-	list_id: number,
-	language?: string,
+/**
+ * @link https://developer.themoviedb.org/reference/list-check-item-status
+ */
+export interface TMDBListsCheckItemStatusRequest {
+	/**
+	 * @type int32
+	 */
+	list_id: number
+	/**
+	 * @default "en-US"
+	 */
+	language?: string
+	/**
+	 * @type int32
+	 */
 	movie_id?: number
 }
 
@@ -17,28 +29,66 @@ type QueryParams = {
 	movie_id?: number
 }
 
-interface Response {
-	id: number,
+/**
+ * @link https://developer.themoviedb.org/reference/list-check-item-status
+ */
+export interface TMDBListsCheckItemStatusResponse {
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	id: number
+	/**
+	 * @default true
+	 */
 	item_present: boolean
 }
 
-export function TMDBListsCheckItemStatus(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBListsCheckItemStatus(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Use this method to check if an item has already been added to the list.
+ *
+ * @link https://developer.themoviedb.org/reference/list-check-item-status
+ */
+export function TMDBListsCheckItemStatus(
+	request: TMDBListsCheckItemStatusRequest,
+	fetcher: Fetcher,
+): Promise<TMDBListsCheckItemStatusResponse>
+/**
+ * Use this method to check if an item has already been added to the list.
+ *
+ * @link https://developer.themoviedb.org/reference/list-check-item-status
+ */
+export function TMDBListsCheckItemStatus(
+	request: TMDBListsCheckItemStatusRequest,
+	readAccessToken: string,
+): Promise<TMDBListsCheckItemStatusResponse>
 
-export default function TMDBListsCheckItemStatus(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.LIST, "{list_id}/item_status", {
-		path: {
-			list_id: request.list_id
+/**
+ * Use this method to check if an item has already been added to the list.
+ *
+ * @link https://developer.themoviedb.org/reference/list-check-item-status
+ */
+export default function TMDBListsCheckItemStatus(
+	request: TMDBListsCheckItemStatusRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBListsCheckItemStatusResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.LIST,
+		"{list_id}/item_status",
+		{
+			path: {
+				list_id: request.list_id,
+			},
+			query: {
+				language: request.language,
+				movie_id: request.movie_id,
+			},
 		},
-		query: {
-			language: request.language,
-			movie_id: request.movie_id
-		}
-	})
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBListsCheckItemStatusResponse>(url)
 	}
 }
