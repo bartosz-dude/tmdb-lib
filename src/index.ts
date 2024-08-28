@@ -1,7 +1,7 @@
 import TMDBAccount from "./api/v3/account"
 import TMDBAuthentication from "./api/v3/authentication"
 import TMDBCertifications from "./api/v3/certification"
-import { TMDBChanges } from "./api/v3/changes"
+import TMDBChanges from "./api/v3/changes"
 import { TMDBCollections } from "./api/v3/collections"
 import { TMDBCompanies } from "./api/v3/companies"
 import { TMDBConfiguration } from "./api/v3/configuration"
