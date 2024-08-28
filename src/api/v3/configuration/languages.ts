@@ -2,28 +2,66 @@ import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
 import TMDBUrlParser from "../../../urlParser"
 
-interface Request {
-}
+/**
+ * @link https://developer.themoviedb.org/reference/configuration-languages
+ */
+export interface TMDBConfigurationLanguagesRequest {}
 
 type PathParams = null
 
 type QueryParams = null
 
-interface Response {
-	iso_3166_1: string,
-	english_name: string,
+/**
+ * @link https://developer.themoviedb.org/reference/configuration-languages
+ */
+export type TMDBConfigurationLanguagesResponse = {
+	iso_3166_1: string
+	english_name: string
 	name: string
 }[]
 
-export function TMDBConfigurationLanguages(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBConfigurationLanguages(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Get the list of languages (ISO 639-1 tags) used throughout TMDB.
+ *
+ * @see `TMDB_CONFIGURATION.languages` constant provides the same information as a default request to this endpoint as of 08/2024
+ *
+ * @link https://developer.themoviedb.org/reference/configuration-languages
+ */
+export function TMDBConfigurationLanguages(
+	request: TMDBConfigurationLanguagesRequest,
+	fetcher: Fetcher,
+): Promise<TMDBConfigurationLanguagesResponse>
+/**
+ * Get the list of languages (ISO 639-1 tags) used throughout TMDB.
+ *
+ * @see `TMDB_CONFIGURATION.languages` constant provides the same information as a default request to this endpoint as of 08/2024
+ *
+ * @link https://developer.themoviedb.org/reference/configuration-languages
+ */
+export function TMDBConfigurationLanguages(
+	request: TMDBConfigurationLanguagesRequest,
+	readAccessToken: string,
+): Promise<TMDBConfigurationLanguagesResponse>
 
-export default function TMDBConfigurationLanguages(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.CONFIGURATION, "languages")
+/**
+ * Get the list of languages (ISO 639-1 tags) used throughout TMDB.
+ *
+ * @see `TMDB_CONFIGURATION.languages` constant provides the same information as a default request to this endpoint as of 08/2024
+ *
+ * @link https://developer.themoviedb.org/reference/configuration-languages
+ */
+export default function TMDBConfigurationLanguages(
+	request: TMDBConfigurationLanguagesRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBConfigurationLanguagesResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.CONFIGURATION,
+		"languages",
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBConfigurationLanguagesResponse>(url)
 	}
 }

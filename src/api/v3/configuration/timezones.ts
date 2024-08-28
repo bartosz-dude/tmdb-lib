@@ -2,27 +2,65 @@ import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
 import TMDBUrlParser from "../../../urlParser"
 
-interface Request {
-}
+/**
+ * @link https://developer.themoviedb.org/reference/configuration-timezones
+ */
+export interface TMDBConfigurationTimezonesRequest {}
 
 type PathParams = null
 
 type QueryParams = null
 
-interface Response {
-	iso_3166_1: string,
+/**
+ * @link https://developer.themoviedb.org/reference/configuration-timezones
+ */
+export type TMDBConfigurationTimezonesResponse = {
+	iso_3166_1: string
 	zones: string[]
 }[]
 
-export function TMDBConfigurationTimezones(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBConfigurationTimezones(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Get the list of timezones used throughout TMDB.
+ *
+ * @see `TMDB_CONFIGURATION.timezones` constant provides the same information as a default request to this endpoint as of 08/2024
+ *
+ * @link https://developer.themoviedb.org/reference/configuration-timezones
+ */
+export function TMDBConfigurationTimezones(
+	request: TMDBConfigurationTimezonesRequest,
+	fetcher: Fetcher,
+): Promise<TMDBConfigurationTimezonesResponse>
+/**
+ * Get the list of timezones used throughout TMDB.
+ *
+ * @see `TMDB_CONFIGURATION.timezones` constant provides the same information as a default request to this endpoint as of 08/2024
+ *
+ * @link https://developer.themoviedb.org/reference/configuration-timezones
+ */
+export function TMDBConfigurationTimezones(
+	request: TMDBConfigurationTimezonesRequest,
+	readAccessToken: string,
+): Promise<TMDBConfigurationTimezonesResponse>
 
-export default function TMDBConfigurationTimezones(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.CONFIGURATION, "timezones")
+/**
+ * Get the list of timezones used throughout TMDB.
+ *
+ * @see `TMDB_CONFIGURATION.timezones` constant provides the same information as a default request to this endpoint as of 08/2024
+ *
+ * @link https://developer.themoviedb.org/reference/configuration-timezones
+ */
+export default function TMDBConfigurationTimezones(
+	request: TMDBConfigurationTimezonesRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBConfigurationTimezonesResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.CONFIGURATION,
+		"timezones",
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBConfigurationTimezonesResponse>(url)
 	}
 }

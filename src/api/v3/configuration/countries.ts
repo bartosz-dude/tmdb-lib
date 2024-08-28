@@ -2,7 +2,13 @@ import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
 import TMDBUrlParser from "../../../urlParser"
 
-interface Request {
+/**
+ * @link https://developer.themoviedb.org/reference/configuration-countries
+ */
+export interface TMDBConfigurationCountriesRequest {
+	/**
+	 * @default "en-US"
+	 */
 	language?: string
 }
 
@@ -12,25 +18,62 @@ type QueryParams = {
 	language?: string
 }
 
-interface Response {
-	iso_3166_1: string,
-	english_name: string,
+/**
+ * @link https://developer.themoviedb.org/reference/configuration-countries
+ */
+export type TMDBConfigurationCountriesResponse = {
+	iso_3166_1: string
+	english_name: string
 	native_name: string
 }[]
 
-export function TMDBConfigurationCountries(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBConfigurationCountries(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Get the list of countries (ISO 3166-1 tags) used throughout TMDB.
+ *
+ * @see `TMDB_CONFIGURATION.countries` constant provides the same information as a default request to this endpoint as of 08/2024
+ *
+ * @link https://developer.themoviedb.org/reference/configuration-countries
+ */
+export function TMDBConfigurationCountries(
+	request: TMDBConfigurationCountriesRequest,
+	fetcher: Fetcher,
+): Promise<TMDBConfigurationCountriesResponse>
+/**
+ * Get the list of countries (ISO 3166-1 tags) used throughout TMDB.
+ *
+ * @see `TMDB_CONFIGURATION.countries` constant provides the same information as a default request to this endpoint as of 08/2024
+ *
+ * @link https://developer.themoviedb.org/reference/configuration-countries
+ */
+export function TMDBConfigurationCountries(
+	request: TMDBConfigurationCountriesRequest,
+	readAccessToken: string,
+): Promise<TMDBConfigurationCountriesResponse>
 
-export default function TMDBConfigurationCountries(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.CONFIGURATION, "countries", {
-		query: {
-			language: request.language
-		}
-	})
+/**
+ * Get the list of countries (ISO 3166-1 tags) used throughout TMDB.
+ *
+ * @see `TMDB_CONFIGURATION.countries` constant provides the same information as a default request to this endpoint as of 08/2024
+ *
+ * @link https://developer.themoviedb.org/reference/configuration-countries
+ */
+export default function TMDBConfigurationCountries(
+	request: TMDBConfigurationCountriesRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBConfigurationCountriesResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.CONFIGURATION,
+		"countries",
+		{
+			query: {
+				language: request.language,
+			},
+		},
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBConfigurationCountriesResponse>(url)
 	}
 }
