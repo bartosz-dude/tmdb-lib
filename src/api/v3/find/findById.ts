@@ -2,80 +2,301 @@ import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
 import TMDBUrlParser from "../../../urlParser"
 
-type ExternalSource = "imdb_id" | "facebook_id" | "instagram_id" | "tvdb_id" | "tiktok_id" | "twitter_id" | "wikidata_id" | "youtube_id"
+type ExternalSource =
+	| "imdb_id"
+	| "facebook_id"
+	| "instagram_id"
+	| "tvdb_id"
+	| "tiktok_id"
+	| "twitter_id"
+	| "wikidata_id"
+	| "youtube_id"
 
-interface Request {
-	external_id: number,
-	external_source: ExternalSource,
+/**
+ * @link https://developer.themoviedb.org/reference/find-by-id
+ */
+export interface TMDBFingFindByIdRequest {
+	external_id: string
+	external_source: ExternalSource
 	language?: string
 }
 
 type PathParams = {
-	external_id: number
+	external_id: string
 }
 
 type QueryParams = {
-	external_source: ExternalSource,
+	external_source: ExternalSource
 	language?: string
 }
 
-interface Response {
+/**
+ * @link https://developer.themoviedb.org/reference/find-by-id
+ */
+export interface TMDBFingFindByIdResponse {
 	movie_results: {
-		adult: boolean,
-		backdrop_path: string,
-		id: number,
-		title: string,
-		original_language: string,
-		original_title: string,
-		overview: string,
-		poster_path: string,
-		media_type: string,
-		genre_ids: number[],
-		popularity: number,
-		release_date: string,
-		video: boolean,
-		vote_average: number,
+		/**
+		 * @default true
+		 */
+		adult: boolean
+		backdrop_path: string
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		id: number
+		title: string
+		original_language: string
+		original_title: string
+		overview: string
+		poster_path: string
+		media_type: string
+		/**
+		 * @type int[]
+		 */
+		genre_ids: number[]
+		/**
+		 * @type number
+		 * @default 0
+		 */
+		popularity: number
+		release_date: string
+		/**
+		 * @default true
+		 */
+		video: boolean
+		/**
+		 * @type number
+		 * @default 0
+		 */
+		vote_average: number
+		/**
+		 * @type int
+		 * @default 0
+		 */
 		vote_count: number
-	}[],
-	person_results: [], // Not defined in docs
+	}[]
+	// Not defined in docs
+	// based on IMDb
+	person_results: {
+		/**
+		 * @type int
+		 */
+		id: number
+		name: string
+		original_name: string
+		media_type: "person"
+		adult: boolean
+		/**
+		 * @type number
+		 */
+		popularity: number
+		/**
+		 * @type int
+		 */
+		gender: number
+		known_for_department: string
+		profile_path: string
+		known_for: {
+			backdrop_path: string
+			/**
+			 * @type int
+			 */
+			id: number
+			title: string
+			original_title: string
+			overview: string
+			poster_path: string
+			media_type: string
+			adult: boolean
+			original_language: string
+			/**
+			 * @type int[]
+			 */
+			genre_ids: number[]
+			/**
+			 * @type number
+			 */
+			popularity: number
+			release_date: string
+			video: boolean
+			/**
+			 * @type number
+			 */
+			vote_average: number
+			/**
+			 * @type int
+			 */
+			vote_count: number
+		}[]
+	}[]
+	// Not defined in docs
+	// based on IMDb
 	tv_results: {
-		adult: boolean,
-		backdrop_path: string,
-		id: number,
-		name: string,
-		original_language: string,
-		original_name: string,
-		overview: string,
-		poster_path: string,
-		media_type: string,
-		genre_ids: number[],
-		popularity: number,
-		first_air_date: string,
-		vote_average: number,
-		vote_count: number,
-		origin_country: string[],
-	}[], // Not defined in docs; taken from response
-	tv_episodes_results: [], // Not defined in docs
-	tv_seasons_results: [] // Not defined in docs
+		backdrop_path: string
+		/**
+		 * @type int
+		 */
+		id: number
+		name: string
+		original_name: string
+		overview: string
+		poster_path: string
+		media_type: "tv"
+		adult: boolean
+		original_language: string
+		/**
+		 * @type int[]
+		 */
+		genre_ids: number[]
+		/**
+		 * @type number
+		 */
+		popularity: number
+		first_air_date: string
+		/**
+		 * @type number
+		 */
+		vote_average: number
+		/**
+		 * @type int
+		 */
+		vote_count: number
+		origin_country: string[]
+	}[]
+	// Not defined in docs
+	// based on IMDb
+	tv_episodes_results: {
+		/**
+		 * @type int
+		 */
+		id: number
+		name: string
+		overview: string
+		media_type: "tv_episode"
+		/**
+		 * @type number
+		 */
+		vote_average: number
+		/**
+		 * @type int
+		 */
+		vote_count: number
+		air_date: string
+		/**
+		 * @type int
+		 */
+		episode_number: number
+		episode_type: "finale" | "standard"
+		production_code: string
+		/**
+		 * @type number
+		 */
+		runtime: number
+		/**
+		 * @type int
+		 */
+		season_number: number
+		/**
+		 * @type int
+		 */
+		show_id: number
+		still_path: string
+	}[]
+	// Not defined in docs
+	// based on TheTVDB
+	tv_seasons_results: {
+		/**
+		 * @type int
+		 */
+		id: number
+		name: string
+		overview: string
+		poster_path: string
+		media_type: "tv_season"
+		/**
+		 * @type number
+		 */
+		vote_averrage: number
+		air_date: string
+		/**
+		 * @type int
+		 */
+		season_number: number
+		/**
+		 * @type int
+		 */
+		show_id: number
+		/**
+		 * @type int
+		 */
+		episode_count: number
+	}[]
 }
 
-export function TMDBFingFindById(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBFingFindById(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Find data by external ID's.
+ *
+ * The find method makes it easy to search for objects in our database by an external identifier.
+ *
+ * This method will search all objects (movies, TV shows and people) and return the results in a single response.
+ *
+ * Check the [docs page](https://developer.themoviedb.org/reference/find-by-id) to see supported external sources.
+ *
+ * @link https://developer.themoviedb.org/reference/find-by-id
+ */
+export function TMDBFingFindById(
+	request: TMDBFingFindByIdRequest,
+	fetcher: Fetcher,
+): Promise<TMDBFingFindByIdResponse>
+/**
+ * Find data by external ID's.
+ *
+ * The find method makes it easy to search for objects in our database by an external identifier.
+ *
+ * This method will search all objects (movies, TV shows and people) and return the results in a single response.
+ *
+ * Check the [docs page](https://developer.themoviedb.org/reference/find-by-id) to see supported external sources.
+ *
+ * @link https://developer.themoviedb.org/reference/find-by-id
+ */
+export function TMDBFingFindById(
+	request: TMDBFingFindByIdRequest,
+	readAccessToken: string,
+): Promise<TMDBFingFindByIdResponse>
 
-export default function TMDBFingFindById(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.FIND, "{external_id}", {
-		path: {
-			external_id: request.external_id
+/**
+ * Find data by external ID's.
+ *
+ * The find method makes it easy to search for objects in our database by an external identifier.
+ *
+ * This method will search all objects (movies, TV shows and people) and return the results in a single response.
+ *
+ * Check the [docs page](https://developer.themoviedb.org/reference/find-by-id) to see supported external sources.
+ *
+ * @link https://developer.themoviedb.org/reference/find-by-id
+ */
+export default function TMDBFingFindById(
+	request: TMDBFingFindByIdRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBFingFindByIdResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.FIND,
+		"{external_id}",
+		{
+			path: {
+				external_id: request.external_id,
+			},
+			query: {
+				external_source: request.external_source,
+				language: request.language,
+			},
 		},
-		query: {
-			external_source: request.external_source,
-			language: request.language
-		}
-	})
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBFingFindByIdResponse>(url)
 	}
 }
