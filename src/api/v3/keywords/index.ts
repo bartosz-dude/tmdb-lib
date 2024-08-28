@@ -1,5 +1,10 @@
-import { TMDBKeywordsDetails } from "./details";
+import { TMDBKeywordsDetails } from "./details"
 
-export const TMDBKeywords = {
-	details: TMDBKeywordsDetails
+const TMDBKeywords = {
+	/**
+	 * @link https://developer.themoviedb.org/reference/keyword-details
+	 */
+	details: TMDBKeywordsDetails,
 }
+
+export default TMDBKeywords
