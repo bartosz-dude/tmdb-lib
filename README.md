@@ -12,7 +12,7 @@ Unofficial Javascript wrapper / library for [The Movie Database](https://www.the
 
 ## Info
 
-Currently library implements only `v3` of The Movie Database API.
+Currently library implements `v3` and `v4` of The Movie Database API. This wrapper considers `v3` to be the default so for example `TMDB.account.<some method>` calls the `v3` api. If you want to call `v4` you need to call `TMDB.v4.account.<some method>`.
 
 This library is currently being written. You can check implemented endpoints in [this list](API_IMPLENTATION.md).
 
@@ -32,16 +32,16 @@ npm instal tmdb-lib-js
 
 ```typescript
 const details = await TMDB.networks.details(
-	{ network_id: 123 },
-	"readAccessToken",
+ { network_id: 123 },
+ "readAccessToken",
 )
 ```
 
 Fully supports types for each endpoint `request` and `response`.
 
-`tmdb-lib-js` has built-in fetcher for each endpint. The fetcher injects the TMDB API Read Access Token into the request. To use it, you set Access Token in the method. Also you can use custom fetcher by passing it instead of Access Token.
+`tmdb-lib-js` has built-in fetcher for each endpint. The fetcher injects the TMDB API Read Access Token into the request. To use it, you set Access Token in the method. You can also use custom fetcher by passing it instead of Access Token.
 
-If you are implementing this library client side (eg. in firebase app) I reccomend implementing custom fetcher that is executed server side (eg. cloud functions in firebase) to not expose Access Token to client.
+If you are implementing this library client side (eg. in firebase app) I reccomend using custom fetcher that is that injects Access Token server side (eg. cloud functions in firebase) to not expose said token to the client.
 
 ### Custom Fetcher
 
@@ -80,7 +80,7 @@ According to this type, custom fetcher must implement `GET`, `POST` and `DELETE`
 
 ```
 
-I recommend looking into [build-in fetcher](./src/fetcher.ts) as a reference for making custom fetcher.
+I recommend looking into [built-in fetcher](./src/fetcher.ts) as a reference for making custom fetcher.
 
 ### Images
 
