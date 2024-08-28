@@ -48,12 +48,12 @@ const TMDBAccount = {
 	 */
 	ratedTvEpisodes: TMDBAccountRatedTvEpisodes,
 	/**
- * @link https://developer.themoviedb.org/reference/account-watchlist-movies
- */
+	 * @link https://developer.themoviedb.org/reference/account-watchlist-movies
+	 */
 	watchlistMovies: TMDBAccountWatchlistMovies,
 	/**
- * @link https://developer.themoviedb.org/reference/account-watchlist-tv
- */
+	 * @link https://developer.themoviedb.org/reference/account-watchlist-tv
+	 */
 	watchlistTv: TMDBAccountWatchlistTv,
 }
 
