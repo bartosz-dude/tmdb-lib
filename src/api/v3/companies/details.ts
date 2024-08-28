@@ -2,7 +2,13 @@ import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
 import TMDBUrlParser from "../../../urlParser"
 
-interface Request {
+/**
+ * @link https://developer.themoviedb.org/reference/company-details
+ */
+export interface TMDBCompaniesDetailsRequest {
+	/**
+	 * @type int32
+	 */
 	company_id: number
 }
 
@@ -12,30 +18,65 @@ type PathParams = {
 
 type QueryParams = null
 
-interface Response {
-	description: string,
-	headquarters: string,
-	homepage: string,
-	id: number,
-	logo_path: string,
-	name: string,
-	origin_country: string,
+/**
+ * @link https://developer.themoviedb.org/reference/company-details
+ */
+export interface TMDBCompaniesDetailsResponse {
+	description: string
+	headquarters: string
+	homepage: string
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	id: number
+	logo_path: string
+	name: string
+	origin_country: string
 	parent_company: string
 }
 
-export function TMDBCompaniesDetails(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBCompaniesDetails(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Get the company details by ID.
+ *
+ * @link https://developer.themoviedb.org/reference/company-details
+ */
+export function TMDBCompaniesDetails(
+	request: TMDBCompaniesDetailsRequest,
+	fetcher: Fetcher,
+): Promise<TMDBCompaniesDetailsResponse>
+/**
+ * Get the company details by ID.
+ *
+ * @link https://developer.themoviedb.org/reference/company-details
+ */
+export function TMDBCompaniesDetails(
+	request: TMDBCompaniesDetailsRequest,
+	readAccessToken: string,
+): Promise<TMDBCompaniesDetailsResponse>
 
-export default function TMDBCompaniesDetails(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.COMPANY, "{company_id}", {
-		path: {
-			company_id: request.company_id
-		}
-	})
+/**
+ * Get the company details by ID.
+ *
+ * @link https://developer.themoviedb.org/reference/company-details
+ */
+export default function TMDBCompaniesDetails(
+	request: TMDBCompaniesDetailsRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBCompaniesDetailsResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.COMPANY,
+		"{company_id}",
+		{
+			path: {
+				company_id: request.company_id,
+			},
+		},
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBCompaniesDetailsResponse>(url)
 	}
 }
