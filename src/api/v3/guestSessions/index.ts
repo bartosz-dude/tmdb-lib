@@ -1,9 +1,26 @@
-import { TMDBGuestSessionsRatedMovies } from "./ratedMovies";
-import { TMDBGuestSessionsRatedTv } from "./ratedTv";
-import { TMDBGuestSessionsRatedTvEpisodes } from "./ratedTvEpisodes";
+import { TMDBGuestSessionsRatedMovies } from "./ratedMovies"
+import { TMDBGuestSessionsRatedTv } from "./ratedTv"
+import { TMDBGuestSessionsRatedTvEpisodes } from "./ratedTvEpisodes"
 
-export const TMDBGuestSessions = {
+const TMDBGuestSessions = {
+	/**
+	 * Get the rated movies for a guest session.
+	 *
+	 * @link https://developer.themoviedb.org/reference/guest-session-rated-movies
+	 */
 	ratedMovies: TMDBGuestSessionsRatedMovies,
+	/**
+	 * Get the rated TV shows for a guest session.
+	 *
+	 * @link https://developer.themoviedb.org/reference/guest-session-rated-tv
+	 */
 	ratedTv: TMDBGuestSessionsRatedTv,
-	ratedTvEpisodes: TMDBGuestSessionsRatedTvEpisodes
+	/**
+	 * Get the rated TV episodes for a guest session.
+	 *
+	 * @link https://developer.themoviedb.org/reference/guest-session-rated-tv-episodes
+	 */
+	ratedTvEpisodes: TMDBGuestSessionsRatedTvEpisodes,
 }
+
+export default TMDBGuestSessions
