@@ -10,7 +10,7 @@ export const TMDB_CONFIGURATION = Object.freeze({
 		images: Object.freeze({
 			base_url: "http://image.tmdb.org/t/p/",
 			secure_base_url: "https://image.tmdb.org/t/p/",
-			backdrop_sizes: Object.freeze([ "w300", "w780", "w1280", "original" ]),
+			backdrop_sizes: Object.freeze(["w300", "w780", "w1280", "original"]),
 			logo_sizes: Object.freeze([
 				"w45",
 				"w92",
@@ -29,8 +29,8 @@ export const TMDB_CONFIGURATION = Object.freeze({
 				"w780",
 				"original",
 			]),
-			profile_sizes: Object.freeze([ "w45", "w185", "h632", "original" ]),
-			still_sizes: Object.freeze([ "w92", "w185", "w300", "original" ]),
+			profile_sizes: Object.freeze(["w45", "w185", "h632", "original"]),
+			still_sizes: Object.freeze(["w92", "w185", "w300", "original"]),
 		}),
 		change_keys: Object.freeze([
 			"adult",
@@ -1575,7 +1575,7 @@ export const TMDB_CONFIGURATION = Object.freeze({
 		}),
 		Object.freeze({
 			department: "Actors",
-			jobs: [ "Actor", "Stunt Double", "Voice", "Cameo", "Special Guest" ],
+			jobs: ["Actor", "Stunt Double", "Voice", "Cameo", "Special Guest"],
 		}),
 		Object.freeze({
 			department: "Art",
@@ -2346,938 +2346,938 @@ export const TMDB_CONFIGURATION = Object.freeze({
 		Object.freeze({
 			iso_639_1: "xx",
 			english_name: "No Language",
-			name: "No Language"
+			name: "No Language",
 		}),
 		Object.freeze({
 			iso_639_1: "aa",
 			english_name: "Afar",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "af",
 			english_name: "Afrikaans",
-			name: "Afrikaans"
+			name: "Afrikaans",
 		}),
 		Object.freeze({
 			iso_639_1: "ak",
 			english_name: "Akan",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "an",
 			english_name: "Aragonese",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "as",
 			english_name: "Assamese",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "av",
 			english_name: "Avaric",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ae",
 			english_name: "Avestan",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ay",
 			english_name: "Aymara",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "az",
 			english_name: "Azerbaijani",
-			name: "Azərbaycan"
+			name: "Azərbaycan",
 		}),
 		Object.freeze({
 			iso_639_1: "ba",
 			english_name: "Bashkir",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "bm",
 			english_name: "Bambara",
-			name: "Bamanankan"
+			name: "Bamanankan",
 		}),
 		Object.freeze({
 			iso_639_1: "bi",
 			english_name: "Bislama",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "bo",
 			english_name: "Tibetan",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "br",
 			english_name: "Breton",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ca",
 			english_name: "Catalan",
-			name: "Català"
+			name: "Català",
 		}),
 		Object.freeze({
 			iso_639_1: "cs",
 			english_name: "Czech",
-			name: "Český"
+			name: "Český",
 		}),
 		Object.freeze({
 			iso_639_1: "ce",
 			english_name: "Chechen",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "cu",
 			english_name: "Slavic",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "cv",
 			english_name: "Chuvash",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "kw",
 			english_name: "Cornish",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "co",
 			english_name: "Corsican",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "cr",
 			english_name: "Cree",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "cy",
 			english_name: "Welsh",
-			name: "Cymraeg"
+			name: "Cymraeg",
 		}),
 		Object.freeze({
 			iso_639_1: "da",
 			english_name: "Danish",
-			name: "Dansk"
+			name: "Dansk",
 		}),
 		Object.freeze({
 			iso_639_1: "de",
 			english_name: "German",
-			name: "Deutsch"
+			name: "Deutsch",
 		}),
 		Object.freeze({
 			iso_639_1: "dv",
 			english_name: "Divehi",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "dz",
 			english_name: "Dzongkha",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "eo",
 			english_name: "Esperanto",
-			name: "Esperanto"
+			name: "Esperanto",
 		}),
 		Object.freeze({
 			iso_639_1: "et",
 			english_name: "Estonian",
-			name: "Eesti"
+			name: "Eesti",
 		}),
 		Object.freeze({
 			iso_639_1: "eu",
 			english_name: "Basque",
-			name: "euskera"
+			name: "euskera",
 		}),
 		Object.freeze({
 			iso_639_1: "fo",
 			english_name: "Faroese",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "fj",
 			english_name: "Fijian",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "fi",
 			english_name: "Finnish",
-			name: "suomi"
+			name: "suomi",
 		}),
 		Object.freeze({
 			iso_639_1: "fr",
 			english_name: "French",
-			name: "Français"
+			name: "Français",
 		}),
 		Object.freeze({
 			iso_639_1: "fy",
 			english_name: "Frisian",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ff",
 			english_name: "Fulah",
-			name: "Fulfulde"
+			name: "Fulfulde",
 		}),
 		Object.freeze({
 			iso_639_1: "gd",
 			english_name: "Gaelic",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ga",
 			english_name: "Irish",
-			name: "Gaeilge"
+			name: "Gaeilge",
 		}),
 		Object.freeze({
 			iso_639_1: "gl",
 			english_name: "Galician",
-			name: "Galego"
+			name: "Galego",
 		}),
 		Object.freeze({
 			iso_639_1: "gv",
 			english_name: "Manx",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "gn",
 			english_name: "Guarani",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "gu",
 			english_name: "Gujarati",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ht",
 			english_name: "Haitian; Haitian Creole",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ha",
 			english_name: "Hausa",
-			name: "Hausa"
+			name: "Hausa",
 		}),
 		Object.freeze({
 			iso_639_1: "sh",
 			english_name: "Serbo-Croatian",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "hz",
 			english_name: "Herero",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ho",
 			english_name: "Hiri Motu",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "hr",
 			english_name: "Croatian",
-			name: "Hrvatski"
+			name: "Hrvatski",
 		}),
 		Object.freeze({
 			iso_639_1: "hu",
 			english_name: "Hungarian",
-			name: "Magyar"
+			name: "Magyar",
 		}),
 		Object.freeze({
 			iso_639_1: "ig",
 			english_name: "Igbo",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "io",
 			english_name: "Ido",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ii",
 			english_name: "Yi",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "iu",
 			english_name: "Inuktitut",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ie",
 			english_name: "Interlingue",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ia",
 			english_name: "Interlingua",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "id",
 			english_name: "Indonesian",
-			name: "Bahasa indonesia"
+			name: "Bahasa indonesia",
 		}),
 		Object.freeze({
 			iso_639_1: "ik",
 			english_name: "Inupiaq",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "is",
 			english_name: "Icelandic",
-			name: "Íslenska"
+			name: "Íslenska",
 		}),
 		Object.freeze({
 			iso_639_1: "it",
 			english_name: "Italian",
-			name: "Italiano"
+			name: "Italiano",
 		}),
 		Object.freeze({
 			iso_639_1: "jv",
 			english_name: "Javanese",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ja",
 			english_name: "Japanese",
-			name: "日本語"
+			name: "日本語",
 		}),
 		Object.freeze({
 			iso_639_1: "kl",
 			english_name: "Kalaallisut",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "kn",
 			english_name: "Kannada",
-			name: "?????"
+			name: "?????",
 		}),
 		Object.freeze({
 			iso_639_1: "ks",
 			english_name: "Kashmiri",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "kr",
 			english_name: "Kanuri",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "kk",
 			english_name: "Kazakh",
-			name: "қазақ"
+			name: "қазақ",
 		}),
 		Object.freeze({
 			iso_639_1: "km",
 			english_name: "Khmer",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ki",
 			english_name: "Kikuyu",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "rw",
 			english_name: "Kinyarwanda",
-			name: "Kinyarwanda"
+			name: "Kinyarwanda",
 		}),
 		Object.freeze({
 			iso_639_1: "ky",
 			english_name: "Kirghiz",
-			name: "??????"
+			name: "??????",
 		}),
 		Object.freeze({
 			iso_639_1: "kv",
 			english_name: "Komi",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "kg",
 			english_name: "Kongo",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ko",
 			english_name: "Korean",
-			name: "한국어/조선말"
+			name: "한국어/조선말",
 		}),
 		Object.freeze({
 			iso_639_1: "kj",
 			english_name: "Kuanyama",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ku",
 			english_name: "Kurdish",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "lo",
 			english_name: "Lao",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "la",
 			english_name: "Latin",
-			name: "Latin"
+			name: "Latin",
 		}),
 		Object.freeze({
 			iso_639_1: "lv",
 			english_name: "Latvian",
-			name: "Latviešu"
+			name: "Latviešu",
 		}),
 		Object.freeze({
 			iso_639_1: "li",
 			english_name: "Limburgish",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ln",
 			english_name: "Lingala",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "lt",
 			english_name: "Lithuanian",
-			name: "Lietuvių"
+			name: "Lietuvių",
 		}),
 		Object.freeze({
 			iso_639_1: "lb",
 			english_name: "Letzeburgesch",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "lu",
 			english_name: "Luba-Katanga",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "lg",
 			english_name: "Ganda",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "mh",
 			english_name: "Marshall",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ml",
 			english_name: "Malayalam",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "mr",
 			english_name: "Marathi",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "mg",
 			english_name: "Malagasy",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "mt",
 			english_name: "Maltese",
-			name: "Malti"
+			name: "Malti",
 		}),
 		Object.freeze({
 			iso_639_1: "mo",
 			english_name: "Moldavian",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "mn",
 			english_name: "Mongolian",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "mi",
 			english_name: "Maori",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ms",
 			english_name: "Malay",
-			name: "Bahasa melayu"
+			name: "Bahasa melayu",
 		}),
 		Object.freeze({
 			iso_639_1: "my",
 			english_name: "Burmese",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "na",
 			english_name: "Nauru",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "nv",
 			english_name: "Navajo",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "nr",
 			english_name: "Ndebele",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "nd",
 			english_name: "Ndebele",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ng",
 			english_name: "Ndonga",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ne",
 			english_name: "Nepali",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "nl",
 			english_name: "Dutch",
-			name: "Nederlands"
+			name: "Nederlands",
 		}),
 		Object.freeze({
 			iso_639_1: "nn",
 			english_name: "Norwegian Nynorsk",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "nb",
 			english_name: "Norwegian Bokmål",
-			name: "Bokmål"
+			name: "Bokmål",
 		}),
 		Object.freeze({
 			iso_639_1: "no",
 			english_name: "Norwegian",
-			name: "Norsk"
+			name: "Norsk",
 		}),
 		Object.freeze({
 			iso_639_1: "ny",
 			english_name: "Chichewa; Nyanja",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "oc",
 			english_name: "Occitan",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "oj",
 			english_name: "Ojibwa",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "or",
 			english_name: "Oriya",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "om",
 			english_name: "Oromo",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "os",
 			english_name: "Ossetian; Ossetic",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "pi",
 			english_name: "Pali",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "pl",
 			english_name: "Polish",
-			name: "Polski"
+			name: "Polski",
 		}),
 		Object.freeze({
 			iso_639_1: "pt",
 			english_name: "Portuguese",
-			name: "Português"
+			name: "Português",
 		}),
 		Object.freeze({
 			iso_639_1: "qu",
 			english_name: "Quechua",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "rm",
 			english_name: "Raeto-Romance",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ro",
 			english_name: "Romanian",
-			name: "Română"
+			name: "Română",
 		}),
 		Object.freeze({
 			iso_639_1: "rn",
 			english_name: "Rundi",
-			name: "Kirundi"
+			name: "Kirundi",
 		}),
 		Object.freeze({
 			iso_639_1: "ru",
 			english_name: "Russian",
-			name: "Pусский"
+			name: "Pусский",
 		}),
 		Object.freeze({
 			iso_639_1: "sg",
 			english_name: "Sango",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "sa",
 			english_name: "Sanskrit",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "si",
 			english_name: "Sinhalese",
-			name: "සිංහල"
+			name: "සිංහල",
 		}),
 		Object.freeze({
 			iso_639_1: "sk",
 			english_name: "Slovak",
-			name: "Slovenčina"
+			name: "Slovenčina",
 		}),
 		Object.freeze({
 			iso_639_1: "sl",
 			english_name: "Slovenian",
-			name: "Slovenščina"
+			name: "Slovenščina",
 		}),
 		Object.freeze({
 			iso_639_1: "se",
 			english_name: "Northern Sami",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "sm",
 			english_name: "Samoan",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "sn",
 			english_name: "Shona",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "sd",
 			english_name: "Sindhi",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "so",
 			english_name: "Somali",
-			name: "Somali"
+			name: "Somali",
 		}),
 		Object.freeze({
 			iso_639_1: "st",
 			english_name: "Sotho",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "es",
 			english_name: "Spanish",
-			name: "Español"
+			name: "Español",
 		}),
 		Object.freeze({
 			iso_639_1: "sq",
 			english_name: "Albanian",
-			name: "shqip"
+			name: "shqip",
 		}),
 		Object.freeze({
 			iso_639_1: "sc",
 			english_name: "Sardinian",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "sr",
 			english_name: "Serbian",
-			name: "Srpski"
+			name: "Srpski",
 		}),
 		Object.freeze({
 			iso_639_1: "ss",
 			english_name: "Swati",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "su",
 			english_name: "Sundanese",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "sw",
 			english_name: "Swahili",
-			name: "Kiswahili"
+			name: "Kiswahili",
 		}),
 		Object.freeze({
 			iso_639_1: "sv",
 			english_name: "Swedish",
-			name: "svenska"
+			name: "svenska",
 		}),
 		Object.freeze({
 			iso_639_1: "ty",
 			english_name: "Tahitian",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ta",
 			english_name: "Tamil",
-			name: "தமிழ்"
+			name: "தமிழ்",
 		}),
 		Object.freeze({
 			iso_639_1: "tt",
 			english_name: "Tatar",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "te",
 			english_name: "Telugu",
-			name: "తెలుగు"
+			name: "తెలుగు",
 		}),
 		Object.freeze({
 			iso_639_1: "tg",
 			english_name: "Tajik",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "tl",
 			english_name: "Tagalog",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "th",
 			english_name: "Thai",
-			name: "ภาษาไทย"
+			name: "ภาษาไทย",
 		}),
 		Object.freeze({
 			iso_639_1: "ti",
 			english_name: "Tigrinya",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "to",
 			english_name: "Tonga",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "tn",
 			english_name: "Tswana",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ts",
 			english_name: "Tsonga",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "tk",
 			english_name: "Turkmen",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "tr",
 			english_name: "Turkish",
-			name: "Türkçe"
+			name: "Türkçe",
 		}),
 		Object.freeze({
 			iso_639_1: "tw",
 			english_name: "Twi",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ug",
 			english_name: "Uighur",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "uk",
 			english_name: "Ukrainian",
-			name: "Український"
+			name: "Український",
 		}),
 		Object.freeze({
 			iso_639_1: "ur",
 			english_name: "Urdu",
-			name: "اردو"
+			name: "اردو",
 		}),
 		Object.freeze({
 			iso_639_1: "uz",
 			english_name: "Uzbek",
-			name: "ozbek"
+			name: "ozbek",
 		}),
 		Object.freeze({
 			iso_639_1: "ve",
 			english_name: "Venda",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "vi",
 			english_name: "Vietnamese",
-			name: "Tiếng Việt"
+			name: "Tiếng Việt",
 		}),
 		Object.freeze({
 			iso_639_1: "vo",
 			english_name: "Volapük",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "wa",
 			english_name: "Walloon",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "wo",
 			english_name: "Wolof",
-			name: "Wolof"
+			name: "Wolof",
 		}),
 		Object.freeze({
 			iso_639_1: "xh",
 			english_name: "Xhosa",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "yi",
 			english_name: "Yiddish",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "za",
 			english_name: "Zhuang",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "zu",
 			english_name: "Zulu",
-			name: "isiZulu"
+			name: "isiZulu",
 		}),
 		Object.freeze({
 			iso_639_1: "ab",
 			english_name: "Abkhazian",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "zh",
 			english_name: "Mandarin",
-			name: "普通话"
+			name: "普通话",
 		}),
 		Object.freeze({
 			iso_639_1: "ps",
 			english_name: "Pushto",
-			name: "پښتو"
+			name: "پښتو",
 		}),
 		Object.freeze({
 			iso_639_1: "am",
 			english_name: "Amharic",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "ar",
 			english_name: "Arabic",
-			name: "العربية"
+			name: "العربية",
 		}),
 		Object.freeze({
 			iso_639_1: "bg",
 			english_name: "Bulgarian",
-			name: "български език"
+			name: "български език",
 		}),
 		Object.freeze({
 			iso_639_1: "cn",
 			english_name: "Cantonese",
-			name: "广州话 / 廣州話"
+			name: "广州话 / 廣州話",
 		}),
 		Object.freeze({
 			iso_639_1: "mk",
 			english_name: "Macedonian",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "el",
 			english_name: "Greek",
-			name: "ελληνικά"
+			name: "ελληνικά",
 		}),
 		Object.freeze({
 			iso_639_1: "fa",
 			english_name: "Persian",
-			name: "فارسی"
+			name: "فارسی",
 		}),
 		Object.freeze({
 			iso_639_1: "he",
 			english_name: "Hebrew",
-			name: "עִבְרִית"
+			name: "עִבְרִית",
 		}),
 		Object.freeze({
 			iso_639_1: "hi",
 			english_name: "Hindi",
-			name: "हिन्दी"
+			name: "हिन्दी",
 		}),
 		Object.freeze({
 			iso_639_1: "hy",
 			english_name: "Armenian",
-			name: ""
+			name: "",
 		}),
 		Object.freeze({
 			iso_639_1: "en",
 			english_name: "English",
-			name: "English"
+			name: "English",
 		}),
 		Object.freeze({
 			iso_639_1: "ee",
 			english_name: "Ewe",
-			name: "Èʋegbe"
+			name: "Èʋegbe",
 		}),
 		Object.freeze({
 			iso_639_1: "ka",
 			english_name: "Georgian",
-			name: "ქართული"
+			name: "ქართული",
 		}),
 		Object.freeze({
 			iso_639_1: "pa",
 			english_name: "Punjabi",
-			name: "ਪੰਜਾਬੀ"
+			name: "ਪੰਜਾਬੀ",
 		}),
 		Object.freeze({
 			iso_639_1: "bn",
 			english_name: "Bengali",
-			name: "বাংলা"
+			name: "বাংলা",
 		}),
 		Object.freeze({
 			iso_639_1: "bs",
 			english_name: "Bosnian",
-			name: "Bosanski"
+			name: "Bosanski",
 		}),
 		Object.freeze({
 			iso_639_1: "ch",
 			english_name: "Chamorro",
-			name: "Finu' Chamorro"
+			name: "Finu' Chamorro",
 		}),
 		Object.freeze({
 			iso_639_1: "be",
 			english_name: "Belarusian",
-			name: "беларуская мова"
+			name: "беларуская мова",
 		}),
 		Object.freeze({
 			iso_639_1: "yo",
 			english_name: "Yoruba",
-			name: "Èdè Yorùbá"
-		})
+			name: "Èdè Yorùbá",
+		}),
 	]),
 	primaryTranslations: Object.freeze([
 		"af-ZA",
@@ -3419,60 +3419,44 @@ export const TMDB_CONFIGURATION = Object.freeze({
 		"zh-HK",
 		"zh-SG",
 		"zh-TW",
-		"zu-ZA"
+		"zu-ZA",
 	]),
 	timezones: Object.freeze([
 		Object.freeze({
-			"iso_3166_1": "AD",
-			"zones": [
-				"Europe/Andorra"
-			]
+			iso_3166_1: "AD",
+			zones: ["Europe/Andorra"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "AE",
-			"zones": [
-				"Asia/Dubai"
-			]
+			iso_3166_1: "AE",
+			zones: ["Asia/Dubai"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "AF",
-			"zones": [
-				"Asia/Kabul"
-			]
+			iso_3166_1: "AF",
+			zones: ["Asia/Kabul"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "AG",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "AG",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "AI",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "AI",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "AL",
-			"zones": [
-				"Europe/Tirane"
-			]
+			iso_3166_1: "AL",
+			zones: ["Europe/Tirane"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "AM",
-			"zones": [
-				"Asia/Yerevan"
-			]
+			iso_3166_1: "AM",
+			zones: ["Asia/Yerevan"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "AO",
-			"zones": [
-				"Africa/Lagos"
-			]
+			iso_3166_1: "AO",
+			zones: ["Africa/Lagos"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "AQ",
-			"zones": [
+			iso_3166_1: "AQ",
+			zones: [
 				"Antarctica/Casey",
 				"Antarctica/Davis",
 				"Antarctica/Mawson",
@@ -3482,12 +3466,12 @@ export const TMDB_CONFIGURATION = Object.freeze({
 				"Antarctica/Vostok",
 				"Pacific/Auckland",
 				"Pacific/Port_Moresby",
-				"Asia/Riyadh"
-			]
+				"Asia/Riyadh",
+			],
 		}),
 		Object.freeze({
-			"iso_3166_1": "AR",
-			"zones": [
+			iso_3166_1: "AR",
+			zones: [
 				"America/Argentina/Buenos_Aires",
 				"America/Argentina/Cordoba",
 				"America/Argentina/Salta",
@@ -3499,24 +3483,20 @@ export const TMDB_CONFIGURATION = Object.freeze({
 				"America/Argentina/Mendoza",
 				"America/Argentina/San_Luis",
 				"America/Argentina/Rio_Gallegos",
-				"America/Argentina/Ushuaia"
-			]
+				"America/Argentina/Ushuaia",
+			],
 		}),
 		Object.freeze({
-			"iso_3166_1": "AS",
-			"zones": [
-				"Pacific/Pago_Pago"
-			]
+			iso_3166_1: "AS",
+			zones: ["Pacific/Pago_Pago"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "AT",
-			"zones": [
-				"Europe/Vienna"
-			]
+			iso_3166_1: "AT",
+			zones: ["Europe/Vienna"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "AU",
-			"zones": [
+			iso_3166_1: "AU",
+			zones: [
 				"Australia/Lord_Howe",
 				"Antarctica/Macquarie",
 				"Australia/Hobart",
@@ -3528,114 +3508,80 @@ export const TMDB_CONFIGURATION = Object.freeze({
 				"Australia/Adelaide",
 				"Australia/Darwin",
 				"Australia/Perth",
-				"Australia/Eucla"
-			]
+				"Australia/Eucla",
+			],
 		}),
 		Object.freeze({
-			"iso_3166_1": "AW",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "AW",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "AX",
-			"zones": [
-				"Europe/Helsinki"
-			]
+			iso_3166_1: "AX",
+			zones: ["Europe/Helsinki"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "AZ",
-			"zones": [
-				"Asia/Baku"
-			]
+			iso_3166_1: "AZ",
+			zones: ["Asia/Baku"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BA",
-			"zones": [
-				"Europe/Belgrade"
-			]
+			iso_3166_1: "BA",
+			zones: ["Europe/Belgrade"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BB",
-			"zones": [
-				"America/Barbados"
-			]
+			iso_3166_1: "BB",
+			zones: ["America/Barbados"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BD",
-			"zones": [
-				"Asia/Dhaka"
-			]
+			iso_3166_1: "BD",
+			zones: ["Asia/Dhaka"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BE",
-			"zones": [
-				"Europe/Brussels"
-			]
+			iso_3166_1: "BE",
+			zones: ["Europe/Brussels"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BF",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "BF",
+			zones: ["Africa/Abidjan"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BG",
-			"zones": [
-				"Europe/Sofia"
-			]
+			iso_3166_1: "BG",
+			zones: ["Europe/Sofia"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BH",
-			"zones": [
-				"Asia/Qatar"
-			]
+			iso_3166_1: "BH",
+			zones: ["Asia/Qatar"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BI",
-			"zones": [
-				"Africa/Maputo"
-			]
+			iso_3166_1: "BI",
+			zones: ["Africa/Maputo"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BJ",
-			"zones": [
-				"Africa/Lagos"
-			]
+			iso_3166_1: "BJ",
+			zones: ["Africa/Lagos"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BL",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "BL",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BM",
-			"zones": [
-				"Atlantic/Bermuda"
-			]
+			iso_3166_1: "BM",
+			zones: ["Atlantic/Bermuda"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BN",
-			"zones": [
-				"Asia/Kuching"
-			]
+			iso_3166_1: "BN",
+			zones: ["Asia/Kuching"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BO",
-			"zones": [
-				"America/La_Paz"
-			]
+			iso_3166_1: "BO",
+			zones: ["America/La_Paz"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BQ",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "BQ",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BR",
-			"zones": [
+			iso_3166_1: "BR",
+			zones: [
 				"America/Noronha",
 				"America/Belem",
 				"America/Fortaleza",
@@ -3651,46 +3597,36 @@ export const TMDB_CONFIGURATION = Object.freeze({
 				"America/Boa_Vista",
 				"America/Manaus",
 				"America/Eirunepe",
-				"America/Rio_Branco"
-			]
+				"America/Rio_Branco",
+			],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BS",
-			"zones": [
-				"America/Toronto"
-			]
+			iso_3166_1: "BS",
+			zones: ["America/Toronto"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BT",
-			"zones": [
-				"Asia/Thimphu"
-			]
+			iso_3166_1: "BT",
+			zones: ["Asia/Thimphu"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BV",
-			"zones": []
+			iso_3166_1: "BV",
+			zones: [],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BW",
-			"zones": [
-				"Africa/Maputo"
-			]
+			iso_3166_1: "BW",
+			zones: ["Africa/Maputo"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BY",
-			"zones": [
-				"Europe/Minsk"
-			]
+			iso_3166_1: "BY",
+			zones: ["Europe/Minsk"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "BZ",
-			"zones": [
-				"America/Belize"
-			]
+			iso_3166_1: "BZ",
+			zones: ["America/Belize"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CA",
-			"zones": [
+			iso_3166_1: "CA",
+			zones: [
 				"America/St_Johns",
 				"America/Halifax",
 				"America/Glace_Bay",
@@ -3713,746 +3649,502 @@ export const TMDB_CONFIGURATION = Object.freeze({
 				"America/Vancouver",
 				"America/Panama",
 				"America/Puerto_Rico",
-				"America/Phoenix"
-			]
+				"America/Phoenix",
+			],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CC",
-			"zones": [
-				"Asia/Yangon"
-			]
+			iso_3166_1: "CC",
+			zones: ["Asia/Yangon"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CD",
-			"zones": [
-				"Africa/Maputo",
-				"Africa/Lagos"
-			]
+			iso_3166_1: "CD",
+			zones: ["Africa/Maputo", "Africa/Lagos"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CF",
-			"zones": [
-				"Africa/Lagos"
-			]
+			iso_3166_1: "CF",
+			zones: ["Africa/Lagos"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CG",
-			"zones": [
-				"Africa/Lagos"
-			]
+			iso_3166_1: "CG",
+			zones: ["Africa/Lagos"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CH",
-			"zones": [
-				"Europe/Zurich"
-			]
+			iso_3166_1: "CH",
+			zones: ["Europe/Zurich"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CI",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "CI",
+			zones: ["Africa/Abidjan"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CK",
-			"zones": [
-				"Pacific/Rarotonga"
-			]
+			iso_3166_1: "CK",
+			zones: ["Pacific/Rarotonga"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CL",
-			"zones": [
-				"America/Santiago",
-				"America/Punta_Arenas",
-				"Pacific/Easter"
-			]
+			iso_3166_1: "CL",
+			zones: ["America/Santiago", "America/Punta_Arenas", "Pacific/Easter"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CM",
-			"zones": [
-				"Africa/Lagos"
-			]
+			iso_3166_1: "CM",
+			zones: ["Africa/Lagos"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CN",
-			"zones": [
-				"Asia/Shanghai",
-				"Asia/Urumqi"
-			]
+			iso_3166_1: "CN",
+			zones: ["Asia/Shanghai", "Asia/Urumqi"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CO",
-			"zones": [
-				"America/Bogota"
-			]
+			iso_3166_1: "CO",
+			zones: ["America/Bogota"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CR",
-			"zones": [
-				"America/Costa_Rica"
-			]
+			iso_3166_1: "CR",
+			zones: ["America/Costa_Rica"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CU",
-			"zones": [
-				"America/Havana"
-			]
+			iso_3166_1: "CU",
+			zones: ["America/Havana"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CV",
-			"zones": [
-				"Atlantic/Cape_Verde"
-			]
+			iso_3166_1: "CV",
+			zones: ["Atlantic/Cape_Verde"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CW",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "CW",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CX",
-			"zones": [
-				"Asia/Bangkok"
-			]
+			iso_3166_1: "CX",
+			zones: ["Asia/Bangkok"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CY",
-			"zones": [
-				"Asia/Nicosia",
-				"Asia/Famagusta"
-			]
+			iso_3166_1: "CY",
+			zones: ["Asia/Nicosia", "Asia/Famagusta"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "CZ",
-			"zones": [
-				"Europe/Prague"
-			]
+			iso_3166_1: "CZ",
+			zones: ["Europe/Prague"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "DE",
-			"zones": [
-				"Europe/Berlin",
-				"Europe/Zurich"
-			]
+			iso_3166_1: "DE",
+			zones: ["Europe/Berlin", "Europe/Zurich"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "DJ",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "DJ",
+			zones: ["Africa/Nairobi"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "DK",
-			"zones": [
-				"Europe/Berlin"
-			]
+			iso_3166_1: "DK",
+			zones: ["Europe/Berlin"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "DM",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "DM",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "DO",
-			"zones": [
-				"America/Santo_Domingo"
-			]
+			iso_3166_1: "DO",
+			zones: ["America/Santo_Domingo"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "DZ",
-			"zones": [
-				"Africa/Algiers"
-			]
+			iso_3166_1: "DZ",
+			zones: ["Africa/Algiers"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "EC",
-			"zones": [
-				"America/Guayaquil",
-				"Pacific/Galapagos"
-			]
+			iso_3166_1: "EC",
+			zones: ["America/Guayaquil", "Pacific/Galapagos"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "EE",
-			"zones": [
-				"Europe/Tallinn"
-			]
+			iso_3166_1: "EE",
+			zones: ["Europe/Tallinn"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "EG",
-			"zones": [
-				"Africa/Cairo"
-			]
+			iso_3166_1: "EG",
+			zones: ["Africa/Cairo"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "EH",
-			"zones": [
-				"Africa/El_Aaiun"
-			]
+			iso_3166_1: "EH",
+			zones: ["Africa/El_Aaiun"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "ER",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "ER",
+			zones: ["Africa/Nairobi"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "ES",
-			"zones": [
-				"Europe/Madrid",
-				"Africa/Ceuta",
-				"Atlantic/Canary"
-			]
+			iso_3166_1: "ES",
+			zones: ["Europe/Madrid", "Africa/Ceuta", "Atlantic/Canary"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "ET",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "ET",
+			zones: ["Africa/Nairobi"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "FI",
-			"zones": [
-				"Europe/Helsinki"
-			]
+			iso_3166_1: "FI",
+			zones: ["Europe/Helsinki"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "FJ",
-			"zones": [
-				"Pacific/Fiji"
-			]
+			iso_3166_1: "FJ",
+			zones: ["Pacific/Fiji"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "FK",
-			"zones": [
-				"Atlantic/Stanley"
-			]
+			iso_3166_1: "FK",
+			zones: ["Atlantic/Stanley"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "FM",
-			"zones": [
-				"Pacific/Kosrae",
-				"Pacific/Port_Moresby",
-				"Pacific/Guadalcanal"
-			]
+			iso_3166_1: "FM",
+			zones: ["Pacific/Kosrae", "Pacific/Port_Moresby", "Pacific/Guadalcanal"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "FO",
-			"zones": [
-				"Atlantic/Faroe"
-			]
+			iso_3166_1: "FO",
+			zones: ["Atlantic/Faroe"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "FR",
-			"zones": [
-				"Europe/Paris"
-			]
+			iso_3166_1: "FR",
+			zones: ["Europe/Paris"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GA",
-			"zones": [
-				"Africa/Lagos"
-			]
+			iso_3166_1: "GA",
+			zones: ["Africa/Lagos"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GB",
-			"zones": [
-				"Europe/London"
-			]
+			iso_3166_1: "GB",
+			zones: ["Europe/London"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GD",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "GD",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GE",
-			"zones": [
-				"Asia/Tbilisi"
-			]
+			iso_3166_1: "GE",
+			zones: ["Asia/Tbilisi"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GF",
-			"zones": [
-				"America/Cayenne"
-			]
+			iso_3166_1: "GF",
+			zones: ["America/Cayenne"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GG",
-			"zones": [
-				"Europe/London"
-			]
+			iso_3166_1: "GG",
+			zones: ["Europe/London"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GH",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "GH",
+			zones: ["Africa/Abidjan"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GI",
-			"zones": [
-				"Europe/Gibraltar"
-			]
+			iso_3166_1: "GI",
+			zones: ["Europe/Gibraltar"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GL",
-			"zones": [
+			iso_3166_1: "GL",
+			zones: [
 				"America/Nuuk",
 				"America/Danmarkshavn",
 				"America/Scoresbysund",
-				"America/Thule"
-			]
+				"America/Thule",
+			],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GM",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "GM",
+			zones: ["Africa/Abidjan"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GN",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "GN",
+			zones: ["Africa/Abidjan"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GP",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "GP",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GQ",
-			"zones": [
-				"Africa/Lagos"
-			]
+			iso_3166_1: "GQ",
+			zones: ["Africa/Lagos"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GR",
-			"zones": [
-				"Europe/Athens"
-			]
+			iso_3166_1: "GR",
+			zones: ["Europe/Athens"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GS",
-			"zones": [
-				"Atlantic/South_Georgia"
-			]
+			iso_3166_1: "GS",
+			zones: ["Atlantic/South_Georgia"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GT",
-			"zones": [
-				"America/Guatemala"
-			]
+			iso_3166_1: "GT",
+			zones: ["America/Guatemala"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GU",
-			"zones": [
-				"Pacific/Guam"
-			]
+			iso_3166_1: "GU",
+			zones: ["Pacific/Guam"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GW",
-			"zones": [
-				"Africa/Bissau"
-			]
+			iso_3166_1: "GW",
+			zones: ["Africa/Bissau"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "GY",
-			"zones": [
-				"America/Guyana"
-			]
+			iso_3166_1: "GY",
+			zones: ["America/Guyana"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "HK",
-			"zones": [
-				"Asia/Hong_Kong"
-			]
+			iso_3166_1: "HK",
+			zones: ["Asia/Hong_Kong"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "HM",
-			"zones": []
+			iso_3166_1: "HM",
+			zones: [],
 		}),
 		Object.freeze({
-			"iso_3166_1": "HN",
-			"zones": [
-				"America/Tegucigalpa"
-			]
+			iso_3166_1: "HN",
+			zones: ["America/Tegucigalpa"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "HR",
-			"zones": [
-				"Europe/Belgrade"
-			]
+			iso_3166_1: "HR",
+			zones: ["Europe/Belgrade"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "HT",
-			"zones": [
-				"America/Port-au-Prince"
-			]
+			iso_3166_1: "HT",
+			zones: ["America/Port-au-Prince"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "HU",
-			"zones": [
-				"Europe/Budapest"
-			]
+			iso_3166_1: "HU",
+			zones: ["Europe/Budapest"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "ID",
-			"zones": [
+			iso_3166_1: "ID",
+			zones: [
 				"Asia/Jakarta",
 				"Asia/Pontianak",
 				"Asia/Makassar",
-				"Asia/Jayapura"
-			]
+				"Asia/Jayapura",
+			],
 		}),
 		Object.freeze({
-			"iso_3166_1": "IE",
-			"zones": [
-				"Europe/Dublin"
-			]
+			iso_3166_1: "IE",
+			zones: ["Europe/Dublin"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "IL",
-			"zones": [
-				"Asia/Jerusalem"
-			]
+			iso_3166_1: "IL",
+			zones: ["Asia/Jerusalem"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "IM",
-			"zones": [
-				"Europe/London"
-			]
+			iso_3166_1: "IM",
+			zones: ["Europe/London"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "IN",
-			"zones": [
-				"Asia/Kolkata"
-			]
+			iso_3166_1: "IN",
+			zones: ["Asia/Kolkata"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "IO",
-			"zones": [
-				"Indian/Chagos"
-			]
+			iso_3166_1: "IO",
+			zones: ["Indian/Chagos"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "IQ",
-			"zones": [
-				"Asia/Baghdad"
-			]
+			iso_3166_1: "IQ",
+			zones: ["Asia/Baghdad"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "IR",
-			"zones": [
-				"Asia/Tehran"
-			]
+			iso_3166_1: "IR",
+			zones: ["Asia/Tehran"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "IS",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "IS",
+			zones: ["Africa/Abidjan"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "IT",
-			"zones": [
-				"Europe/Rome"
-			]
+			iso_3166_1: "IT",
+			zones: ["Europe/Rome"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "JE",
-			"zones": [
-				"Europe/London"
-			]
+			iso_3166_1: "JE",
+			zones: ["Europe/London"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "JM",
-			"zones": [
-				"America/Jamaica"
-			]
+			iso_3166_1: "JM",
+			zones: ["America/Jamaica"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "JO",
-			"zones": [
-				"Asia/Amman"
-			]
+			iso_3166_1: "JO",
+			zones: ["Asia/Amman"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "JP",
-			"zones": [
-				"Asia/Tokyo"
-			]
+			iso_3166_1: "JP",
+			zones: ["Asia/Tokyo"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "KE",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "KE",
+			zones: ["Africa/Nairobi"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "KG",
-			"zones": [
-				"Asia/Bishkek"
-			]
+			iso_3166_1: "KG",
+			zones: ["Asia/Bishkek"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "KH",
-			"zones": [
-				"Asia/Bangkok"
-			]
+			iso_3166_1: "KH",
+			zones: ["Asia/Bangkok"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "KI",
-			"zones": [
-				"Pacific/Tarawa",
-				"Pacific/Kanton",
-				"Pacific/Kiritimati"
-			]
+			iso_3166_1: "KI",
+			zones: ["Pacific/Tarawa", "Pacific/Kanton", "Pacific/Kiritimati"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "KM",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "KM",
+			zones: ["Africa/Nairobi"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "KN",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "KN",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "KP",
-			"zones": [
-				"Asia/Pyongyang"
-			]
+			iso_3166_1: "KP",
+			zones: ["Asia/Pyongyang"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "KR",
-			"zones": [
-				"Asia/Seoul"
-			]
+			iso_3166_1: "KR",
+			zones: ["Asia/Seoul"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "KW",
-			"zones": [
-				"Asia/Riyadh"
-			]
+			iso_3166_1: "KW",
+			zones: ["Asia/Riyadh"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "KY",
-			"zones": [
-				"America/Panama"
-			]
+			iso_3166_1: "KY",
+			zones: ["America/Panama"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "KZ",
-			"zones": [
+			iso_3166_1: "KZ",
+			zones: [
 				"Asia/Almaty",
 				"Asia/Qyzylorda",
 				"Asia/Qostanay",
 				"Asia/Aqtobe",
 				"Asia/Aqtau",
 				"Asia/Atyrau",
-				"Asia/Oral"
-			]
+				"Asia/Oral",
+			],
 		}),
 		Object.freeze({
-			"iso_3166_1": "LA",
-			"zones": [
-				"Asia/Bangkok"
-			]
+			iso_3166_1: "LA",
+			zones: ["Asia/Bangkok"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "LB",
-			"zones": [
-				"Asia/Beirut"
-			]
+			iso_3166_1: "LB",
+			zones: ["Asia/Beirut"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "LC",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "LC",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "LI",
-			"zones": [
-				"Europe/Zurich"
-			]
+			iso_3166_1: "LI",
+			zones: ["Europe/Zurich"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "LK",
-			"zones": [
-				"Asia/Colombo"
-			]
+			iso_3166_1: "LK",
+			zones: ["Asia/Colombo"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "LR",
-			"zones": [
-				"Africa/Monrovia"
-			]
+			iso_3166_1: "LR",
+			zones: ["Africa/Monrovia"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "LS",
-			"zones": [
-				"Africa/Johannesburg"
-			]
+			iso_3166_1: "LS",
+			zones: ["Africa/Johannesburg"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "LT",
-			"zones": [
-				"Europe/Vilnius"
-			]
+			iso_3166_1: "LT",
+			zones: ["Europe/Vilnius"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "LU",
-			"zones": [
-				"Europe/Brussels"
-			]
+			iso_3166_1: "LU",
+			zones: ["Europe/Brussels"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "LV",
-			"zones": [
-				"Europe/Riga"
-			]
+			iso_3166_1: "LV",
+			zones: ["Europe/Riga"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "LY",
-			"zones": [
-				"Africa/Tripoli"
-			]
+			iso_3166_1: "LY",
+			zones: ["Africa/Tripoli"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MA",
-			"zones": [
-				"Africa/Casablanca"
-			]
+			iso_3166_1: "MA",
+			zones: ["Africa/Casablanca"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MC",
-			"zones": [
-				"Europe/Paris"
-			]
+			iso_3166_1: "MC",
+			zones: ["Europe/Paris"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MD",
-			"zones": [
-				"Europe/Chisinau"
-			]
+			iso_3166_1: "MD",
+			zones: ["Europe/Chisinau"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "ME",
-			"zones": [
-				"Europe/Belgrade"
-			]
+			iso_3166_1: "ME",
+			zones: ["Europe/Belgrade"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MF",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "MF",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MG",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "MG",
+			zones: ["Africa/Nairobi"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MH",
-			"zones": [
-				"Pacific/Kwajalein",
-				"Pacific/Tarawa"
-			]
+			iso_3166_1: "MH",
+			zones: ["Pacific/Kwajalein", "Pacific/Tarawa"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MK",
-			"zones": [
-				"Europe/Belgrade"
-			]
+			iso_3166_1: "MK",
+			zones: ["Europe/Belgrade"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "ML",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "ML",
+			zones: ["Africa/Abidjan"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MM",
-			"zones": [
-				"Asia/Yangon"
-			]
+			iso_3166_1: "MM",
+			zones: ["Asia/Yangon"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MN",
-			"zones": [
-				"Asia/Ulaanbaatar",
-				"Asia/Hovd",
-				"Asia/Choibalsan"
-			]
+			iso_3166_1: "MN",
+			zones: ["Asia/Ulaanbaatar", "Asia/Hovd", "Asia/Choibalsan"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MO",
-			"zones": [
-				"Asia/Macau"
-			]
+			iso_3166_1: "MO",
+			zones: ["Asia/Macau"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MP",
-			"zones": [
-				"Pacific/Guam"
-			]
+			iso_3166_1: "MP",
+			zones: ["Pacific/Guam"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MQ",
-			"zones": [
-				"America/Martinique"
-			]
+			iso_3166_1: "MQ",
+			zones: ["America/Martinique"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MR",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "MR",
+			zones: ["Africa/Abidjan"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MS",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "MS",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MT",
-			"zones": [
-				"Europe/Malta"
-			]
+			iso_3166_1: "MT",
+			zones: ["Europe/Malta"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MU",
-			"zones": [
-				"Indian/Mauritius"
-			]
+			iso_3166_1: "MU",
+			zones: ["Indian/Mauritius"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MV",
-			"zones": [
-				"Indian/Maldives"
-			]
+			iso_3166_1: "MV",
+			zones: ["Indian/Maldives"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MW",
-			"zones": [
-				"Africa/Maputo"
-			]
+			iso_3166_1: "MW",
+			zones: ["Africa/Maputo"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MX",
-			"zones": [
+			iso_3166_1: "MX",
+			zones: [
 				"America/Mexico_City",
 				"America/Cancun",
 				"America/Merida",
@@ -4464,218 +4156,144 @@ export const TMDB_CONFIGURATION = Object.freeze({
 				"America/Mazatlan",
 				"America/Bahia_Banderas",
 				"America/Hermosillo",
-				"America/Tijuana"
-			]
+				"America/Tijuana",
+			],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MY",
-			"zones": [
-				"Asia/Kuching",
-				"Asia/Singapore"
-			]
+			iso_3166_1: "MY",
+			zones: ["Asia/Kuching", "Asia/Singapore"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "MZ",
-			"zones": [
-				"Africa/Maputo"
-			]
+			iso_3166_1: "MZ",
+			zones: ["Africa/Maputo"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "NA",
-			"zones": [
-				"Africa/Windhoek"
-			]
+			iso_3166_1: "NA",
+			zones: ["Africa/Windhoek"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "NC",
-			"zones": [
-				"Pacific/Noumea"
-			]
+			iso_3166_1: "NC",
+			zones: ["Pacific/Noumea"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "NE",
-			"zones": [
-				"Africa/Lagos"
-			]
+			iso_3166_1: "NE",
+			zones: ["Africa/Lagos"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "NF",
-			"zones": [
-				"Pacific/Norfolk"
-			]
+			iso_3166_1: "NF",
+			zones: ["Pacific/Norfolk"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "NG",
-			"zones": [
-				"Africa/Lagos"
-			]
+			iso_3166_1: "NG",
+			zones: ["Africa/Lagos"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "NI",
-			"zones": [
-				"America/Managua"
-			]
+			iso_3166_1: "NI",
+			zones: ["America/Managua"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "NL",
-			"zones": [
-				"Europe/Brussels"
-			]
+			iso_3166_1: "NL",
+			zones: ["Europe/Brussels"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "NO",
-			"zones": [
-				"Europe/Berlin"
-			]
+			iso_3166_1: "NO",
+			zones: ["Europe/Berlin"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "NP",
-			"zones": [
-				"Asia/Kathmandu"
-			]
+			iso_3166_1: "NP",
+			zones: ["Asia/Kathmandu"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "NR",
-			"zones": [
-				"Pacific/Nauru"
-			]
+			iso_3166_1: "NR",
+			zones: ["Pacific/Nauru"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "NU",
-			"zones": [
-				"Pacific/Niue"
-			]
+			iso_3166_1: "NU",
+			zones: ["Pacific/Niue"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "NZ",
-			"zones": [
-				"Pacific/Auckland",
-				"Pacific/Chatham"
-			]
+			iso_3166_1: "NZ",
+			zones: ["Pacific/Auckland", "Pacific/Chatham"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "OM",
-			"zones": [
-				"Asia/Dubai"
-			]
+			iso_3166_1: "OM",
+			zones: ["Asia/Dubai"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "PA",
-			"zones": [
-				"America/Panama"
-			]
+			iso_3166_1: "PA",
+			zones: ["America/Panama"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "PE",
-			"zones": [
-				"America/Lima"
-			]
+			iso_3166_1: "PE",
+			zones: ["America/Lima"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "PF",
-			"zones": [
-				"Pacific/Tahiti",
-				"Pacific/Marquesas",
-				"Pacific/Gambier"
-			]
+			iso_3166_1: "PF",
+			zones: ["Pacific/Tahiti", "Pacific/Marquesas", "Pacific/Gambier"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "PG",
-			"zones": [
-				"Pacific/Port_Moresby",
-				"Pacific/Bougainville"
-			]
+			iso_3166_1: "PG",
+			zones: ["Pacific/Port_Moresby", "Pacific/Bougainville"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "PH",
-			"zones": [
-				"Asia/Manila"
-			]
+			iso_3166_1: "PH",
+			zones: ["Asia/Manila"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "PK",
-			"zones": [
-				"Asia/Karachi"
-			]
+			iso_3166_1: "PK",
+			zones: ["Asia/Karachi"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "PL",
-			"zones": [
-				"Europe/Warsaw"
-			]
+			iso_3166_1: "PL",
+			zones: ["Europe/Warsaw"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "PM",
-			"zones": [
-				"America/Miquelon"
-			]
+			iso_3166_1: "PM",
+			zones: ["America/Miquelon"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "PN",
-			"zones": [
-				"Pacific/Pitcairn"
-			]
+			iso_3166_1: "PN",
+			zones: ["Pacific/Pitcairn"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "PR",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "PR",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "PS",
-			"zones": [
-				"Asia/Gaza",
-				"Asia/Hebron"
-			]
+			iso_3166_1: "PS",
+			zones: ["Asia/Gaza", "Asia/Hebron"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "PT",
-			"zones": [
-				"Europe/Lisbon",
-				"Atlantic/Madeira",
-				"Atlantic/Azores"
-			]
+			iso_3166_1: "PT",
+			zones: ["Europe/Lisbon", "Atlantic/Madeira", "Atlantic/Azores"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "PW",
-			"zones": [
-				"Pacific/Palau"
-			]
+			iso_3166_1: "PW",
+			zones: ["Pacific/Palau"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "PY",
-			"zones": [
-				"America/Asuncion"
-			]
+			iso_3166_1: "PY",
+			zones: ["America/Asuncion"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "QA",
-			"zones": [
-				"Asia/Qatar"
-			]
+			iso_3166_1: "QA",
+			zones: ["Asia/Qatar"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "RE",
-			"zones": [
-				"Asia/Dubai"
-			]
+			iso_3166_1: "RE",
+			zones: ["Asia/Dubai"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "RO",
-			"zones": [
-				"Europe/Bucharest"
-			]
+			iso_3166_1: "RO",
+			zones: ["Europe/Bucharest"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "RS",
-			"zones": [
-				"Europe/Belgrade"
-			]
+			iso_3166_1: "RS",
+			zones: ["Europe/Belgrade"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "RU",
-			"zones": [
+			iso_3166_1: "RU",
+			zones: [
 				"Europe/Kaliningrad",
 				"Europe/Moscow",
 				"Europe/Simferopol",
@@ -4702,261 +4320,176 @@ export const TMDB_CONFIGURATION = Object.freeze({
 				"Asia/Sakhalin",
 				"Asia/Srednekolymsk",
 				"Asia/Kamchatka",
-				"Asia/Anadyr"
-			]
+				"Asia/Anadyr",
+			],
 		}),
 		Object.freeze({
-			"iso_3166_1": "RW",
-			"zones": [
-				"Africa/Maputo"
-			]
+			iso_3166_1: "RW",
+			zones: ["Africa/Maputo"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SA",
-			"zones": [
-				"Asia/Riyadh"
-			]
+			iso_3166_1: "SA",
+			zones: ["Asia/Riyadh"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SB",
-			"zones": [
-				"Pacific/Guadalcanal"
-			]
+			iso_3166_1: "SB",
+			zones: ["Pacific/Guadalcanal"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SC",
-			"zones": [
-				"Asia/Dubai"
-			]
+			iso_3166_1: "SC",
+			zones: ["Asia/Dubai"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SD",
-			"zones": [
-				"Africa/Khartoum"
-			]
+			iso_3166_1: "SD",
+			zones: ["Africa/Khartoum"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SE",
-			"zones": [
-				"Europe/Berlin"
-			]
+			iso_3166_1: "SE",
+			zones: ["Europe/Berlin"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SG",
-			"zones": [
-				"Asia/Singapore"
-			]
+			iso_3166_1: "SG",
+			zones: ["Asia/Singapore"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SH",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "SH",
+			zones: ["Africa/Abidjan"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SI",
-			"zones": [
-				"Europe/Belgrade"
-			]
+			iso_3166_1: "SI",
+			zones: ["Europe/Belgrade"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SJ",
-			"zones": [
-				"Europe/Berlin"
-			]
+			iso_3166_1: "SJ",
+			zones: ["Europe/Berlin"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SK",
-			"zones": [
-				"Europe/Prague"
-			]
+			iso_3166_1: "SK",
+			zones: ["Europe/Prague"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SL",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "SL",
+			zones: ["Africa/Abidjan"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SM",
-			"zones": [
-				"Europe/Rome"
-			]
+			iso_3166_1: "SM",
+			zones: ["Europe/Rome"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SN",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "SN",
+			zones: ["Africa/Abidjan"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SO",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "SO",
+			zones: ["Africa/Nairobi"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SR",
-			"zones": [
-				"America/Paramaribo"
-			]
+			iso_3166_1: "SR",
+			zones: ["America/Paramaribo"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SS",
-			"zones": [
-				"Africa/Juba"
-			]
+			iso_3166_1: "SS",
+			zones: ["Africa/Juba"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "ST",
-			"zones": [
-				"Africa/Sao_Tome"
-			]
+			iso_3166_1: "ST",
+			zones: ["Africa/Sao_Tome"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SV",
-			"zones": [
-				"America/El_Salvador"
-			]
+			iso_3166_1: "SV",
+			zones: ["America/El_Salvador"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SX",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "SX",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SY",
-			"zones": [
-				"Asia/Damascus"
-			]
+			iso_3166_1: "SY",
+			zones: ["Asia/Damascus"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "SZ",
-			"zones": [
-				"Africa/Johannesburg"
-			]
+			iso_3166_1: "SZ",
+			zones: ["Africa/Johannesburg"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "TC",
-			"zones": [
-				"America/Grand_Turk"
-			]
+			iso_3166_1: "TC",
+			zones: ["America/Grand_Turk"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "TD",
-			"zones": [
-				"Africa/Ndjamena"
-			]
+			iso_3166_1: "TD",
+			zones: ["Africa/Ndjamena"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "TF",
-			"zones": [
-				"Asia/Dubai",
-				"Indian/Maldives"
-			]
+			iso_3166_1: "TF",
+			zones: ["Asia/Dubai", "Indian/Maldives"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "TG",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "TG",
+			zones: ["Africa/Abidjan"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "TH",
-			"zones": [
-				"Asia/Bangkok"
-			]
+			iso_3166_1: "TH",
+			zones: ["Asia/Bangkok"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "TJ",
-			"zones": [
-				"Asia/Dushanbe"
-			]
+			iso_3166_1: "TJ",
+			zones: ["Asia/Dushanbe"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "TK",
-			"zones": [
-				"Pacific/Fakaofo"
-			]
+			iso_3166_1: "TK",
+			zones: ["Pacific/Fakaofo"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "TL",
-			"zones": [
-				"Asia/Dili"
-			]
+			iso_3166_1: "TL",
+			zones: ["Asia/Dili"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "TM",
-			"zones": [
-				"Asia/Ashgabat"
-			]
+			iso_3166_1: "TM",
+			zones: ["Asia/Ashgabat"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "TN",
-			"zones": [
-				"Africa/Tunis"
-			]
+			iso_3166_1: "TN",
+			zones: ["Africa/Tunis"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "TO",
-			"zones": [
-				"Pacific/Tongatapu"
-			]
+			iso_3166_1: "TO",
+			zones: ["Pacific/Tongatapu"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "TR",
-			"zones": [
-				"Europe/Istanbul"
-			]
+			iso_3166_1: "TR",
+			zones: ["Europe/Istanbul"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "TT",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "TT",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "TV",
-			"zones": [
-				"Pacific/Tarawa"
-			]
+			iso_3166_1: "TV",
+			zones: ["Pacific/Tarawa"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "TW",
-			"zones": [
-				"Asia/Taipei"
-			]
+			iso_3166_1: "TW",
+			zones: ["Asia/Taipei"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "TZ",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "TZ",
+			zones: ["Africa/Nairobi"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "UA",
-			"zones": [
-				"Europe/Kyiv",
-				"Europe/Simferopol"
-			]
+			iso_3166_1: "UA",
+			zones: ["Europe/Kyiv", "Europe/Simferopol"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "UG",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "UG",
+			zones: ["Africa/Nairobi"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "UM",
-			"zones": [
-				"Pacific/Pago_Pago",
-				"Pacific/Tarawa"
-			]
+			iso_3166_1: "UM",
+			zones: ["Pacific/Pago_Pago", "Pacific/Tarawa"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "US",
-			"zones": [
+			iso_3166_1: "US",
+			zones: [
 				"America/New_York",
 				"America/Detroit",
 				"America/Kentucky/Louisville",
@@ -4985,125 +4518,91 @@ export const TMDB_CONFIGURATION = Object.freeze({
 				"America/Yakutat",
 				"America/Nome",
 				"America/Adak",
-				"Pacific/Honolulu"
-			]
+				"Pacific/Honolulu",
+			],
 		}),
 		Object.freeze({
-			"iso_3166_1": "UY",
-			"zones": [
-				"America/Montevideo"
-			]
+			iso_3166_1: "UY",
+			zones: ["America/Montevideo"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "UZ",
-			"zones": [
-				"Asia/Samarkand",
-				"Asia/Tashkent"
-			]
+			iso_3166_1: "UZ",
+			zones: ["Asia/Samarkand", "Asia/Tashkent"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "VA",
-			"zones": [
-				"Europe/Rome"
-			]
+			iso_3166_1: "VA",
+			zones: ["Europe/Rome"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "VC",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "VC",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "VE",
-			"zones": [
-				"America/Caracas"
-			]
+			iso_3166_1: "VE",
+			zones: ["America/Caracas"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "VG",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "VG",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "VI",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "VI",
+			zones: ["America/Puerto_Rico"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "VN",
-			"zones": [
-				"Asia/Ho_Chi_Minh",
-				"Asia/Bangkok"
-			]
+			iso_3166_1: "VN",
+			zones: ["Asia/Ho_Chi_Minh", "Asia/Bangkok"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "VU",
-			"zones": [
-				"Pacific/Efate"
-			]
+			iso_3166_1: "VU",
+			zones: ["Pacific/Efate"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "WF",
-			"zones": [
-				"Pacific/Tarawa"
-			]
+			iso_3166_1: "WF",
+			zones: ["Pacific/Tarawa"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "WS",
-			"zones": [
-				"Pacific/Apia"
-			]
+			iso_3166_1: "WS",
+			zones: ["Pacific/Apia"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "YE",
-			"zones": [
-				"Asia/Riyadh"
-			]
+			iso_3166_1: "YE",
+			zones: ["Asia/Riyadh"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "YT",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "YT",
+			zones: ["Africa/Nairobi"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "ZA",
-			"zones": [
-				"Africa/Johannesburg"
-			]
+			iso_3166_1: "ZA",
+			zones: ["Africa/Johannesburg"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "ZM",
-			"zones": [
-				"Africa/Maputo"
-			]
+			iso_3166_1: "ZM",
+			zones: ["Africa/Maputo"],
 		}),
 		Object.freeze({
-			"iso_3166_1": "ZW",
-			"zones": [
-				"Africa/Maputo"
-			]
-		})
-	])
+			iso_3166_1: "ZW",
+			zones: ["Africa/Maputo"],
+		}),
+	]),
 }) as TMDBConfigurationConst
 
 type TMDBConfigurationConst = Readonly<{
 	/**
 	 * API configuration details.
-	 * 
+	 *
 	 * @link https://developer.themoviedb.org/reference/configuration-details
 	 */
 	details: Readonly<{
 		images: Readonly<{
 			base_url: "http://image.tmdb.org/t/p/"
 			secure_base_url: "https://image.tmdb.org/t/p/"
-			backdrop_sizes: [ "w300", "w780", "w1280", "original" ]
-			logo_sizes: [ "w45", "w92", "w154", "w185", "w300", "w500", "original" ]
-			poster_sizes: [ "w92", "w154", "w185", "w342", "w500", "w780", "original" ]
-			profile_sizes: [ "w45", "w185", "h632", "original" ]
-			still_sizes: [ "w92", "w185", "w300", "original" ]
+			backdrop_sizes: ["w300", "w780", "w1280", "original"]
+			logo_sizes: ["w45", "w92", "w154", "w185", "w300", "w500", "original"]
+			poster_sizes: ["w92", "w154", "w185", "w342", "w500", "w780", "original"]
+			profile_sizes: ["w45", "w185", "h632", "original"]
+			still_sizes: ["w92", "w185", "w300", "original"]
 		}>
 		change_keys: [
 			"adult",
@@ -6429,7 +5928,7 @@ type TMDBConfigurationConst = Readonly<{
 	>
 	/**
 	 * List of the jobs and departments we use on TMDB.
-	 * 
+	 *
 	 * @link https://developer.themoviedb.org/reference/configuration-jobs
 	 */
 	jobs: Readonly<
@@ -6663,7 +6162,7 @@ type TMDBConfigurationConst = Readonly<{
 			}>,
 			Readonly<{
 				department: "Actors"
-				jobs: [ "Actor", "Stunt Double", "Voice", "Cameo", "Special Guest" ]
+				jobs: ["Actor", "Stunt Double", "Voice", "Cameo", "Special Guest"]
 			}>,
 			Readonly<{
 				department: "Art"
@@ -7433,1150 +6932,1138 @@ type TMDBConfigurationConst = Readonly<{
 	>
 	/**
 	 * List of languages (ISO 639-1 tags) used throughout TMDB.
-	 * 
+	 *
 	 * @link https://developer.themoviedb.org/reference/configuration-primary-translations
 	 */
-	languages: Readonly<[
-		Readonly<{
-			iso_639_1: "xx",
-			english_name: "No Language",
-			name: "No Language"
-		}>,
-		Readonly<{
-			iso_639_1: "aa",
-			english_name: "Afar",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "af",
-			english_name: "Afrikaans",
-			name: "Afrikaans"
-		}>,
-		Readonly<{
-			iso_639_1: "ak",
-			english_name: "Akan",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "an",
-			english_name: "Aragonese",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "as",
-			english_name: "Assamese",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "av",
-			english_name: "Avaric",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ae",
-			english_name: "Avestan",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ay",
-			english_name: "Aymara",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "az",
-			english_name: "Azerbaijani",
-			name: "Azərbaycan"
-		}>,
-		Readonly<{
-			iso_639_1: "ba",
-			english_name: "Bashkir",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "bm",
-			english_name: "Bambara",
-			name: "Bamanankan"
-		}>,
-		Readonly<{
-			iso_639_1: "bi",
-			english_name: "Bislama",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "bo",
-			english_name: "Tibetan",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "br",
-			english_name: "Breton",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ca",
-			english_name: "Catalan",
-			name: "Català"
-		}>,
-		Readonly<{
-			iso_639_1: "cs",
-			english_name: "Czech",
-			name: "Český"
-		}>,
-		Readonly<{
-			iso_639_1: "ce",
-			english_name: "Chechen",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "cu",
-			english_name: "Slavic",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "cv",
-			english_name: "Chuvash",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "kw",
-			english_name: "Cornish",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "co",
-			english_name: "Corsican",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "cr",
-			english_name: "Cree",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "cy",
-			english_name: "Welsh",
-			name: "Cymraeg"
-		}>,
-		Readonly<{
-			iso_639_1: "da",
-			english_name: "Danish",
-			name: "Dansk"
-		}>,
-		Readonly<{
-			iso_639_1: "de",
-			english_name: "German",
-			name: "Deutsch"
-		}>,
-		Readonly<{
-			iso_639_1: "dv",
-			english_name: "Divehi",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "dz",
-			english_name: "Dzongkha",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "eo",
-			english_name: "Esperanto",
-			name: "Esperanto"
-		}>,
-		Readonly<{
-			iso_639_1: "et",
-			english_name: "Estonian",
-			name: "Eesti"
-		}>,
-		Readonly<{
-			iso_639_1: "eu",
-			english_name: "Basque",
-			name: "euskera"
-		}>,
-		Readonly<{
-			iso_639_1: "fo",
-			english_name: "Faroese",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "fj",
-			english_name: "Fijian",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "fi",
-			english_name: "Finnish",
-			name: "suomi"
-		}>,
-		Readonly<{
-			iso_639_1: "fr",
-			english_name: "French",
-			name: "Français"
-		}>,
-		Readonly<{
-			iso_639_1: "fy",
-			english_name: "Frisian",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ff",
-			english_name: "Fulah",
-			name: "Fulfulde"
-		}>,
-		Readonly<{
-			iso_639_1: "gd",
-			english_name: "Gaelic",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ga",
-			english_name: "Irish",
-			name: "Gaeilge"
-		}>,
-		Readonly<{
-			iso_639_1: "gl",
-			english_name: "Galician",
-			name: "Galego"
-		}>,
-		Readonly<{
-			iso_639_1: "gv",
-			english_name: "Manx",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "gn",
-			english_name: "Guarani",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "gu",
-			english_name: "Gujarati",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ht",
-			english_name: "Haitian; Haitian Creole",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ha",
-			english_name: "Hausa",
-			name: "Hausa"
-		}>,
-		Readonly<{
-			iso_639_1: "sh",
-			english_name: "Serbo-Croatian",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "hz",
-			english_name: "Herero",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ho",
-			english_name: "Hiri Motu",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "hr",
-			english_name: "Croatian",
-			name: "Hrvatski"
-		}>,
-		Readonly<{
-			iso_639_1: "hu",
-			english_name: "Hungarian",
-			name: "Magyar"
-		}>,
-		Readonly<{
-			iso_639_1: "ig",
-			english_name: "Igbo",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "io",
-			english_name: "Ido",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ii",
-			english_name: "Yi",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "iu",
-			english_name: "Inuktitut",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ie",
-			english_name: "Interlingue",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ia",
-			english_name: "Interlingua",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "id",
-			english_name: "Indonesian",
-			name: "Bahasa indonesia"
-		}>,
-		Readonly<{
-			iso_639_1: "ik",
-			english_name: "Inupiaq",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "is",
-			english_name: "Icelandic",
-			name: "Íslenska"
-		}>,
-		Readonly<{
-			iso_639_1: "it",
-			english_name: "Italian",
-			name: "Italiano"
-		}>,
-		Readonly<{
-			iso_639_1: "jv",
-			english_name: "Javanese",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ja",
-			english_name: "Japanese",
-			name: "日本語"
-		}>,
-		Readonly<{
-			iso_639_1: "kl",
-			english_name: "Kalaallisut",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "kn",
-			english_name: "Kannada",
-			name: "?????"
-		}>,
-		Readonly<{
-			iso_639_1: "ks",
-			english_name: "Kashmiri",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "kr",
-			english_name: "Kanuri",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "kk",
-			english_name: "Kazakh",
-			name: "қазақ"
-		}>,
-		Readonly<{
-			iso_639_1: "km",
-			english_name: "Khmer",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ki",
-			english_name: "Kikuyu",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "rw",
-			english_name: "Kinyarwanda",
-			name: "Kinyarwanda"
-		}>,
-		Readonly<{
-			iso_639_1: "ky",
-			english_name: "Kirghiz",
-			name: "??????"
-		}>,
-		Readonly<{
-			iso_639_1: "kv",
-			english_name: "Komi",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "kg",
-			english_name: "Kongo",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ko",
-			english_name: "Korean",
-			name: "한국어/조선말"
-		}>,
-		Readonly<{
-			iso_639_1: "kj",
-			english_name: "Kuanyama",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ku",
-			english_name: "Kurdish",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "lo",
-			english_name: "Lao",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "la",
-			english_name: "Latin",
-			name: "Latin"
-		}>,
-		Readonly<{
-			iso_639_1: "lv",
-			english_name: "Latvian",
-			name: "Latviešu"
-		}>,
-		Readonly<{
-			iso_639_1: "li",
-			english_name: "Limburgish",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ln",
-			english_name: "Lingala",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "lt",
-			english_name: "Lithuanian",
-			name: "Lietuvių"
-		}>,
-		Readonly<{
-			iso_639_1: "lb",
-			english_name: "Letzeburgesch",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "lu",
-			english_name: "Luba-Katanga",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "lg",
-			english_name: "Ganda",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "mh",
-			english_name: "Marshall",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ml",
-			english_name: "Malayalam",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "mr",
-			english_name: "Marathi",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "mg",
-			english_name: "Malagasy",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "mt",
-			english_name: "Maltese",
-			name: "Malti"
-		}>,
-		Readonly<{
-			iso_639_1: "mo",
-			english_name: "Moldavian",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "mn",
-			english_name: "Mongolian",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "mi",
-			english_name: "Maori",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ms",
-			english_name: "Malay",
-			name: "Bahasa melayu"
-		}>,
-		Readonly<{
-			iso_639_1: "my",
-			english_name: "Burmese",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "na",
-			english_name: "Nauru",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "nv",
-			english_name: "Navajo",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "nr",
-			english_name: "Ndebele",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "nd",
-			english_name: "Ndebele",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ng",
-			english_name: "Ndonga",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ne",
-			english_name: "Nepali",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "nl",
-			english_name: "Dutch",
-			name: "Nederlands"
-		}>,
-		Readonly<{
-			iso_639_1: "nn",
-			english_name: "Norwegian Nynorsk",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "nb",
-			english_name: "Norwegian Bokmål",
-			name: "Bokmål"
-		}>,
-		Readonly<{
-			iso_639_1: "no",
-			english_name: "Norwegian",
-			name: "Norsk"
-		}>,
-		Readonly<{
-			iso_639_1: "ny",
-			english_name: "Chichewa; Nyanja",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "oc",
-			english_name: "Occitan",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "oj",
-			english_name: "Ojibwa",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "or",
-			english_name: "Oriya",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "om",
-			english_name: "Oromo",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "os",
-			english_name: "Ossetian; Ossetic",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "pi",
-			english_name: "Pali",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "pl",
-			english_name: "Polish",
-			name: "Polski"
-		}>,
-		Readonly<{
-			iso_639_1: "pt",
-			english_name: "Portuguese",
-			name: "Português"
-		}>,
-		Readonly<{
-			iso_639_1: "qu",
-			english_name: "Quechua",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "rm",
-			english_name: "Raeto-Romance",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ro",
-			english_name: "Romanian",
-			name: "Română"
-		}>,
-		Readonly<{
-			iso_639_1: "rn",
-			english_name: "Rundi",
-			name: "Kirundi"
-		}>,
-		Readonly<{
-			iso_639_1: "ru",
-			english_name: "Russian",
-			name: "Pусский"
-		}>,
-		Readonly<{
-			iso_639_1: "sg",
-			english_name: "Sango",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "sa",
-			english_name: "Sanskrit",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "si",
-			english_name: "Sinhalese",
-			name: "සිංහල"
-		}>,
-		Readonly<{
-			iso_639_1: "sk",
-			english_name: "Slovak",
-			name: "Slovenčina"
-		}>,
-		Readonly<{
-			iso_639_1: "sl",
-			english_name: "Slovenian",
-			name: "Slovenščina"
-		}>,
-		Readonly<{
-			iso_639_1: "se",
-			english_name: "Northern Sami",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "sm",
-			english_name: "Samoan",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "sn",
-			english_name: "Shona",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "sd",
-			english_name: "Sindhi",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "so",
-			english_name: "Somali",
-			name: "Somali"
-		}>,
-		Readonly<{
-			iso_639_1: "st",
-			english_name: "Sotho",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "es",
-			english_name: "Spanish",
-			name: "Español"
-		}>,
-		Readonly<{
-			iso_639_1: "sq",
-			english_name: "Albanian",
-			name: "shqip"
-		}>,
-		Readonly<{
-			iso_639_1: "sc",
-			english_name: "Sardinian",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "sr",
-			english_name: "Serbian",
-			name: "Srpski"
-		}>,
-		Readonly<{
-			iso_639_1: "ss",
-			english_name: "Swati",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "su",
-			english_name: "Sundanese",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "sw",
-			english_name: "Swahili",
-			name: "Kiswahili"
-		}>,
-		Readonly<{
-			iso_639_1: "sv",
-			english_name: "Swedish",
-			name: "svenska"
-		}>,
-		Readonly<{
-			iso_639_1: "ty",
-			english_name: "Tahitian",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ta",
-			english_name: "Tamil",
-			name: "தமிழ்"
-		}>,
-		Readonly<{
-			iso_639_1: "tt",
-			english_name: "Tatar",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "te",
-			english_name: "Telugu",
-			name: "తెలుగు"
-		}>,
-		Readonly<{
-			iso_639_1: "tg",
-			english_name: "Tajik",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "tl",
-			english_name: "Tagalog",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "th",
-			english_name: "Thai",
-			name: "ภาษาไทย"
-		}>,
-		Readonly<{
-			iso_639_1: "ti",
-			english_name: "Tigrinya",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "to",
-			english_name: "Tonga",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "tn",
-			english_name: "Tswana",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ts",
-			english_name: "Tsonga",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "tk",
-			english_name: "Turkmen",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "tr",
-			english_name: "Turkish",
-			name: "Türkçe"
-		}>,
-		Readonly<{
-			iso_639_1: "tw",
-			english_name: "Twi",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ug",
-			english_name: "Uighur",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "uk",
-			english_name: "Ukrainian",
-			name: "Український"
-		}>,
-		Readonly<{
-			iso_639_1: "ur",
-			english_name: "Urdu",
-			name: "اردو"
-		}>,
-		Readonly<{
-			iso_639_1: "uz",
-			english_name: "Uzbek",
-			name: "ozbek"
-		}>,
-		Readonly<{
-			iso_639_1: "ve",
-			english_name: "Venda",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "vi",
-			english_name: "Vietnamese",
-			name: "Tiếng Việt"
-		}>,
-		Readonly<{
-			iso_639_1: "vo",
-			english_name: "Volapük",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "wa",
-			english_name: "Walloon",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "wo",
-			english_name: "Wolof",
-			name: "Wolof"
-		}>,
-		Readonly<{
-			iso_639_1: "xh",
-			english_name: "Xhosa",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "yi",
-			english_name: "Yiddish",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "za",
-			english_name: "Zhuang",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "zu",
-			english_name: "Zulu",
-			name: "isiZulu"
-		}>,
-		Readonly<{
-			iso_639_1: "ab",
-			english_name: "Abkhazian",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "zh",
-			english_name: "Mandarin",
-			name: "普通话"
-		}>,
-		Readonly<{
-			iso_639_1: "ps",
-			english_name: "Pushto",
-			name: "پښتو"
-		}>,
-		Readonly<{
-			iso_639_1: "am",
-			english_name: "Amharic",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "ar",
-			english_name: "Arabic",
-			name: "العربية"
-		}>,
-		Readonly<{
-			iso_639_1: "bg",
-			english_name: "Bulgarian",
-			name: "български език"
-		}>,
-		Readonly<{
-			iso_639_1: "cn",
-			english_name: "Cantonese",
-			name: "广州话 / 廣州話"
-		}>,
-		Readonly<{
-			iso_639_1: "mk",
-			english_name: "Macedonian",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "el",
-			english_name: "Greek",
-			name: "ελληνικά"
-		}>,
-		Readonly<{
-			iso_639_1: "fa",
-			english_name: "Persian",
-			name: "فارسی"
-		}>,
-		Readonly<{
-			iso_639_1: "he",
-			english_name: "Hebrew",
-			name: "עִבְרִית"
-		}>,
-		Readonly<{
-			iso_639_1: "hi",
-			english_name: "Hindi",
-			name: "हिन्दी"
-		}>,
-		Readonly<{
-			iso_639_1: "hy",
-			english_name: "Armenian",
-			name: ""
-		}>,
-		Readonly<{
-			iso_639_1: "en",
-			english_name: "English",
-			name: "English"
-		}>,
-		Readonly<{
-			iso_639_1: "ee",
-			english_name: "Ewe",
-			name: "Èʋegbe"
-		}>,
-		Readonly<{
-			iso_639_1: "ka",
-			english_name: "Georgian",
-			name: "ქართული"
-		}>,
-		Readonly<{
-			iso_639_1: "pa",
-			english_name: "Punjabi",
-			name: "ਪੰਜਾਬੀ"
-		}>,
-		Readonly<{
-			iso_639_1: "bn",
-			english_name: "Bengali",
-			name: "বাংলা"
-		}>,
-		Readonly<{
-			iso_639_1: "bs",
-			english_name: "Bosnian",
-			name: "Bosanski"
-		}>,
-		Readonly<{
-			iso_639_1: "ch",
-			english_name: "Chamorro",
-			name: "Finu' Chamorro"
-		}>,
-		Readonly<{
-			iso_639_1: "be",
-			english_name: "Belarusian",
-			name: "беларуская мова"
-		}>,
-		Readonly<{
-			iso_639_1: "yo",
-			english_name: "Yoruba",
-			name: "Èdè Yorùbá"
-		}>
-	]>
+	languages: Readonly<
+		[
+			Readonly<{
+				iso_639_1: "xx"
+				english_name: "No Language"
+				name: "No Language"
+			}>,
+			Readonly<{
+				iso_639_1: "aa"
+				english_name: "Afar"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "af"
+				english_name: "Afrikaans"
+				name: "Afrikaans"
+			}>,
+			Readonly<{
+				iso_639_1: "ak"
+				english_name: "Akan"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "an"
+				english_name: "Aragonese"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "as"
+				english_name: "Assamese"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "av"
+				english_name: "Avaric"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ae"
+				english_name: "Avestan"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ay"
+				english_name: "Aymara"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "az"
+				english_name: "Azerbaijani"
+				name: "Azərbaycan"
+			}>,
+			Readonly<{
+				iso_639_1: "ba"
+				english_name: "Bashkir"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "bm"
+				english_name: "Bambara"
+				name: "Bamanankan"
+			}>,
+			Readonly<{
+				iso_639_1: "bi"
+				english_name: "Bislama"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "bo"
+				english_name: "Tibetan"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "br"
+				english_name: "Breton"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ca"
+				english_name: "Catalan"
+				name: "Català"
+			}>,
+			Readonly<{
+				iso_639_1: "cs"
+				english_name: "Czech"
+				name: "Český"
+			}>,
+			Readonly<{
+				iso_639_1: "ce"
+				english_name: "Chechen"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "cu"
+				english_name: "Slavic"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "cv"
+				english_name: "Chuvash"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "kw"
+				english_name: "Cornish"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "co"
+				english_name: "Corsican"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "cr"
+				english_name: "Cree"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "cy"
+				english_name: "Welsh"
+				name: "Cymraeg"
+			}>,
+			Readonly<{
+				iso_639_1: "da"
+				english_name: "Danish"
+				name: "Dansk"
+			}>,
+			Readonly<{
+				iso_639_1: "de"
+				english_name: "German"
+				name: "Deutsch"
+			}>,
+			Readonly<{
+				iso_639_1: "dv"
+				english_name: "Divehi"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "dz"
+				english_name: "Dzongkha"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "eo"
+				english_name: "Esperanto"
+				name: "Esperanto"
+			}>,
+			Readonly<{
+				iso_639_1: "et"
+				english_name: "Estonian"
+				name: "Eesti"
+			}>,
+			Readonly<{
+				iso_639_1: "eu"
+				english_name: "Basque"
+				name: "euskera"
+			}>,
+			Readonly<{
+				iso_639_1: "fo"
+				english_name: "Faroese"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "fj"
+				english_name: "Fijian"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "fi"
+				english_name: "Finnish"
+				name: "suomi"
+			}>,
+			Readonly<{
+				iso_639_1: "fr"
+				english_name: "French"
+				name: "Français"
+			}>,
+			Readonly<{
+				iso_639_1: "fy"
+				english_name: "Frisian"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ff"
+				english_name: "Fulah"
+				name: "Fulfulde"
+			}>,
+			Readonly<{
+				iso_639_1: "gd"
+				english_name: "Gaelic"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ga"
+				english_name: "Irish"
+				name: "Gaeilge"
+			}>,
+			Readonly<{
+				iso_639_1: "gl"
+				english_name: "Galician"
+				name: "Galego"
+			}>,
+			Readonly<{
+				iso_639_1: "gv"
+				english_name: "Manx"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "gn"
+				english_name: "Guarani"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "gu"
+				english_name: "Gujarati"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ht"
+				english_name: "Haitian; Haitian Creole"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ha"
+				english_name: "Hausa"
+				name: "Hausa"
+			}>,
+			Readonly<{
+				iso_639_1: "sh"
+				english_name: "Serbo-Croatian"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "hz"
+				english_name: "Herero"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ho"
+				english_name: "Hiri Motu"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "hr"
+				english_name: "Croatian"
+				name: "Hrvatski"
+			}>,
+			Readonly<{
+				iso_639_1: "hu"
+				english_name: "Hungarian"
+				name: "Magyar"
+			}>,
+			Readonly<{
+				iso_639_1: "ig"
+				english_name: "Igbo"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "io"
+				english_name: "Ido"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ii"
+				english_name: "Yi"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "iu"
+				english_name: "Inuktitut"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ie"
+				english_name: "Interlingue"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ia"
+				english_name: "Interlingua"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "id"
+				english_name: "Indonesian"
+				name: "Bahasa indonesia"
+			}>,
+			Readonly<{
+				iso_639_1: "ik"
+				english_name: "Inupiaq"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "is"
+				english_name: "Icelandic"
+				name: "Íslenska"
+			}>,
+			Readonly<{
+				iso_639_1: "it"
+				english_name: "Italian"
+				name: "Italiano"
+			}>,
+			Readonly<{
+				iso_639_1: "jv"
+				english_name: "Javanese"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ja"
+				english_name: "Japanese"
+				name: "日本語"
+			}>,
+			Readonly<{
+				iso_639_1: "kl"
+				english_name: "Kalaallisut"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "kn"
+				english_name: "Kannada"
+				name: "?????"
+			}>,
+			Readonly<{
+				iso_639_1: "ks"
+				english_name: "Kashmiri"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "kr"
+				english_name: "Kanuri"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "kk"
+				english_name: "Kazakh"
+				name: "қазақ"
+			}>,
+			Readonly<{
+				iso_639_1: "km"
+				english_name: "Khmer"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ki"
+				english_name: "Kikuyu"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "rw"
+				english_name: "Kinyarwanda"
+				name: "Kinyarwanda"
+			}>,
+			Readonly<{
+				iso_639_1: "ky"
+				english_name: "Kirghiz"
+				name: "??????"
+			}>,
+			Readonly<{
+				iso_639_1: "kv"
+				english_name: "Komi"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "kg"
+				english_name: "Kongo"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ko"
+				english_name: "Korean"
+				name: "한국어/조선말"
+			}>,
+			Readonly<{
+				iso_639_1: "kj"
+				english_name: "Kuanyama"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ku"
+				english_name: "Kurdish"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "lo"
+				english_name: "Lao"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "la"
+				english_name: "Latin"
+				name: "Latin"
+			}>,
+			Readonly<{
+				iso_639_1: "lv"
+				english_name: "Latvian"
+				name: "Latviešu"
+			}>,
+			Readonly<{
+				iso_639_1: "li"
+				english_name: "Limburgish"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ln"
+				english_name: "Lingala"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "lt"
+				english_name: "Lithuanian"
+				name: "Lietuvių"
+			}>,
+			Readonly<{
+				iso_639_1: "lb"
+				english_name: "Letzeburgesch"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "lu"
+				english_name: "Luba-Katanga"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "lg"
+				english_name: "Ganda"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "mh"
+				english_name: "Marshall"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ml"
+				english_name: "Malayalam"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "mr"
+				english_name: "Marathi"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "mg"
+				english_name: "Malagasy"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "mt"
+				english_name: "Maltese"
+				name: "Malti"
+			}>,
+			Readonly<{
+				iso_639_1: "mo"
+				english_name: "Moldavian"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "mn"
+				english_name: "Mongolian"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "mi"
+				english_name: "Maori"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ms"
+				english_name: "Malay"
+				name: "Bahasa melayu"
+			}>,
+			Readonly<{
+				iso_639_1: "my"
+				english_name: "Burmese"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "na"
+				english_name: "Nauru"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "nv"
+				english_name: "Navajo"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "nr"
+				english_name: "Ndebele"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "nd"
+				english_name: "Ndebele"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ng"
+				english_name: "Ndonga"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ne"
+				english_name: "Nepali"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "nl"
+				english_name: "Dutch"
+				name: "Nederlands"
+			}>,
+			Readonly<{
+				iso_639_1: "nn"
+				english_name: "Norwegian Nynorsk"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "nb"
+				english_name: "Norwegian Bokmål"
+				name: "Bokmål"
+			}>,
+			Readonly<{
+				iso_639_1: "no"
+				english_name: "Norwegian"
+				name: "Norsk"
+			}>,
+			Readonly<{
+				iso_639_1: "ny"
+				english_name: "Chichewa; Nyanja"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "oc"
+				english_name: "Occitan"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "oj"
+				english_name: "Ojibwa"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "or"
+				english_name: "Oriya"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "om"
+				english_name: "Oromo"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "os"
+				english_name: "Ossetian; Ossetic"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "pi"
+				english_name: "Pali"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "pl"
+				english_name: "Polish"
+				name: "Polski"
+			}>,
+			Readonly<{
+				iso_639_1: "pt"
+				english_name: "Portuguese"
+				name: "Português"
+			}>,
+			Readonly<{
+				iso_639_1: "qu"
+				english_name: "Quechua"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "rm"
+				english_name: "Raeto-Romance"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ro"
+				english_name: "Romanian"
+				name: "Română"
+			}>,
+			Readonly<{
+				iso_639_1: "rn"
+				english_name: "Rundi"
+				name: "Kirundi"
+			}>,
+			Readonly<{
+				iso_639_1: "ru"
+				english_name: "Russian"
+				name: "Pусский"
+			}>,
+			Readonly<{
+				iso_639_1: "sg"
+				english_name: "Sango"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "sa"
+				english_name: "Sanskrit"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "si"
+				english_name: "Sinhalese"
+				name: "සිංහල"
+			}>,
+			Readonly<{
+				iso_639_1: "sk"
+				english_name: "Slovak"
+				name: "Slovenčina"
+			}>,
+			Readonly<{
+				iso_639_1: "sl"
+				english_name: "Slovenian"
+				name: "Slovenščina"
+			}>,
+			Readonly<{
+				iso_639_1: "se"
+				english_name: "Northern Sami"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "sm"
+				english_name: "Samoan"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "sn"
+				english_name: "Shona"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "sd"
+				english_name: "Sindhi"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "so"
+				english_name: "Somali"
+				name: "Somali"
+			}>,
+			Readonly<{
+				iso_639_1: "st"
+				english_name: "Sotho"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "es"
+				english_name: "Spanish"
+				name: "Español"
+			}>,
+			Readonly<{
+				iso_639_1: "sq"
+				english_name: "Albanian"
+				name: "shqip"
+			}>,
+			Readonly<{
+				iso_639_1: "sc"
+				english_name: "Sardinian"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "sr"
+				english_name: "Serbian"
+				name: "Srpski"
+			}>,
+			Readonly<{
+				iso_639_1: "ss"
+				english_name: "Swati"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "su"
+				english_name: "Sundanese"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "sw"
+				english_name: "Swahili"
+				name: "Kiswahili"
+			}>,
+			Readonly<{
+				iso_639_1: "sv"
+				english_name: "Swedish"
+				name: "svenska"
+			}>,
+			Readonly<{
+				iso_639_1: "ty"
+				english_name: "Tahitian"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ta"
+				english_name: "Tamil"
+				name: "தமிழ்"
+			}>,
+			Readonly<{
+				iso_639_1: "tt"
+				english_name: "Tatar"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "te"
+				english_name: "Telugu"
+				name: "తెలుగు"
+			}>,
+			Readonly<{
+				iso_639_1: "tg"
+				english_name: "Tajik"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "tl"
+				english_name: "Tagalog"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "th"
+				english_name: "Thai"
+				name: "ภาษาไทย"
+			}>,
+			Readonly<{
+				iso_639_1: "ti"
+				english_name: "Tigrinya"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "to"
+				english_name: "Tonga"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "tn"
+				english_name: "Tswana"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ts"
+				english_name: "Tsonga"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "tk"
+				english_name: "Turkmen"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "tr"
+				english_name: "Turkish"
+				name: "Türkçe"
+			}>,
+			Readonly<{
+				iso_639_1: "tw"
+				english_name: "Twi"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ug"
+				english_name: "Uighur"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "uk"
+				english_name: "Ukrainian"
+				name: "Український"
+			}>,
+			Readonly<{
+				iso_639_1: "ur"
+				english_name: "Urdu"
+				name: "اردو"
+			}>,
+			Readonly<{
+				iso_639_1: "uz"
+				english_name: "Uzbek"
+				name: "ozbek"
+			}>,
+			Readonly<{
+				iso_639_1: "ve"
+				english_name: "Venda"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "vi"
+				english_name: "Vietnamese"
+				name: "Tiếng Việt"
+			}>,
+			Readonly<{
+				iso_639_1: "vo"
+				english_name: "Volapük"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "wa"
+				english_name: "Walloon"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "wo"
+				english_name: "Wolof"
+				name: "Wolof"
+			}>,
+			Readonly<{
+				iso_639_1: "xh"
+				english_name: "Xhosa"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "yi"
+				english_name: "Yiddish"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "za"
+				english_name: "Zhuang"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "zu"
+				english_name: "Zulu"
+				name: "isiZulu"
+			}>,
+			Readonly<{
+				iso_639_1: "ab"
+				english_name: "Abkhazian"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "zh"
+				english_name: "Mandarin"
+				name: "普通话"
+			}>,
+			Readonly<{
+				iso_639_1: "ps"
+				english_name: "Pushto"
+				name: "پښتو"
+			}>,
+			Readonly<{
+				iso_639_1: "am"
+				english_name: "Amharic"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "ar"
+				english_name: "Arabic"
+				name: "العربية"
+			}>,
+			Readonly<{
+				iso_639_1: "bg"
+				english_name: "Bulgarian"
+				name: "български език"
+			}>,
+			Readonly<{
+				iso_639_1: "cn"
+				english_name: "Cantonese"
+				name: "广州话 / 廣州話"
+			}>,
+			Readonly<{
+				iso_639_1: "mk"
+				english_name: "Macedonian"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "el"
+				english_name: "Greek"
+				name: "ελληνικά"
+			}>,
+			Readonly<{
+				iso_639_1: "fa"
+				english_name: "Persian"
+				name: "فارسی"
+			}>,
+			Readonly<{
+				iso_639_1: "he"
+				english_name: "Hebrew"
+				name: "עִבְרִית"
+			}>,
+			Readonly<{
+				iso_639_1: "hi"
+				english_name: "Hindi"
+				name: "हिन्दी"
+			}>,
+			Readonly<{
+				iso_639_1: "hy"
+				english_name: "Armenian"
+				name: ""
+			}>,
+			Readonly<{
+				iso_639_1: "en"
+				english_name: "English"
+				name: "English"
+			}>,
+			Readonly<{
+				iso_639_1: "ee"
+				english_name: "Ewe"
+				name: "Èʋegbe"
+			}>,
+			Readonly<{
+				iso_639_1: "ka"
+				english_name: "Georgian"
+				name: "ქართული"
+			}>,
+			Readonly<{
+				iso_639_1: "pa"
+				english_name: "Punjabi"
+				name: "ਪੰਜਾਬੀ"
+			}>,
+			Readonly<{
+				iso_639_1: "bn"
+				english_name: "Bengali"
+				name: "বাংলা"
+			}>,
+			Readonly<{
+				iso_639_1: "bs"
+				english_name: "Bosnian"
+				name: "Bosanski"
+			}>,
+			Readonly<{
+				iso_639_1: "ch"
+				english_name: "Chamorro"
+				name: "Finu' Chamorro"
+			}>,
+			Readonly<{
+				iso_639_1: "be"
+				english_name: "Belarusian"
+				name: "беларуская мова"
+			}>,
+			Readonly<{
+				iso_639_1: "yo"
+				english_name: "Yoruba"
+				name: "Èdè Yorùbá"
+			}>,
+		]
+	>
 	/**
 	 * List of the officially supported translations on TMDB.
-	 * 
+	 *
 	 * @link https://developer.themoviedb.org/reference/configuration-primary-translations
 	 */
-	primaryTranslations: Readonly<[
-		"af-ZA",
-		"ar-AE",
-		"ar-BH",
-		"ar-EG",
-		"ar-IQ",
-		"ar-JO",
-		"ar-LY",
-		"ar-MA",
-		"ar-QA",
-		"ar-SA",
-		"ar-TD",
-		"ar-YE",
-		"be-BY",
-		"bg-BG",
-		"bn-BD",
-		"br-FR",
-		"ca-AD",
-		"ca-ES",
-		"ch-GU",
-		"cs-CZ",
-		"cy-GB",
-		"da-DK",
-		"de-AT",
-		"de-CH",
-		"de-DE",
-		"el-CY",
-		"el-GR",
-		"en-AG",
-		"en-AU",
-		"en-BB",
-		"en-BZ",
-		"en-CA",
-		"en-CM",
-		"en-GB",
-		"en-GG",
-		"en-GH",
-		"en-GI",
-		"en-GY",
-		"en-IE",
-		"en-JM",
-		"en-KE",
-		"en-LC",
-		"en-MW",
-		"en-NZ",
-		"en-PG",
-		"en-TC",
-		"en-US",
-		"en-ZM",
-		"en-ZW",
-		"eo-EO",
-		"es-AR",
-		"es-CL",
-		"es-DO",
-		"es-EC",
-		"es-ES",
-		"es-GQ",
-		"es-GT",
-		"es-HN",
-		"es-MX",
-		"es-NI",
-		"es-PA",
-		"es-PE",
-		"es-PY",
-		"es-SV",
-		"es-UY",
-		"et-EE",
-		"eu-ES",
-		"fa-IR",
-		"fi-FI",
-		"fr-BF",
-		"fr-CA",
-		"fr-CD",
-		"fr-CI",
-		"fr-FR",
-		"fr-GF",
-		"fr-GP",
-		"fr-MC",
-		"fr-ML",
-		"fr-MU",
-		"fr-PF",
-		"ga-IE",
-		"gd-GB",
-		"gl-ES",
-		"he-IL",
-		"hi-IN",
-		"hr-HR",
-		"hu-HU",
-		"id-ID",
-		"it-IT",
-		"it-VA",
-		"ja-JP",
-		"ka-GE",
-		"kk-KZ",
-		"kn-IN",
-		"ko-KR",
-		"ku-TR",
-		"ky-KG",
-		"lt-LT",
-		"lv-LV",
-		"ml-IN",
-		"mr-IN",
-		"ms-MY",
-		"ms-SG",
-		"nb-NO",
-		"nl-BE",
-		"nl-NL",
-		"no-NO",
-		"pa-IN",
-		"pl-PL",
-		"pt-AO",
-		"pt-BR",
-		"pt-MZ",
-		"pt-PT",
-		"ro-MD",
-		"ro-RO",
-		"ru-RU",
-		"si-LK",
-		"sk-SK",
-		"sl-SI",
-		"so-SO",
-		"sq-AL",
-		"sq-XK",
-		"sr-ME",
-		"sr-RS",
-		"sv-SE",
-		"sw-TZ",
-		"ta-IN",
-		"te-IN",
-		"th-TH",
-		"tl-PH",
-		"tr-TR",
-		"uk-UA",
-		"ur-PK",
-		"uz-UZ",
-		"vi-VN",
-		"zh-CN",
-		"zh-HK",
-		"zh-SG",
-		"zh-TW",
-		"zu-ZA"
-	]>
+	primaryTranslations: Readonly<
+		[
+			"af-ZA",
+			"ar-AE",
+			"ar-BH",
+			"ar-EG",
+			"ar-IQ",
+			"ar-JO",
+			"ar-LY",
+			"ar-MA",
+			"ar-QA",
+			"ar-SA",
+			"ar-TD",
+			"ar-YE",
+			"be-BY",
+			"bg-BG",
+			"bn-BD",
+			"br-FR",
+			"ca-AD",
+			"ca-ES",
+			"ch-GU",
+			"cs-CZ",
+			"cy-GB",
+			"da-DK",
+			"de-AT",
+			"de-CH",
+			"de-DE",
+			"el-CY",
+			"el-GR",
+			"en-AG",
+			"en-AU",
+			"en-BB",
+			"en-BZ",
+			"en-CA",
+			"en-CM",
+			"en-GB",
+			"en-GG",
+			"en-GH",
+			"en-GI",
+			"en-GY",
+			"en-IE",
+			"en-JM",
+			"en-KE",
+			"en-LC",
+			"en-MW",
+			"en-NZ",
+			"en-PG",
+			"en-TC",
+			"en-US",
+			"en-ZM",
+			"en-ZW",
+			"eo-EO",
+			"es-AR",
+			"es-CL",
+			"es-DO",
+			"es-EC",
+			"es-ES",
+			"es-GQ",
+			"es-GT",
+			"es-HN",
+			"es-MX",
+			"es-NI",
+			"es-PA",
+			"es-PE",
+			"es-PY",
+			"es-SV",
+			"es-UY",
+			"et-EE",
+			"eu-ES",
+			"fa-IR",
+			"fi-FI",
+			"fr-BF",
+			"fr-CA",
+			"fr-CD",
+			"fr-CI",
+			"fr-FR",
+			"fr-GF",
+			"fr-GP",
+			"fr-MC",
+			"fr-ML",
+			"fr-MU",
+			"fr-PF",
+			"ga-IE",
+			"gd-GB",
+			"gl-ES",
+			"he-IL",
+			"hi-IN",
+			"hr-HR",
+			"hu-HU",
+			"id-ID",
+			"it-IT",
+			"it-VA",
+			"ja-JP",
+			"ka-GE",
+			"kk-KZ",
+			"kn-IN",
+			"ko-KR",
+			"ku-TR",
+			"ky-KG",
+			"lt-LT",
+			"lv-LV",
+			"ml-IN",
+			"mr-IN",
+			"ms-MY",
+			"ms-SG",
+			"nb-NO",
+			"nl-BE",
+			"nl-NL",
+			"no-NO",
+			"pa-IN",
+			"pl-PL",
+			"pt-AO",
+			"pt-BR",
+			"pt-MZ",
+			"pt-PT",
+			"ro-MD",
+			"ro-RO",
+			"ru-RU",
+			"si-LK",
+			"sk-SK",
+			"sl-SI",
+			"so-SO",
+			"sq-AL",
+			"sq-XK",
+			"sr-ME",
+			"sr-RS",
+			"sv-SE",
+			"sw-TZ",
+			"ta-IN",
+			"te-IN",
+			"th-TH",
+			"tl-PH",
+			"tr-TR",
+			"uk-UA",
+			"ur-PK",
+			"uz-UZ",
+			"vi-VN",
+			"zh-CN",
+			"zh-HK",
+			"zh-SG",
+			"zh-TW",
+			"zu-ZA",
+		]
+	>
 	/**
 	 * List of timezones used throughout TMDB.
-	 * 
+	 *
 	 * @link https://developer.themoviedb.org/reference/configuration-timezones
 	 */
 	timezones: [
 		Readonly<{
-			"iso_3166_1": "AD",
-			"zones": [
-				"Europe/Andorra"
-			]
+			iso_3166_1: "AD"
+			zones: ["Europe/Andorra"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "AE",
-			"zones": [
-				"Asia/Dubai"
-			]
+			iso_3166_1: "AE"
+			zones: ["Asia/Dubai"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "AF",
-			"zones": [
-				"Asia/Kabul"
-			]
+			iso_3166_1: "AF"
+			zones: ["Asia/Kabul"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "AG",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "AG"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "AI",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "AI"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "AL",
-			"zones": [
-				"Europe/Tirane"
-			]
+			iso_3166_1: "AL"
+			zones: ["Europe/Tirane"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "AM",
-			"zones": [
-				"Asia/Yerevan"
-			]
+			iso_3166_1: "AM"
+			zones: ["Asia/Yerevan"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "AO",
-			"zones": [
-				"Africa/Lagos"
-			]
+			iso_3166_1: "AO"
+			zones: ["Africa/Lagos"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "AQ",
-			"zones": [
+			iso_3166_1: "AQ"
+			zones: [
 				"Antarctica/Casey",
 				"Antarctica/Davis",
 				"Antarctica/Mawson",
@@ -8586,12 +8073,12 @@ type TMDBConfigurationConst = Readonly<{
 				"Antarctica/Vostok",
 				"Pacific/Auckland",
 				"Pacific/Port_Moresby",
-				"Asia/Riyadh"
+				"Asia/Riyadh",
 			]
 		}>,
 		Readonly<{
-			"iso_3166_1": "AR",
-			"zones": [
+			iso_3166_1: "AR"
+			zones: [
 				"America/Argentina/Buenos_Aires",
 				"America/Argentina/Cordoba",
 				"America/Argentina/Salta",
@@ -8603,24 +8090,20 @@ type TMDBConfigurationConst = Readonly<{
 				"America/Argentina/Mendoza",
 				"America/Argentina/San_Luis",
 				"America/Argentina/Rio_Gallegos",
-				"America/Argentina/Ushuaia"
+				"America/Argentina/Ushuaia",
 			]
 		}>,
 		Readonly<{
-			"iso_3166_1": "AS",
-			"zones": [
-				"Pacific/Pago_Pago"
-			]
+			iso_3166_1: "AS"
+			zones: ["Pacific/Pago_Pago"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "AT",
-			"zones": [
-				"Europe/Vienna"
-			]
+			iso_3166_1: "AT"
+			zones: ["Europe/Vienna"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "AU",
-			"zones": [
+			iso_3166_1: "AU"
+			zones: [
 				"Australia/Lord_Howe",
 				"Antarctica/Macquarie",
 				"Australia/Hobart",
@@ -8632,114 +8115,80 @@ type TMDBConfigurationConst = Readonly<{
 				"Australia/Adelaide",
 				"Australia/Darwin",
 				"Australia/Perth",
-				"Australia/Eucla"
+				"Australia/Eucla",
 			]
 		}>,
 		Readonly<{
-			"iso_3166_1": "AW",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "AW"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "AX",
-			"zones": [
-				"Europe/Helsinki"
-			]
+			iso_3166_1: "AX"
+			zones: ["Europe/Helsinki"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "AZ",
-			"zones": [
-				"Asia/Baku"
-			]
+			iso_3166_1: "AZ"
+			zones: ["Asia/Baku"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BA",
-			"zones": [
-				"Europe/Belgrade"
-			]
+			iso_3166_1: "BA"
+			zones: ["Europe/Belgrade"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BB",
-			"zones": [
-				"America/Barbados"
-			]
+			iso_3166_1: "BB"
+			zones: ["America/Barbados"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BD",
-			"zones": [
-				"Asia/Dhaka"
-			]
+			iso_3166_1: "BD"
+			zones: ["Asia/Dhaka"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BE",
-			"zones": [
-				"Europe/Brussels"
-			]
+			iso_3166_1: "BE"
+			zones: ["Europe/Brussels"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BF",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "BF"
+			zones: ["Africa/Abidjan"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BG",
-			"zones": [
-				"Europe/Sofia"
-			]
+			iso_3166_1: "BG"
+			zones: ["Europe/Sofia"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BH",
-			"zones": [
-				"Asia/Qatar"
-			]
+			iso_3166_1: "BH"
+			zones: ["Asia/Qatar"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BI",
-			"zones": [
-				"Africa/Maputo"
-			]
+			iso_3166_1: "BI"
+			zones: ["Africa/Maputo"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BJ",
-			"zones": [
-				"Africa/Lagos"
-			]
+			iso_3166_1: "BJ"
+			zones: ["Africa/Lagos"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BL",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "BL"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BM",
-			"zones": [
-				"Atlantic/Bermuda"
-			]
+			iso_3166_1: "BM"
+			zones: ["Atlantic/Bermuda"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BN",
-			"zones": [
-				"Asia/Kuching"
-			]
+			iso_3166_1: "BN"
+			zones: ["Asia/Kuching"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BO",
-			"zones": [
-				"America/La_Paz"
-			]
+			iso_3166_1: "BO"
+			zones: ["America/La_Paz"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BQ",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "BQ"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BR",
-			"zones": [
+			iso_3166_1: "BR"
+			zones: [
 				"America/Noronha",
 				"America/Belem",
 				"America/Fortaleza",
@@ -8755,46 +8204,36 @@ type TMDBConfigurationConst = Readonly<{
 				"America/Boa_Vista",
 				"America/Manaus",
 				"America/Eirunepe",
-				"America/Rio_Branco"
+				"America/Rio_Branco",
 			]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BS",
-			"zones": [
-				"America/Toronto"
-			]
+			iso_3166_1: "BS"
+			zones: ["America/Toronto"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BT",
-			"zones": [
-				"Asia/Thimphu"
-			]
+			iso_3166_1: "BT"
+			zones: ["Asia/Thimphu"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BV",
-			"zones": []
+			iso_3166_1: "BV"
+			zones: []
 		}>,
 		Readonly<{
-			"iso_3166_1": "BW",
-			"zones": [
-				"Africa/Maputo"
-			]
+			iso_3166_1: "BW"
+			zones: ["Africa/Maputo"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BY",
-			"zones": [
-				"Europe/Minsk"
-			]
+			iso_3166_1: "BY"
+			zones: ["Europe/Minsk"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "BZ",
-			"zones": [
-				"America/Belize"
-			]
+			iso_3166_1: "BZ"
+			zones: ["America/Belize"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CA",
-			"zones": [
+			iso_3166_1: "CA"
+			zones: [
 				"America/St_Johns",
 				"America/Halifax",
 				"America/Glace_Bay",
@@ -8817,746 +8256,502 @@ type TMDBConfigurationConst = Readonly<{
 				"America/Vancouver",
 				"America/Panama",
 				"America/Puerto_Rico",
-				"America/Phoenix"
+				"America/Phoenix",
 			]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CC",
-			"zones": [
-				"Asia/Yangon"
-			]
+			iso_3166_1: "CC"
+			zones: ["Asia/Yangon"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CD",
-			"zones": [
-				"Africa/Maputo",
-				"Africa/Lagos"
-			]
+			iso_3166_1: "CD"
+			zones: ["Africa/Maputo", "Africa/Lagos"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CF",
-			"zones": [
-				"Africa/Lagos"
-			]
+			iso_3166_1: "CF"
+			zones: ["Africa/Lagos"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CG",
-			"zones": [
-				"Africa/Lagos"
-			]
+			iso_3166_1: "CG"
+			zones: ["Africa/Lagos"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CH",
-			"zones": [
-				"Europe/Zurich"
-			]
+			iso_3166_1: "CH"
+			zones: ["Europe/Zurich"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CI",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "CI"
+			zones: ["Africa/Abidjan"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CK",
-			"zones": [
-				"Pacific/Rarotonga"
-			]
+			iso_3166_1: "CK"
+			zones: ["Pacific/Rarotonga"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CL",
-			"zones": [
-				"America/Santiago",
-				"America/Punta_Arenas",
-				"Pacific/Easter"
-			]
+			iso_3166_1: "CL"
+			zones: ["America/Santiago", "America/Punta_Arenas", "Pacific/Easter"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CM",
-			"zones": [
-				"Africa/Lagos"
-			]
+			iso_3166_1: "CM"
+			zones: ["Africa/Lagos"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CN",
-			"zones": [
-				"Asia/Shanghai",
-				"Asia/Urumqi"
-			]
+			iso_3166_1: "CN"
+			zones: ["Asia/Shanghai", "Asia/Urumqi"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CO",
-			"zones": [
-				"America/Bogota"
-			]
+			iso_3166_1: "CO"
+			zones: ["America/Bogota"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CR",
-			"zones": [
-				"America/Costa_Rica"
-			]
+			iso_3166_1: "CR"
+			zones: ["America/Costa_Rica"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CU",
-			"zones": [
-				"America/Havana"
-			]
+			iso_3166_1: "CU"
+			zones: ["America/Havana"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CV",
-			"zones": [
-				"Atlantic/Cape_Verde"
-			]
+			iso_3166_1: "CV"
+			zones: ["Atlantic/Cape_Verde"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CW",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "CW"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CX",
-			"zones": [
-				"Asia/Bangkok"
-			]
+			iso_3166_1: "CX"
+			zones: ["Asia/Bangkok"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CY",
-			"zones": [
-				"Asia/Nicosia",
-				"Asia/Famagusta"
-			]
+			iso_3166_1: "CY"
+			zones: ["Asia/Nicosia", "Asia/Famagusta"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "CZ",
-			"zones": [
-				"Europe/Prague"
-			]
+			iso_3166_1: "CZ"
+			zones: ["Europe/Prague"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "DE",
-			"zones": [
-				"Europe/Berlin",
-				"Europe/Zurich"
-			]
+			iso_3166_1: "DE"
+			zones: ["Europe/Berlin", "Europe/Zurich"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "DJ",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "DJ"
+			zones: ["Africa/Nairobi"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "DK",
-			"zones": [
-				"Europe/Berlin"
-			]
+			iso_3166_1: "DK"
+			zones: ["Europe/Berlin"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "DM",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "DM"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "DO",
-			"zones": [
-				"America/Santo_Domingo"
-			]
+			iso_3166_1: "DO"
+			zones: ["America/Santo_Domingo"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "DZ",
-			"zones": [
-				"Africa/Algiers"
-			]
+			iso_3166_1: "DZ"
+			zones: ["Africa/Algiers"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "EC",
-			"zones": [
-				"America/Guayaquil",
-				"Pacific/Galapagos"
-			]
+			iso_3166_1: "EC"
+			zones: ["America/Guayaquil", "Pacific/Galapagos"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "EE",
-			"zones": [
-				"Europe/Tallinn"
-			]
+			iso_3166_1: "EE"
+			zones: ["Europe/Tallinn"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "EG",
-			"zones": [
-				"Africa/Cairo"
-			]
+			iso_3166_1: "EG"
+			zones: ["Africa/Cairo"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "EH",
-			"zones": [
-				"Africa/El_Aaiun"
-			]
+			iso_3166_1: "EH"
+			zones: ["Africa/El_Aaiun"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "ER",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "ER"
+			zones: ["Africa/Nairobi"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "ES",
-			"zones": [
-				"Europe/Madrid",
-				"Africa/Ceuta",
-				"Atlantic/Canary"
-			]
+			iso_3166_1: "ES"
+			zones: ["Europe/Madrid", "Africa/Ceuta", "Atlantic/Canary"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "ET",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "ET"
+			zones: ["Africa/Nairobi"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "FI",
-			"zones": [
-				"Europe/Helsinki"
-			]
+			iso_3166_1: "FI"
+			zones: ["Europe/Helsinki"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "FJ",
-			"zones": [
-				"Pacific/Fiji"
-			]
+			iso_3166_1: "FJ"
+			zones: ["Pacific/Fiji"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "FK",
-			"zones": [
-				"Atlantic/Stanley"
-			]
+			iso_3166_1: "FK"
+			zones: ["Atlantic/Stanley"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "FM",
-			"zones": [
-				"Pacific/Kosrae",
-				"Pacific/Port_Moresby",
-				"Pacific/Guadalcanal"
-			]
+			iso_3166_1: "FM"
+			zones: ["Pacific/Kosrae", "Pacific/Port_Moresby", "Pacific/Guadalcanal"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "FO",
-			"zones": [
-				"Atlantic/Faroe"
-			]
+			iso_3166_1: "FO"
+			zones: ["Atlantic/Faroe"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "FR",
-			"zones": [
-				"Europe/Paris"
-			]
+			iso_3166_1: "FR"
+			zones: ["Europe/Paris"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GA",
-			"zones": [
-				"Africa/Lagos"
-			]
+			iso_3166_1: "GA"
+			zones: ["Africa/Lagos"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GB",
-			"zones": [
-				"Europe/London"
-			]
+			iso_3166_1: "GB"
+			zones: ["Europe/London"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GD",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "GD"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GE",
-			"zones": [
-				"Asia/Tbilisi"
-			]
+			iso_3166_1: "GE"
+			zones: ["Asia/Tbilisi"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GF",
-			"zones": [
-				"America/Cayenne"
-			]
+			iso_3166_1: "GF"
+			zones: ["America/Cayenne"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GG",
-			"zones": [
-				"Europe/London"
-			]
+			iso_3166_1: "GG"
+			zones: ["Europe/London"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GH",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "GH"
+			zones: ["Africa/Abidjan"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GI",
-			"zones": [
-				"Europe/Gibraltar"
-			]
+			iso_3166_1: "GI"
+			zones: ["Europe/Gibraltar"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GL",
-			"zones": [
+			iso_3166_1: "GL"
+			zones: [
 				"America/Nuuk",
 				"America/Danmarkshavn",
 				"America/Scoresbysund",
-				"America/Thule"
+				"America/Thule",
 			]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GM",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "GM"
+			zones: ["Africa/Abidjan"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GN",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "GN"
+			zones: ["Africa/Abidjan"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GP",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "GP"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GQ",
-			"zones": [
-				"Africa/Lagos"
-			]
+			iso_3166_1: "GQ"
+			zones: ["Africa/Lagos"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GR",
-			"zones": [
-				"Europe/Athens"
-			]
+			iso_3166_1: "GR"
+			zones: ["Europe/Athens"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GS",
-			"zones": [
-				"Atlantic/South_Georgia"
-			]
+			iso_3166_1: "GS"
+			zones: ["Atlantic/South_Georgia"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GT",
-			"zones": [
-				"America/Guatemala"
-			]
+			iso_3166_1: "GT"
+			zones: ["America/Guatemala"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GU",
-			"zones": [
-				"Pacific/Guam"
-			]
+			iso_3166_1: "GU"
+			zones: ["Pacific/Guam"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GW",
-			"zones": [
-				"Africa/Bissau"
-			]
+			iso_3166_1: "GW"
+			zones: ["Africa/Bissau"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "GY",
-			"zones": [
-				"America/Guyana"
-			]
+			iso_3166_1: "GY"
+			zones: ["America/Guyana"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "HK",
-			"zones": [
-				"Asia/Hong_Kong"
-			]
+			iso_3166_1: "HK"
+			zones: ["Asia/Hong_Kong"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "HM",
-			"zones": []
+			iso_3166_1: "HM"
+			zones: []
 		}>,
 		Readonly<{
-			"iso_3166_1": "HN",
-			"zones": [
-				"America/Tegucigalpa"
-			]
+			iso_3166_1: "HN"
+			zones: ["America/Tegucigalpa"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "HR",
-			"zones": [
-				"Europe/Belgrade"
-			]
+			iso_3166_1: "HR"
+			zones: ["Europe/Belgrade"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "HT",
-			"zones": [
-				"America/Port-au-Prince"
-			]
+			iso_3166_1: "HT"
+			zones: ["America/Port-au-Prince"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "HU",
-			"zones": [
-				"Europe/Budapest"
-			]
+			iso_3166_1: "HU"
+			zones: ["Europe/Budapest"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "ID",
-			"zones": [
+			iso_3166_1: "ID"
+			zones: [
 				"Asia/Jakarta",
 				"Asia/Pontianak",
 				"Asia/Makassar",
-				"Asia/Jayapura"
+				"Asia/Jayapura",
 			]
 		}>,
 		Readonly<{
-			"iso_3166_1": "IE",
-			"zones": [
-				"Europe/Dublin"
-			]
+			iso_3166_1: "IE"
+			zones: ["Europe/Dublin"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "IL",
-			"zones": [
-				"Asia/Jerusalem"
-			]
+			iso_3166_1: "IL"
+			zones: ["Asia/Jerusalem"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "IM",
-			"zones": [
-				"Europe/London"
-			]
+			iso_3166_1: "IM"
+			zones: ["Europe/London"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "IN",
-			"zones": [
-				"Asia/Kolkata"
-			]
+			iso_3166_1: "IN"
+			zones: ["Asia/Kolkata"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "IO",
-			"zones": [
-				"Indian/Chagos"
-			]
+			iso_3166_1: "IO"
+			zones: ["Indian/Chagos"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "IQ",
-			"zones": [
-				"Asia/Baghdad"
-			]
+			iso_3166_1: "IQ"
+			zones: ["Asia/Baghdad"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "IR",
-			"zones": [
-				"Asia/Tehran"
-			]
+			iso_3166_1: "IR"
+			zones: ["Asia/Tehran"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "IS",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "IS"
+			zones: ["Africa/Abidjan"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "IT",
-			"zones": [
-				"Europe/Rome"
-			]
+			iso_3166_1: "IT"
+			zones: ["Europe/Rome"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "JE",
-			"zones": [
-				"Europe/London"
-			]
+			iso_3166_1: "JE"
+			zones: ["Europe/London"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "JM",
-			"zones": [
-				"America/Jamaica"
-			]
+			iso_3166_1: "JM"
+			zones: ["America/Jamaica"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "JO",
-			"zones": [
-				"Asia/Amman"
-			]
+			iso_3166_1: "JO"
+			zones: ["Asia/Amman"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "JP",
-			"zones": [
-				"Asia/Tokyo"
-			]
+			iso_3166_1: "JP"
+			zones: ["Asia/Tokyo"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "KE",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "KE"
+			zones: ["Africa/Nairobi"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "KG",
-			"zones": [
-				"Asia/Bishkek"
-			]
+			iso_3166_1: "KG"
+			zones: ["Asia/Bishkek"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "KH",
-			"zones": [
-				"Asia/Bangkok"
-			]
+			iso_3166_1: "KH"
+			zones: ["Asia/Bangkok"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "KI",
-			"zones": [
-				"Pacific/Tarawa",
-				"Pacific/Kanton",
-				"Pacific/Kiritimati"
-			]
+			iso_3166_1: "KI"
+			zones: ["Pacific/Tarawa", "Pacific/Kanton", "Pacific/Kiritimati"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "KM",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "KM"
+			zones: ["Africa/Nairobi"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "KN",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "KN"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "KP",
-			"zones": [
-				"Asia/Pyongyang"
-			]
+			iso_3166_1: "KP"
+			zones: ["Asia/Pyongyang"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "KR",
-			"zones": [
-				"Asia/Seoul"
-			]
+			iso_3166_1: "KR"
+			zones: ["Asia/Seoul"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "KW",
-			"zones": [
-				"Asia/Riyadh"
-			]
+			iso_3166_1: "KW"
+			zones: ["Asia/Riyadh"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "KY",
-			"zones": [
-				"America/Panama"
-			]
+			iso_3166_1: "KY"
+			zones: ["America/Panama"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "KZ",
-			"zones": [
+			iso_3166_1: "KZ"
+			zones: [
 				"Asia/Almaty",
 				"Asia/Qyzylorda",
 				"Asia/Qostanay",
 				"Asia/Aqtobe",
 				"Asia/Aqtau",
 				"Asia/Atyrau",
-				"Asia/Oral"
+				"Asia/Oral",
 			]
 		}>,
 		Readonly<{
-			"iso_3166_1": "LA",
-			"zones": [
-				"Asia/Bangkok"
-			]
+			iso_3166_1: "LA"
+			zones: ["Asia/Bangkok"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "LB",
-			"zones": [
-				"Asia/Beirut"
-			]
+			iso_3166_1: "LB"
+			zones: ["Asia/Beirut"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "LC",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "LC"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "LI",
-			"zones": [
-				"Europe/Zurich"
-			]
+			iso_3166_1: "LI"
+			zones: ["Europe/Zurich"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "LK",
-			"zones": [
-				"Asia/Colombo"
-			]
+			iso_3166_1: "LK"
+			zones: ["Asia/Colombo"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "LR",
-			"zones": [
-				"Africa/Monrovia"
-			]
+			iso_3166_1: "LR"
+			zones: ["Africa/Monrovia"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "LS",
-			"zones": [
-				"Africa/Johannesburg"
-			]
+			iso_3166_1: "LS"
+			zones: ["Africa/Johannesburg"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "LT",
-			"zones": [
-				"Europe/Vilnius"
-			]
+			iso_3166_1: "LT"
+			zones: ["Europe/Vilnius"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "LU",
-			"zones": [
-				"Europe/Brussels"
-			]
+			iso_3166_1: "LU"
+			zones: ["Europe/Brussels"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "LV",
-			"zones": [
-				"Europe/Riga"
-			]
+			iso_3166_1: "LV"
+			zones: ["Europe/Riga"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "LY",
-			"zones": [
-				"Africa/Tripoli"
-			]
+			iso_3166_1: "LY"
+			zones: ["Africa/Tripoli"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MA",
-			"zones": [
-				"Africa/Casablanca"
-			]
+			iso_3166_1: "MA"
+			zones: ["Africa/Casablanca"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MC",
-			"zones": [
-				"Europe/Paris"
-			]
+			iso_3166_1: "MC"
+			zones: ["Europe/Paris"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MD",
-			"zones": [
-				"Europe/Chisinau"
-			]
+			iso_3166_1: "MD"
+			zones: ["Europe/Chisinau"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "ME",
-			"zones": [
-				"Europe/Belgrade"
-			]
+			iso_3166_1: "ME"
+			zones: ["Europe/Belgrade"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MF",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "MF"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MG",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "MG"
+			zones: ["Africa/Nairobi"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MH",
-			"zones": [
-				"Pacific/Kwajalein",
-				"Pacific/Tarawa"
-			]
+			iso_3166_1: "MH"
+			zones: ["Pacific/Kwajalein", "Pacific/Tarawa"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MK",
-			"zones": [
-				"Europe/Belgrade"
-			]
+			iso_3166_1: "MK"
+			zones: ["Europe/Belgrade"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "ML",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "ML"
+			zones: ["Africa/Abidjan"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MM",
-			"zones": [
-				"Asia/Yangon"
-			]
+			iso_3166_1: "MM"
+			zones: ["Asia/Yangon"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MN",
-			"zones": [
-				"Asia/Ulaanbaatar",
-				"Asia/Hovd",
-				"Asia/Choibalsan"
-			]
+			iso_3166_1: "MN"
+			zones: ["Asia/Ulaanbaatar", "Asia/Hovd", "Asia/Choibalsan"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MO",
-			"zones": [
-				"Asia/Macau"
-			]
+			iso_3166_1: "MO"
+			zones: ["Asia/Macau"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MP",
-			"zones": [
-				"Pacific/Guam"
-			]
+			iso_3166_1: "MP"
+			zones: ["Pacific/Guam"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MQ",
-			"zones": [
-				"America/Martinique"
-			]
+			iso_3166_1: "MQ"
+			zones: ["America/Martinique"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MR",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "MR"
+			zones: ["Africa/Abidjan"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MS",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "MS"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MT",
-			"zones": [
-				"Europe/Malta"
-			]
+			iso_3166_1: "MT"
+			zones: ["Europe/Malta"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MU",
-			"zones": [
-				"Indian/Mauritius"
-			]
+			iso_3166_1: "MU"
+			zones: ["Indian/Mauritius"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MV",
-			"zones": [
-				"Indian/Maldives"
-			]
+			iso_3166_1: "MV"
+			zones: ["Indian/Maldives"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MW",
-			"zones": [
-				"Africa/Maputo"
-			]
+			iso_3166_1: "MW"
+			zones: ["Africa/Maputo"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MX",
-			"zones": [
+			iso_3166_1: "MX"
+			zones: [
 				"America/Mexico_City",
 				"America/Cancun",
 				"America/Merida",
@@ -9568,218 +8763,144 @@ type TMDBConfigurationConst = Readonly<{
 				"America/Mazatlan",
 				"America/Bahia_Banderas",
 				"America/Hermosillo",
-				"America/Tijuana"
+				"America/Tijuana",
 			]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MY",
-			"zones": [
-				"Asia/Kuching",
-				"Asia/Singapore"
-			]
+			iso_3166_1: "MY"
+			zones: ["Asia/Kuching", "Asia/Singapore"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "MZ",
-			"zones": [
-				"Africa/Maputo"
-			]
+			iso_3166_1: "MZ"
+			zones: ["Africa/Maputo"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "NA",
-			"zones": [
-				"Africa/Windhoek"
-			]
+			iso_3166_1: "NA"
+			zones: ["Africa/Windhoek"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "NC",
-			"zones": [
-				"Pacific/Noumea"
-			]
+			iso_3166_1: "NC"
+			zones: ["Pacific/Noumea"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "NE",
-			"zones": [
-				"Africa/Lagos"
-			]
+			iso_3166_1: "NE"
+			zones: ["Africa/Lagos"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "NF",
-			"zones": [
-				"Pacific/Norfolk"
-			]
+			iso_3166_1: "NF"
+			zones: ["Pacific/Norfolk"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "NG",
-			"zones": [
-				"Africa/Lagos"
-			]
+			iso_3166_1: "NG"
+			zones: ["Africa/Lagos"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "NI",
-			"zones": [
-				"America/Managua"
-			]
+			iso_3166_1: "NI"
+			zones: ["America/Managua"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "NL",
-			"zones": [
-				"Europe/Brussels"
-			]
+			iso_3166_1: "NL"
+			zones: ["Europe/Brussels"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "NO",
-			"zones": [
-				"Europe/Berlin"
-			]
+			iso_3166_1: "NO"
+			zones: ["Europe/Berlin"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "NP",
-			"zones": [
-				"Asia/Kathmandu"
-			]
+			iso_3166_1: "NP"
+			zones: ["Asia/Kathmandu"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "NR",
-			"zones": [
-				"Pacific/Nauru"
-			]
+			iso_3166_1: "NR"
+			zones: ["Pacific/Nauru"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "NU",
-			"zones": [
-				"Pacific/Niue"
-			]
+			iso_3166_1: "NU"
+			zones: ["Pacific/Niue"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "NZ",
-			"zones": [
-				"Pacific/Auckland",
-				"Pacific/Chatham"
-			]
+			iso_3166_1: "NZ"
+			zones: ["Pacific/Auckland", "Pacific/Chatham"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "OM",
-			"zones": [
-				"Asia/Dubai"
-			]
+			iso_3166_1: "OM"
+			zones: ["Asia/Dubai"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "PA",
-			"zones": [
-				"America/Panama"
-			]
+			iso_3166_1: "PA"
+			zones: ["America/Panama"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "PE",
-			"zones": [
-				"America/Lima"
-			]
+			iso_3166_1: "PE"
+			zones: ["America/Lima"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "PF",
-			"zones": [
-				"Pacific/Tahiti",
-				"Pacific/Marquesas",
-				"Pacific/Gambier"
-			]
+			iso_3166_1: "PF"
+			zones: ["Pacific/Tahiti", "Pacific/Marquesas", "Pacific/Gambier"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "PG",
-			"zones": [
-				"Pacific/Port_Moresby",
-				"Pacific/Bougainville"
-			]
+			iso_3166_1: "PG"
+			zones: ["Pacific/Port_Moresby", "Pacific/Bougainville"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "PH",
-			"zones": [
-				"Asia/Manila"
-			]
+			iso_3166_1: "PH"
+			zones: ["Asia/Manila"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "PK",
-			"zones": [
-				"Asia/Karachi"
-			]
+			iso_3166_1: "PK"
+			zones: ["Asia/Karachi"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "PL",
-			"zones": [
-				"Europe/Warsaw"
-			]
+			iso_3166_1: "PL"
+			zones: ["Europe/Warsaw"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "PM",
-			"zones": [
-				"America/Miquelon"
-			]
+			iso_3166_1: "PM"
+			zones: ["America/Miquelon"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "PN",
-			"zones": [
-				"Pacific/Pitcairn"
-			]
+			iso_3166_1: "PN"
+			zones: ["Pacific/Pitcairn"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "PR",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "PR"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "PS",
-			"zones": [
-				"Asia/Gaza",
-				"Asia/Hebron"
-			]
+			iso_3166_1: "PS"
+			zones: ["Asia/Gaza", "Asia/Hebron"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "PT",
-			"zones": [
-				"Europe/Lisbon",
-				"Atlantic/Madeira",
-				"Atlantic/Azores"
-			]
+			iso_3166_1: "PT"
+			zones: ["Europe/Lisbon", "Atlantic/Madeira", "Atlantic/Azores"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "PW",
-			"zones": [
-				"Pacific/Palau"
-			]
+			iso_3166_1: "PW"
+			zones: ["Pacific/Palau"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "PY",
-			"zones": [
-				"America/Asuncion"
-			]
+			iso_3166_1: "PY"
+			zones: ["America/Asuncion"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "QA",
-			"zones": [
-				"Asia/Qatar"
-			]
+			iso_3166_1: "QA"
+			zones: ["Asia/Qatar"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "RE",
-			"zones": [
-				"Asia/Dubai"
-			]
+			iso_3166_1: "RE"
+			zones: ["Asia/Dubai"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "RO",
-			"zones": [
-				"Europe/Bucharest"
-			]
+			iso_3166_1: "RO"
+			zones: ["Europe/Bucharest"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "RS",
-			"zones": [
-				"Europe/Belgrade"
-			]
+			iso_3166_1: "RS"
+			zones: ["Europe/Belgrade"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "RU",
-			"zones": [
+			iso_3166_1: "RU"
+			zones: [
 				"Europe/Kaliningrad",
 				"Europe/Moscow",
 				"Europe/Simferopol",
@@ -9806,261 +8927,176 @@ type TMDBConfigurationConst = Readonly<{
 				"Asia/Sakhalin",
 				"Asia/Srednekolymsk",
 				"Asia/Kamchatka",
-				"Asia/Anadyr"
+				"Asia/Anadyr",
 			]
 		}>,
 		Readonly<{
-			"iso_3166_1": "RW",
-			"zones": [
-				"Africa/Maputo"
-			]
+			iso_3166_1: "RW"
+			zones: ["Africa/Maputo"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SA",
-			"zones": [
-				"Asia/Riyadh"
-			]
+			iso_3166_1: "SA"
+			zones: ["Asia/Riyadh"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SB",
-			"zones": [
-				"Pacific/Guadalcanal"
-			]
+			iso_3166_1: "SB"
+			zones: ["Pacific/Guadalcanal"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SC",
-			"zones": [
-				"Asia/Dubai"
-			]
+			iso_3166_1: "SC"
+			zones: ["Asia/Dubai"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SD",
-			"zones": [
-				"Africa/Khartoum"
-			]
+			iso_3166_1: "SD"
+			zones: ["Africa/Khartoum"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SE",
-			"zones": [
-				"Europe/Berlin"
-			]
+			iso_3166_1: "SE"
+			zones: ["Europe/Berlin"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SG",
-			"zones": [
-				"Asia/Singapore"
-			]
+			iso_3166_1: "SG"
+			zones: ["Asia/Singapore"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SH",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "SH"
+			zones: ["Africa/Abidjan"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SI",
-			"zones": [
-				"Europe/Belgrade"
-			]
+			iso_3166_1: "SI"
+			zones: ["Europe/Belgrade"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SJ",
-			"zones": [
-				"Europe/Berlin"
-			]
+			iso_3166_1: "SJ"
+			zones: ["Europe/Berlin"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SK",
-			"zones": [
-				"Europe/Prague"
-			]
+			iso_3166_1: "SK"
+			zones: ["Europe/Prague"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SL",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "SL"
+			zones: ["Africa/Abidjan"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SM",
-			"zones": [
-				"Europe/Rome"
-			]
+			iso_3166_1: "SM"
+			zones: ["Europe/Rome"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SN",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "SN"
+			zones: ["Africa/Abidjan"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SO",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "SO"
+			zones: ["Africa/Nairobi"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SR",
-			"zones": [
-				"America/Paramaribo"
-			]
+			iso_3166_1: "SR"
+			zones: ["America/Paramaribo"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SS",
-			"zones": [
-				"Africa/Juba"
-			]
+			iso_3166_1: "SS"
+			zones: ["Africa/Juba"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "ST",
-			"zones": [
-				"Africa/Sao_Tome"
-			]
+			iso_3166_1: "ST"
+			zones: ["Africa/Sao_Tome"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SV",
-			"zones": [
-				"America/El_Salvador"
-			]
+			iso_3166_1: "SV"
+			zones: ["America/El_Salvador"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SX",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "SX"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SY",
-			"zones": [
-				"Asia/Damascus"
-			]
+			iso_3166_1: "SY"
+			zones: ["Asia/Damascus"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "SZ",
-			"zones": [
-				"Africa/Johannesburg"
-			]
+			iso_3166_1: "SZ"
+			zones: ["Africa/Johannesburg"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "TC",
-			"zones": [
-				"America/Grand_Turk"
-			]
+			iso_3166_1: "TC"
+			zones: ["America/Grand_Turk"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "TD",
-			"zones": [
-				"Africa/Ndjamena"
-			]
+			iso_3166_1: "TD"
+			zones: ["Africa/Ndjamena"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "TF",
-			"zones": [
-				"Asia/Dubai",
-				"Indian/Maldives"
-			]
+			iso_3166_1: "TF"
+			zones: ["Asia/Dubai", "Indian/Maldives"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "TG",
-			"zones": [
-				"Africa/Abidjan"
-			]
+			iso_3166_1: "TG"
+			zones: ["Africa/Abidjan"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "TH",
-			"zones": [
-				"Asia/Bangkok"
-			]
+			iso_3166_1: "TH"
+			zones: ["Asia/Bangkok"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "TJ",
-			"zones": [
-				"Asia/Dushanbe"
-			]
+			iso_3166_1: "TJ"
+			zones: ["Asia/Dushanbe"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "TK",
-			"zones": [
-				"Pacific/Fakaofo"
-			]
+			iso_3166_1: "TK"
+			zones: ["Pacific/Fakaofo"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "TL",
-			"zones": [
-				"Asia/Dili"
-			]
+			iso_3166_1: "TL"
+			zones: ["Asia/Dili"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "TM",
-			"zones": [
-				"Asia/Ashgabat"
-			]
+			iso_3166_1: "TM"
+			zones: ["Asia/Ashgabat"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "TN",
-			"zones": [
-				"Africa/Tunis"
-			]
+			iso_3166_1: "TN"
+			zones: ["Africa/Tunis"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "TO",
-			"zones": [
-				"Pacific/Tongatapu"
-			]
+			iso_3166_1: "TO"
+			zones: ["Pacific/Tongatapu"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "TR",
-			"zones": [
-				"Europe/Istanbul"
-			]
+			iso_3166_1: "TR"
+			zones: ["Europe/Istanbul"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "TT",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "TT"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "TV",
-			"zones": [
-				"Pacific/Tarawa"
-			]
+			iso_3166_1: "TV"
+			zones: ["Pacific/Tarawa"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "TW",
-			"zones": [
-				"Asia/Taipei"
-			]
+			iso_3166_1: "TW"
+			zones: ["Asia/Taipei"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "TZ",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "TZ"
+			zones: ["Africa/Nairobi"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "UA",
-			"zones": [
-				"Europe/Kyiv",
-				"Europe/Simferopol"
-			]
+			iso_3166_1: "UA"
+			zones: ["Europe/Kyiv", "Europe/Simferopol"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "UG",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "UG"
+			zones: ["Africa/Nairobi"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "UM",
-			"zones": [
-				"Pacific/Pago_Pago",
-				"Pacific/Tarawa"
-			]
+			iso_3166_1: "UM"
+			zones: ["Pacific/Pago_Pago", "Pacific/Tarawa"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "US",
-			"zones": [
+			iso_3166_1: "US"
+			zones: [
 				"America/New_York",
 				"America/Detroit",
 				"America/Kentucky/Louisville",
@@ -10089,106 +9125,72 @@ type TMDBConfigurationConst = Readonly<{
 				"America/Yakutat",
 				"America/Nome",
 				"America/Adak",
-				"Pacific/Honolulu"
+				"Pacific/Honolulu",
 			]
 		}>,
 		Readonly<{
-			"iso_3166_1": "UY",
-			"zones": [
-				"America/Montevideo"
-			]
+			iso_3166_1: "UY"
+			zones: ["America/Montevideo"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "UZ",
-			"zones": [
-				"Asia/Samarkand",
-				"Asia/Tashkent"
-			]
+			iso_3166_1: "UZ"
+			zones: ["Asia/Samarkand", "Asia/Tashkent"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "VA",
-			"zones": [
-				"Europe/Rome"
-			]
+			iso_3166_1: "VA"
+			zones: ["Europe/Rome"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "VC",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "VC"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "VE",
-			"zones": [
-				"America/Caracas"
-			]
+			iso_3166_1: "VE"
+			zones: ["America/Caracas"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "VG",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "VG"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "VI",
-			"zones": [
-				"America/Puerto_Rico"
-			]
+			iso_3166_1: "VI"
+			zones: ["America/Puerto_Rico"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "VN",
-			"zones": [
-				"Asia/Ho_Chi_Minh",
-				"Asia/Bangkok"
-			]
+			iso_3166_1: "VN"
+			zones: ["Asia/Ho_Chi_Minh", "Asia/Bangkok"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "VU",
-			"zones": [
-				"Pacific/Efate"
-			]
+			iso_3166_1: "VU"
+			zones: ["Pacific/Efate"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "WF",
-			"zones": [
-				"Pacific/Tarawa"
-			]
+			iso_3166_1: "WF"
+			zones: ["Pacific/Tarawa"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "WS",
-			"zones": [
-				"Pacific/Apia"
-			]
+			iso_3166_1: "WS"
+			zones: ["Pacific/Apia"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "YE",
-			"zones": [
-				"Asia/Riyadh"
-			]
+			iso_3166_1: "YE"
+			zones: ["Asia/Riyadh"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "YT",
-			"zones": [
-				"Africa/Nairobi"
-			]
+			iso_3166_1: "YT"
+			zones: ["Africa/Nairobi"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "ZA",
-			"zones": [
-				"Africa/Johannesburg"
-			]
+			iso_3166_1: "ZA"
+			zones: ["Africa/Johannesburg"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "ZM",
-			"zones": [
-				"Africa/Maputo"
-			]
+			iso_3166_1: "ZM"
+			zones: ["Africa/Maputo"]
 		}>,
 		Readonly<{
-			"iso_3166_1": "ZW",
-			"zones": [
-				"Africa/Maputo"
-			]
-		}>
+			iso_3166_1: "ZW"
+			zones: ["Africa/Maputo"]
+		}>,
 	]
 }>
