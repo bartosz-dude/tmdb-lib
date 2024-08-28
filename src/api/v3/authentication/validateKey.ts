@@ -2,29 +2,67 @@ import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
 import TMDBUrlParser from "../../../urlParser"
 
-interface Request {
-
-}
+/**
+ * @link https://developer.themoviedb.org/reference/authentication-validate-key
+ */
+export interface TMDBAuthenticationValidateKeyRequest {}
 
 type PathParams = null
 
 type QueryParams = null
 
-interface Response {
-	success: boolean,
-	status_code: string,
+/**
+ * @link https://developer.themoviedb.org/reference/authentication-validate-key
+ */
+export interface TMDBAuthenticationValidateKeyResponse {
+	/**
+	 * @default true
+	 */
+	success: boolean
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	status_code: number
 	status_message: string
 }
 
-export function TMDBAuthenticationValidateKey(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBAuthenticationValidateKey(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Test your API Key to see if it's valid.
+ *
+ * @link https://developer.themoviedb.org/reference/authentication-validate-key
+ */
+export function TMDBAuthenticationValidateKey(
+	request: TMDBAuthenticationValidateKeyRequest,
+	fetcher: Fetcher,
+): Promise<TMDBAuthenticationValidateKeyResponse>
+/**
+ * Test your API Key to see if it's valid.
+ *
+ * @link https://developer.themoviedb.org/reference/authentication-validate-key
+ */
+export function TMDBAuthenticationValidateKey(
+	request: TMDBAuthenticationValidateKeyRequest,
+	readAccessToken: string,
+): Promise<TMDBAuthenticationValidateKeyResponse>
 
-export default function TMDBAuthenticationValidateKey(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.AUTHENTICATION, "")
+/**
+ * Test your API Key to see if it's valid.
+ *
+ * @link https://developer.themoviedb.org/reference/authentication-validate-key
+ */
+export default function TMDBAuthenticationValidateKey(
+	request: TMDBAuthenticationValidateKeyRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBAuthenticationValidateKeyResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.AUTHENTICATION,
+		"",
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBAuthenticationValidateKeyResponse>(url)
 	}
 }
