@@ -2,8 +2,17 @@ import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
 import TMDBUrlParser from "../../../urlParser"
 
-interface Request {
-	collection_id: number,
+/**
+ * @link https://developer.themoviedb.org/reference/collection-details
+ */
+export interface TMDBCollectionsDetailsRequest {
+	/**
+	 * @type int32
+	 */
+	collection_id: number
+	/**
+	 * @default "en-US"
+	 */
 	language?: string
 }
 
@@ -15,46 +24,100 @@ type QueryParams = {
 	language?: string
 }
 
-interface Response {
-	id: number,
-	name: string,
-	overview: string,
-	poster_path: string,
-	backdrop_path: string,
+/**
+ * @link https://developer.themoviedb.org/reference/collection-details
+ */
+export interface TMDBCollectionsDetailsResponse {
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	id: number
+	name: string
+	overview: string
+	poster_path: string
+	backdrop_path: string
 	parts: {
-		adult: boolean,
-		backdrop_path: string,
-		id: number,
-		title: string,
-		original_language: string,
-		original_title: string,
-		overview: string,
-		media_type: string,
-		genre_ids: number[],
-		popularity: number,
-		release_date: string,
-		video: boolean,
-		vote_average: number,
+		/**
+		 * @default true
+		 */
+		adult: boolean
+		backdrop_path: string
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		id: number
+		title: string
+		original_language: string
+		original_title: string
+		overview: string
+		media_type: string
+		genre_ids: number[]
+		/**
+		 * @type number
+		 * @default 0
+		 */
+		popularity: number
+		release_date: string
+		video: boolean
+		/**
+		 * @type number
+		 * @default 0
+		 */
+		vote_average: number
+		/**
+		 * @type int
+		 * @default 0
+		 */
 		vote_count: number
 	}[]
 }
 
-export function TMDBCollectionsDetails(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBCollectionsDetails(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Get collection details by ID.
+ *
+ * @link https://developer.themoviedb.org/reference/collection-details
+ */
+export function TMDBCollectionsDetails(
+	request: TMDBCollectionsDetailsRequest,
+	fetcher: Fetcher,
+): Promise<TMDBCollectionsDetailsResponse>
+/**
+ * Get collection details by ID.
+ *
+ * @link https://developer.themoviedb.org/reference/collection-details
+ */
+export function TMDBCollectionsDetails(
+	request: TMDBCollectionsDetailsRequest,
+	readAccessToken: string,
+): Promise<TMDBCollectionsDetailsResponse>
 
-export default function TMDBCollectionsDetails(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.COLLECTION, "{collection_id}", {
-		path: {
-			collection_id: request.collection_id
+/**
+ * Get collection details by ID.
+ *
+ * @link https://developer.themoviedb.org/reference/collection-details
+ */
+export default function TMDBCollectionsDetails(
+	request: TMDBCollectionsDetailsRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBCollectionsDetailsResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.COLLECTION,
+		"{collection_id}",
+		{
+			path: {
+				collection_id: request.collection_id,
+			},
+			query: {
+				language: request.language,
+			},
 		},
-		query: {
-			language: request.language
-		}
-	})
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBCollectionsDetailsResponse>(url)
 	}
 }
