@@ -4588,7 +4588,7 @@ export const TMDB_CONFIGURATION = Object.freeze({
 	]),
 }) as TMDBConfigurationConst
 
-type TMDBConfigurationConst = Readonly<{
+export type TMDBConfigurationConst = Readonly<{
 	/**
 	 * API configuration details.
 	 *
@@ -9194,3 +9194,6 @@ type TMDBConfigurationConst = Readonly<{
 		}>,
 	]
 }>
+
+export type TMDB_ISO_3166_1 =
+	TMDBConfigurationConst["countries"][number]["iso_3166_1"]
