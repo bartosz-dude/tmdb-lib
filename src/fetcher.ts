@@ -27,7 +27,7 @@ export default async function TMDBFetcher<Response>(
 					method: "POST",
 					headers: {
 						accept: "application/json",
-						"content-type": "application/json",
+						"content-type": "application/json;charset=utf-8",
 						Authorization: `Bearer ${readAccessToken}`,
 					},
 					body: request.rawBody ? JSON.stringify(request.rawBody) : "",
@@ -40,7 +40,7 @@ export default async function TMDBFetcher<Response>(
 					method: "DELETE",
 					headers: {
 						accept: "application/json",
-						"content-type": "application/json",
+						"content-type": "application/json;charset=utf-8",
 						Authorization: `Bearer ${readAccessToken}`,
 					},
 					body: request.rawBody ? JSON.stringify(request.rawBody) : "",
