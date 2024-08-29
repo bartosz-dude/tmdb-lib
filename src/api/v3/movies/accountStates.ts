@@ -1,10 +1,16 @@
 import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
-import TMDBUrlParser from "../../../urlParser"
+import TMDBUrlParser from "../../../parsers"
 
-interface Request {
-	movie_id: number,
-	session_id?: string,
+/**
+ * @link https://developer.themoviedb.org/reference/movie-account-states
+ */
+export interface TMDBMovieAccountStatesRequest {
+	/**
+	 * @type int32
+	 */
+	movie_id: number
+	session_id?: string
 	guest_session_id?: string
 }
 
@@ -13,36 +19,83 @@ type PathParams = {
 }
 
 type QueryParams = {
-	[ key in keyof Omit<Request, keyof PathParams> ]: Request[ key ]
+	[key in keyof Omit<
+		TMDBMovieAccountStatesRequest,
+		keyof PathParams
+	>]: TMDBMovieAccountStatesRequest[key]
 }
 
-
-interface Response {
-	id: number,
-	favorite: boolean,
+/**
+ * @link https://developer.themoviedb.org/reference/movie-account-states
+ */
+export interface TMDBMovieAccountStatesResponse {
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	id: number
+	/**
+	 * @default true
+	 */
+	favorite: boolean
 	rated: {
-		value: number,
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		value: number
 	}
-	watchlist: boolean,
+	/**
+	 * @default true
+	 */
+	watchlist: boolean
 }
 
-export function TMDBMovieAccountStates(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBMovieAccountStates(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Get the rating, watchlist and favorite status of an account.
+ *
+ * @link https://developer.themoviedb.org/reference/movie-account-states
+ */
+export function TMDBMovieAccountStates(
+	request: TMDBMovieAccountStatesRequest,
+	fetcher: Fetcher,
+): Promise<TMDBMovieAccountStatesResponse>
+/**
+ * Get the rating, watchlist and favorite status of an account.
+ *
+ * @link https://developer.themoviedb.org/reference/movie-account-states
+ */
+export function TMDBMovieAccountStates(
+	request: TMDBMovieAccountStatesRequest,
+	readAccessToken: string,
+): Promise<TMDBMovieAccountStatesResponse>
 
-export default function TMDBMovieAccountStates(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.MOVIE, "{movie_id}/account_states", {
-		path: {
-			movie_id: request.movie_id
+/**
+ * Get the rating, watchlist and favorite status of an account.
+ *
+ * @link https://developer.themoviedb.org/reference/movie-account-states
+ */
+export default function TMDBMovieAccountStates(
+	request: TMDBMovieAccountStatesRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBMovieAccountStatesResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.MOVIE,
+		"{movie_id}/account_states",
+		{
+			path: {
+				movie_id: request.movie_id,
+			},
+			query: {
+				session_id: request.session_id,
+				guest_session_id: request.session_id,
+			},
 		},
-		query: {
-			session_id: request.session_id,
-			guest_session_id: request.session_id
-		}
-	})
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBMovieAccountStatesResponse>(url)
 	}
 }

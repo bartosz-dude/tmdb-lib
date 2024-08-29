@@ -1,9 +1,15 @@
 import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
-import TMDBUrlParser from "../../../urlParser"
+import TMDBUrlParser from "../../../parsers"
 
-interface Request {
-	movie_id: number,
+/**
+ * @link https://developer.themoviedb.org/reference/movie-translations
+ */
+export interface TMDBMovieTranslationsRequest {
+	/**
+	 * @type int32
+	 */
+	movie_id: number
 }
 
 type PathParams = {
@@ -12,37 +18,81 @@ type PathParams = {
 
 type QueryParams = null
 
-
-interface Response {
-	id: number,
+/**
+ * @link https://developer.themoviedb.org/reference/movie-translations
+ */
+export interface TMDBMovieTranslationsResponse {
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	id: number
 	translations: {
-		iso_3166_1: string,
-		iso_639_1: string,
-		name: string,
-		english_name: string,
+		iso_3166_1: string
+		iso_639_1: string
+		name: string
+		english_name: string
 		data: {
-			homepage: string,
-			overview: string,
-			runtime: number,
-			tagline: string,
-			title: string,
+			homepage: string
+			overview: string
+			/**
+			 * @type int
+			 * @default 0
+			 */
+			runtime: number
+			tagline: string
+			title: string
 		}
 	}[]
 }
 
-export function TMDBMovieTranslations(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBMovieTranslations(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Get the translations for a movie.
+ *
+ * Take a read through our [language](https://developer.themoviedb.org/docs/languages) documentation for more information about languages on TMDB.
+ *
+ * @link https://developer.themoviedb.org/reference/movie-translations
+ */
+export function TMDBMovieTranslations(
+	request: TMDBMovieTranslationsRequest,
+	fetcher: Fetcher,
+): Promise<TMDBMovieTranslationsResponse>
+/**
+ * Get the translations for a movie.
+ *
+ * Take a read through our [language](https://developer.themoviedb.org/docs/languages) documentation for more information about languages on TMDB.
+ *
+ * @link https://developer.themoviedb.org/reference/movie-translations
+ */
+export function TMDBMovieTranslations(
+	request: TMDBMovieTranslationsRequest,
+	readAccessToken: string,
+): Promise<TMDBMovieTranslationsResponse>
 
-export default function TMDBMovieTranslations(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.MOVIE, "{movie_id}/translations", {
-		path: {
-			movie_id: request.movie_id
-		}
-	})
+/**
+ * Get the translations for a movie.
+ *
+ * Take a read through our [language](https://developer.themoviedb.org/docs/languages) documentation for more information about languages on TMDB.
+ *
+ * @link https://developer.themoviedb.org/reference/movie-translations
+ */
+export default function TMDBMovieTranslations(
+	request: TMDBMovieTranslationsRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBMovieTranslationsResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.MOVIE,
+		"{movie_id}/translations",
+		{
+			path: {
+				movie_id: request.movie_id,
+			},
+		},
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBMovieTranslationsResponse>(url)
 	}
 }

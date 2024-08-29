@@ -1,10 +1,23 @@
 import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
-import TMDBUrlParser from "../../../urlParser"
+import TMDBUrlParser from "../../../parsers"
 
-interface Request {
-	movie_id: number,
-	language?: string,
+/**
+ * @link https://developer.themoviedb.org/reference/movie-recommendations
+ */
+export interface TMDBMovieRecommendationsRequest {
+	/**
+	 * @type int32
+	 */
+	movie_id: number
+	/**
+	 * @default "en-US"
+	 */
+	language?: string
+	/**
+	 * @type int32
+	 * @default 1
+	 */
 	page?: number
 }
 
@@ -13,50 +26,102 @@ type PathParams = {
 }
 
 type QueryParams = {
-	[ key in keyof Omit<Request, "movie_id"> ]: Request[ key ]
+	[key in keyof Omit<
+		TMDBMovieRecommendationsRequest,
+		"movie_id"
+	>]: TMDBMovieRecommendationsRequest[key]
 }
 
-
-interface Response { // not defined in docs
-	page: number,
+/**
+ * @link https://developer.themoviedb.org/reference/movie-recommendations
+ */
+export interface TMDBMovieRecommendationsResponse {
+	// not defined in docs
+	/**
+	 * @type int
+	 */
+	page: number
 	results: {
-		adult: boolean,
-		backdrop_path: string | null,
-		id: number,
-		title: string,
-		original_language: string,
-		original_title: string,
-		overview: string,
-		poster_path: string,
-		media_type: string,
-		genre_ids: number[],
-		popularity: number,
-		release_date: string,
-		video: boolean,
-		vote_average: number,
+		backdrop_path: string | null
+		/**
+		 * @type int
+		 */
+		id: number
+		title: string
+		original_title: string
+		overview: string
+		poster_path: string
+		media_type: string
+		adult: boolean
+		original_language: string
+		/**
+		 * @type int[]
+		 */
+		genre_ids: number[]
+		/**
+		 * @type number
+		 */
+		popularity: number
+		release_date: string
+		video: boolean
+		/**
+		 * @type number
+		 */
+		vote_average: number
+		/**
+		 * @type int
+		 */
 		vote_count: number
-	}[],
-	total_pages: number,
+	}[]
+	/**
+	 * @type int
+	 */
+	total_pages: number
+	/**
+	 * @type int
+	 */
 	total_results: number
 }
 
-export function TMDBMovieRecommendations(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBMovieRecommendations(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * @link https://developer.themoviedb.org/reference/movie-recommendations
+ */
+export function TMDBMovieRecommendations(
+	request: TMDBMovieRecommendationsRequest,
+	fetcher: Fetcher,
+): Promise<TMDBMovieRecommendationsResponse>
+/**
+ * @link https://developer.themoviedb.org/reference/movie-recommendations
+ */
+export function TMDBMovieRecommendations(
+	request: TMDBMovieRecommendationsRequest,
+	readAccessToken: string,
+): Promise<TMDBMovieRecommendationsResponse>
 
-export default function TMDBMovieRecommendations(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.MOVIE, "{movie_id}/recommendations", {
-		path: {
-			movie_id: request.movie_id
+/**
+ * @link https://developer.themoviedb.org/reference/movie-recommendations
+ */
+export default function TMDBMovieRecommendations(
+	request: TMDBMovieRecommendationsRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBMovieRecommendationsResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.MOVIE,
+		"{movie_id}/recommendations",
+		{
+			path: {
+				movie_id: request.movie_id,
+			},
+			query: {
+				language: request.language,
+				page: request.page,
+			},
 		},
-		query: {
-			language: request.language,
-			page: request.page
-		}
-	})
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBMovieRecommendationsResponse>(url)
 	}
 }

@@ -1,10 +1,19 @@
 import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
-import TMDBUrlParser from "../../../urlParser"
+import TMDBUrlParser from "../../../parsers"
 
-interface Request {
-	movie_id: number,
-	language?: string,
+/**
+ * @link https://developer.themoviedb.org/reference/movie-credits
+ */
+export interface TMDBMovieCreditsRequest {
+	/**
+	 * @type int32
+	 */
+	movie_id: number
+	/**
+	 * @default "en-US"
+	 */
+	language?: string
 }
 
 type PathParams = {
@@ -12,57 +21,126 @@ type PathParams = {
 }
 
 type QueryParams = {
-	[ key in keyof Omit<Request, keyof PathParams> ]: Request[ key ]
+	[key in keyof Omit<
+		TMDBMovieCreditsRequest,
+		keyof PathParams
+	>]: TMDBMovieCreditsRequest[key]
 }
 
-
-interface Response {
-	id: number,
+/**
+ * @link https://developer.themoviedb.org/reference/movie-credits
+ */
+export interface TMDBMovieCreditsResponse {
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	id: number
 	cast: {
-		adult: boolean,
-		gender: number,
-		id: number,
-		known_for_department: string,
-		name: string,
-		original_name: string,
-		popularity: number,
-		profile_path: string,
-		cast_id: number,
-		character: string,
-		credit_id: string,
-		order: number,
-	}[],
+		/**
+		 * @default true
+		 */
+		adult: boolean
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		gender: number
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		id: number
+		known_for_department: string
+		name: string
+		original_name: string
+		/**
+		 * @type number
+		 * @default 0
+		 */
+		popularity: number
+		profile_path: string
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		cast_id: number
+		character: string
+		credit_id: string
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		order: number
+	}[]
 	crew: {
-		adult: boolean,
-		gender: number,
-		id: number,
-		known_for_department: string,
-		name: string,
-		original_name: string,
-		popularity: number,
-		profile_path: string,
-		credit_id: string,
-		department: string,
-		job: string,
+		/**
+		 * @default true
+		 */
+		adult: boolean
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		gender: number
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		id: number
+		known_for_department: string
+		name: string
+		original_name: string
+		/**
+		 * @type number
+		 * @default 0
+		 */
+		popularity: number
+		profile_path: string
+		credit_id: string
+		department: string
+		job: string
 	}[]
 }
 
-export function TMDBMovieCredits(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBMovieCredits(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * @link https://developer.themoviedb.org/reference/movie-credits
+ */
+export function TMDBMovieCredits(
+	request: TMDBMovieCreditsRequest,
+	fetcher: Fetcher,
+): Promise<TMDBMovieCreditsResponse>
+/**
+ * @link https://developer.themoviedb.org/reference/movie-credits
+ */
+export function TMDBMovieCredits(
+	request: TMDBMovieCreditsRequest,
+	readAccessToken: string,
+): Promise<TMDBMovieCreditsResponse>
 
-export default function TMDBMovieCredits(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.MOVIE, "{movie_id}/credits", {
-		path: {
-			movie_id: request.movie_id
+/**
+ * @link https://developer.themoviedb.org/reference/movie-credits
+ */
+export default function TMDBMovieCredits(
+	request: TMDBMovieCreditsRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBMovieCreditsResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.MOVIE,
+		"{movie_id}/credits",
+		{
+			path: {
+				movie_id: request.movie_id,
+			},
+			query: {
+				language: request.language,
+			},
 		},
-		query: {
-			language: request.language
-		}
-	})
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBMovieCreditsResponse>(url)
 	}
 }

@@ -1,9 +1,19 @@
+import type {
+	TMDB_ISO_3166_1,
+	TMDBConfigurationConst,
+} from "../../../constants"
 import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
-import TMDBUrlParser from "../../../urlParser"
+import TMDBUrlParser from "../../../parsers"
 
-interface Request {
-	movie_id: number,
+/**
+ * @link https://developer.themoviedb.org/reference/movie-watch-providers
+ */
+export interface TMDBMovieWatchProvidersRequest {
+	/**
+	 * @type int32
+	 */
+	movie_id: number
 }
 
 type PathParams = {
@@ -12,131 +22,111 @@ type PathParams = {
 
 type QueryParams = null
 
-
-interface Response {
-	id: number,
-	results: {
-		AE: Links,
-		AL: Links,
-		AR: Links,
-		AT: Links,
-		AU: Links,
-		BA: Links,
-		BB: Links,
-		BE: Links,
-		BG: Links,
-		BH: Links,
-		BO: Links,
-		BR: Links,
-		BS: Links,
-		CA: Links,
-		CH: Links,
-		CL: Links,
-		CO: Links,
-		CR: Links,
-		CV: Links,
-		CZ: Links,
-		DE: Links,
-		DK: Links,
-		DO: Links,
-		EC: Links,
-		EE: Links,
-		EG: Links,
-		ES: Links,
-		FI: Links,
-		FJ: Links,
-		FR: Links,
-		GB: Links,
-		GF: Links,
-		GI: Links,
-		GR: Links,
-		GT: Links,
-		HK: Links,
-		HN: Links,
-		HR: Links,
-		HU: Links,
-		ID: Links,
-		IE: Links,
-		IL: Links,
-		IN: Links,
-		IQ: Links,
-		IS: Links,
-		IT: Links,
-		JM: Links,
-		JO: Links,
-		JP: Links,
-		KR: Links,
-		KW: Links,
-		LB: Links,
-		LI: Links,
-		LT: Links,
-		LV: Links,
-		MD: Links,
-		MK: Links,
-		MT: Links,
-		MU: Links,
-		MX: Links,
-		MY: Links,
-		MZ: Links,
-		NL: Links,
-		NO: Links,
-		NZ: Links,
-		OM: Links,
-		PA: Links,
-		PE: Links,
-		PH: Links,
-		PK: Links,
-		PL: Links,
-		PS: Links,
-		PT: Links,
-		PY: Links,
-		QA: Links,
-		RO: Links,
-		RS: Links,
-		RU: Links,
-		SA: Links,
-		SE: Links,
-		SG: Links,
-		SI: Links,
-		SK: Links,
-		SM: Links,
-		SV: Links,
-		TH: Links,
-		TR: Links,
-		TT: Links,
-		TW: Links,
-		UG: Links,
-		US: Links,
-		UY: Links,
-		VE: Links,
-		YE: Links,
-		ZA: Links,
-	}
+/**
+ * @link https://developer.themoviedb.org/reference/movie-watch-providers
+ */
+export interface TMDBMovieWatchProvidersResponse {
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	id: number
+	results: Record<TMDB_ISO_3166_1, Providers>
 }
 
-interface Links {
-	link: string,
-	flatrate: {
-		logo_path: string,
-		provider_id: number,
-		provider_name: string,
-		display_priority: number,
-	}[]
+interface Providers {
+	link: string
+	flatrate: WatchProvider[]
+	buy?: WatchProvider[]
+	rent?: WatchProvider[]
 }
 
-export function TMDBMovieWatchProviders(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBMovieWatchProviders(request: Request, readAccessToken: string): Promise<Response>
+interface WatchProvider {
+	logo_path: string
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	provider_id: number
+	provider_name: string
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	display_priority: number
+}
 
-export default function TMDBMovieWatchProviders(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.MOVIE, "{movie_id}/watch/providers", {
-		path: {
-			movie_id: request.movie_id
-		}
-	})
+/**
+ * Get the list of streaming providers we have for a movie.
+ *
+ * Powered by our partnership with JustWatch, you can query this method to get a list of the streaming/rental/purchase availabilities per country by provider.
+ *
+ * This is *not* going to return full deep links, but rather, it's just enough information to display what's available where.
+ *
+ * You can link to the provided TMDB URL to help support TMDB and provide the actual deep links to the content.
+ *
+ * ### JustWatch Attribution Required
+ *
+ * In order to use this data you must attribute the source of the data as JustWatch. If we find any usage not complying with these terms we will revoke access to the API.
+ *
+ * @link https://developer.themoviedb.org/reference/movie-watch-providers
+ */
+export function TMDBMovieWatchProviders(
+	request: TMDBMovieWatchProvidersRequest,
+	fetcher: Fetcher,
+): Promise<TMDBMovieWatchProvidersResponse>
+/**
+ * Get the list of streaming providers we have for a movie.
+ *
+ * Powered by our partnership with JustWatch, you can query this method to get a list of the streaming/rental/purchase availabilities per country by provider.
+ *
+ * This is *not* going to return full deep links, but rather, it's just enough information to display what's available where.
+ *
+ * You can link to the provided TMDB URL to help support TMDB and provide the actual deep links to the content.
+ *
+ * ### JustWatch Attribution Required
+ *
+ * In order to use this data you must attribute the source of the data as JustWatch. If we find any usage not complying with these terms we will revoke access to the API.
+ *
+ * @link https://developer.themoviedb.org/reference/movie-watch-providers
+ */
+export function TMDBMovieWatchProviders(
+	request: TMDBMovieWatchProvidersRequest,
+	readAccessToken: string,
+): Promise<TMDBMovieWatchProvidersResponse>
+
+/**
+ * Get the list of streaming providers we have for a movie.
+ *
+ * Powered by our partnership with JustWatch, you can query this method to get a list of the streaming/rental/purchase availabilities per country by provider.
+ *
+ * This is *not* going to return full deep links, but rather, it's just enough information to display what's available where.
+ *
+ * You can link to the provided TMDB URL to help support TMDB and provide the actual deep links to the content.
+ *
+ * ### JustWatch Attribution Required
+ *
+ * In order to use this data you must attribute the source of the data as JustWatch. If we find any usage not complying with these terms we will revoke access to the API.
+ *
+ * @link https://developer.themoviedb.org/reference/movie-watch-providers
+ */
+export default function TMDBMovieWatchProviders(
+	request: TMDBMovieWatchProvidersRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBMovieWatchProvidersResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.MOVIE,
+		"{movie_id}/watch/providers",
+		{
+			path: {
+				movie_id: request.movie_id,
+			},
+		},
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBMovieWatchProvidersResponse>(url)
 	}
 }

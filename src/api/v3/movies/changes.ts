@@ -1,12 +1,22 @@
 import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
-import TMDBUrlParser from "../../../urlParser"
+import TMDBUrlParser from "../../../parsers"
 
-interface Request {
-	movie_id: number,
-	end_date?: Date,
-	page?: string
-	start_date?: Date,
+/**
+ * @link https://developer.themoviedb.org/reference/movie-changes
+ */
+export interface TMDBMovieChangesRequest {
+	/**
+	 * @type int32
+	 */
+	movie_id: number
+	end_date?: Date
+	/**
+	 * @type int32
+	 * @default 1
+	 */
+	page?: number
+	start_date?: Date
 }
 
 type PathParams = {
@@ -14,30 +24,91 @@ type PathParams = {
 }
 
 type QueryParams = {
-	[ key in keyof Omit<Request, keyof PathParams> ]: Request[ key ]
+	[key in keyof Omit<
+		TMDBMovieChangesRequest,
+		keyof PathParams
+	>]: TMDBMovieChangesRequest[key]
 }
 
+/**
+ * @link https://developer.themoviedb.org/reference/movie-changes
+ */
+export interface TMDBMovieChangesResponse {
+	changes: {
+		key: string
+		items: {
+			id: string
+			action: string
+			time: string
+			iso_639_1: string
+			iso_3166_1: string
+			value: {
+				poster: {
+					file_path: string
+				}
+			}
+		}[]
+	}[]
+}
 
-type Response = any
+/**
+ * Get the recent changes for a movie.
+ *
+ * Get the changes for a movie. By default only the last 24 hours are returned.
+ *
+ * You can query up to 14 days in a single query by using the `start_date` and `end_date` query parameters.
+ *
+ * @link https://developer.themoviedb.org/reference/movie-changes
+ */
+export function TMDBMovieChanges(
+	request: TMDBMovieChangesRequest,
+	fetcher: Fetcher,
+): Promise<TMDBMovieChangesResponse>
+/**
+ * Get the recent changes for a movie.
+ *
+ * Get the changes for a movie. By default only the last 24 hours are returned.
+ *
+ * You can query up to 14 days in a single query by using the `start_date` and `end_date` query parameters.
+ *
+ * @link https://developer.themoviedb.org/reference/movie-changes
+ */
+export function TMDBMovieChanges(
+	request: TMDBMovieChangesRequest,
+	readAccessToken: string,
+): Promise<TMDBMovieChangesResponse>
 
-export function TMDBMovieChanges(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBMovieChanges(request: Request, readAccessToken: string): Promise<Response>
-
-export default function TMDBMovieChanges(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.MOVIE, "{movie_id}/changes", {
-		path: {
-			movie_id: request.movie_id
+/**
+ * Get the recent changes for a movie.
+ *
+ * Get the changes for a movie. By default only the last 24 hours are returned.
+ *
+ * You can query up to 14 days in a single query by using the `start_date` and `end_date` query parameters.
+ *
+ * @link https://developer.themoviedb.org/reference/movie-changes
+ */
+export default function TMDBMovieChanges(
+	request: TMDBMovieChangesRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBMovieChangesResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.MOVIE,
+		"{movie_id}/changes",
+		{
+			path: {
+				movie_id: request.movie_id,
+			},
+			query: {
+				end_date: request.end_date,
+				page: request.page,
+				start_date: request.start_date,
+			},
 		},
-		query: {
-			end_date: request.end_date,
-			page: request.page,
-			start_date: request.start_date
-		}
-	})
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBMovieChangesResponse>(url)
 	}
 }

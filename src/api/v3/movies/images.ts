@@ -1,10 +1,19 @@
 import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
-import TMDBUrlParser from "../../../urlParser"
+import TMDBUrlParser from "../../../parsers"
 
-interface Request {
-	movie_id: number,
-	include_image_language?: string,
+/**
+ * @link https://developer.themoviedb.org/reference/movie-images
+ */
+export interface TMDBMovieImagesRequest {
+	/**
+	 * @type int32
+	 */
+	movie_id: number
+	/**
+	 * specify a comma separated list of ISO-639-1 values to query, for example: `en`,`null`
+	 */
+	include_image_language?: string
 	language?: string
 }
 
@@ -13,58 +22,167 @@ type PathParams = {
 }
 
 type QueryParams = {
-	[ key in keyof Omit<Request, keyof PathParams> ]: Request[ key ]
+	[key in keyof Omit<
+		TMDBMovieImagesRequest,
+		keyof PathParams
+	>]: TMDBMovieImagesRequest[key]
 }
 
-
-interface Response {
+/**
+ * @link https://developer.themoviedb.org/reference/movie-images
+ */
+export interface TMDBMovieImagesResponse {
 	backdrops: {
-		aspect_ratio: number,
-		height: number,
-		iso_639_1: string,
-		file_path: string,
-		vote_average: number,
-		vote_count: number,
-		width: number,
-	}[],
-	id: number,
+		/**
+		 * @type number
+		 * @default 0
+		 */
+		aspect_ratio: number
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		height: number
+		iso_639_1: string
+		file_path: string
+		/**
+		 * @type number
+		 * @default 0
+		 */
+		vote_average: number
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		vote_count: number
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		width: number
+	}[]
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	id: number
 	logos: {
-		aspect_ratio: number,
-		height: number,
-		iso_639_1: string,
-		file_path: string,
-		vote_average: number,
-		vote_count: number,
-		width: number,
-	}[],
+		/**
+		 * @type number
+		 * @default 0
+		 */
+		aspect_ratio: number
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		height: number
+		iso_639_1: string
+		file_path: string
+		/**
+		 * @type number
+		 * @default 0
+		 */
+		vote_average: number
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		vote_count: number
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		width: number
+	}[]
 	posters: {
-		aspect_ratio: number,
-		height: number,
-		iso_639_1: string,
-		file_path: string,
-		vote_average: number,
-		vote_count: number,
-		width: number,
+		/**
+		 * @type number
+		 * @default 0
+		 */
+		aspect_ratio: number
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		height: number
+		iso_639_1: string
+		file_path: string
+		/**
+		 * @type number
+		 * @default 0
+		 */
+		vote_average: number
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		vote_count: number
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		width: number
 	}[]
 }
 
-export function TMDBMovieImages(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBMovieImages(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Get the images that belong to a movie.
+ *
+ * This method will return the backdrops, posters and logos that have been added to a movie.
+ *
+ * If you have a `language` specified, it will act as a filter on the returned items. You can use the `include_image_language` param to query additional languages.
+ *
+ * @link https://developer.themoviedb.org/reference/movie-images
+ */
+export function TMDBMovieImages(
+	request: TMDBMovieImagesRequest,
+	fetcher: Fetcher,
+): Promise<TMDBMovieImagesResponse>
+/**
+ * Get the images that belong to a movie.
+ *
+ * This method will return the backdrops, posters and logos that have been added to a movie.
+ *
+ * If you have a `language` specified, it will act as a filter on the returned items. You can use the `include_image_language` param to query additional languages.
+ *
+ * @link https://developer.themoviedb.org/reference/movie-images
+ */
+export function TMDBMovieImages(
+	request: TMDBMovieImagesRequest,
+	readAccessToken: string,
+): Promise<TMDBMovieImagesResponse>
 
-export default function TMDBMovieImages(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.MOVIE, "{movie_id}/images", {
-		path: {
-			movie_id: request.movie_id
+/**
+ * Get the images that belong to a movie.
+ *
+ * This method will return the backdrops, posters and logos that have been added to a movie.
+ *
+ * If you have a `language` specified, it will act as a filter on the returned items. You can use the `include_image_language` param to query additional languages.
+ *
+ * @link https://developer.themoviedb.org/reference/movie-images
+ */
+export default function TMDBMovieImages(
+	request: TMDBMovieImagesRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBMovieImagesResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.MOVIE,
+		"{movie_id}/images",
+		{
+			path: {
+				movie_id: request.movie_id,
+			},
+			query: {
+				include_image_language: request.include_image_language,
+				language: request.language,
+			},
 		},
-		query: {
-			include_image_language: request.include_image_language,
-			language: request.language
-		}
-	})
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBMovieImagesResponse>(url)
 	}
 }

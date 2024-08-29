@@ -1,9 +1,15 @@
 import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
-import TMDBUrlParser from "../../../urlParser"
+import TMDBUrlParser from "../../../parsers"
 
-interface Request {
-	movie_id: number,
+/**
+ * @link https://developer.themoviedb.org/reference/movie-release-dates
+ */
+export interface TMDBMovieReleaseDatesRequest {
+	/**
+	 * @type int32
+	 */
+	movie_id: number
 }
 
 type PathParams = {
@@ -12,35 +18,103 @@ type PathParams = {
 
 type QueryParams = null
 
-
-interface Response {
-	id: number,
+/**
+ * @link https://developer.themoviedb.org/reference/movie-release-dates
+ */
+export interface TMDBMovieReleaseDatesResponse {
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	id: number
 	results: {
-		iso_3166_1: string,
+		iso_3166_1: string
 		release_dates: {
-			certification: string,
-			descriptors: [],
-			iso_639_1: string,
-			note: string,
-			release_date: string,
+			certification: string
+			descriptors: []
+			iso_639_1: string
+			note: string
+			release_date: string
+			/**
+			 * @type int
+			 * @default 0
+			 */
 			type: number
 		}[]
 	}[]
 }
 
-export function TMDBMovieReleaseDates(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBMovieReleaseDates(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Get the release dates and certifications for a movie.
+ *
+ * The release types and statuses used on TMDB are the following:
+ * | Release              | Type  |
+ * |----------------------|-------|
+ * | Premiere             |   1   |
+ * | Theatrical (limited) |   2   |
+ * | Theatrical           |   3   |
+ * | Digital              |   4   |
+ * | Physical             |   5   |
+ * | TV                   |   6   |
+ *
+ * @link https://developer.themoviedb.org/reference/movie-release-dates
+ */
+export function TMDBMovieReleaseDates(
+	request: TMDBMovieReleaseDatesRequest,
+	fetcher: Fetcher,
+): Promise<TMDBMovieReleaseDatesResponse>
+/**
+ * Get the release dates and certifications for a movie.
+ *
+ * The release types and statuses used on TMDB are the following:
+ * | Release              | Type  |
+ * |----------------------|-------|
+ * | Premiere             |   1   |
+ * | Theatrical (limited) |   2   |
+ * | Theatrical           |   3   |
+ * | Digital              |   4   |
+ * | Physical             |   5   |
+ * | TV                   |   6   |
+ *
+ * @link https://developer.themoviedb.org/reference/movie-release-dates
+ */
+export function TMDBMovieReleaseDates(
+	request: TMDBMovieReleaseDatesRequest,
+	readAccessToken: string,
+): Promise<TMDBMovieReleaseDatesResponse>
 
-export default function TMDBMovieReleaseDates(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.MOVIE, "{movie_id}/release_dates", {
-		path: {
-			movie_id: request.movie_id
-		}
-	})
+/**
+ * Get the release dates and certifications for a movie.
+ *
+ * The release types and statuses used on TMDB are the following:
+ * | Release              | Type  |
+ * |----------------------|-------|
+ * | Premiere             |   1   |
+ * | Theatrical (limited) |   2   |
+ * | Theatrical           |   3   |
+ * | Digital              |   4   |
+ * | Physical             |   5   |
+ * | TV                   |   6   |
+ *
+ * @link https://developer.themoviedb.org/reference/movie-release-dates
+ */
+export default function TMDBMovieReleaseDates(
+	request: TMDBMovieReleaseDatesRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBMovieReleaseDatesResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.MOVIE,
+		"{movie_id}/release_dates",
+		{
+			path: {
+				movie_id: request.movie_id,
+			},
+		},
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBMovieReleaseDatesResponse>(url)
 	}
 }
