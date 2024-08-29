@@ -1,6 +1,6 @@
 import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
-import TMDBUrlParser from "../../../urlParser"
+import TMDBUrlParser from "../../../parsers"
 
 /**
  * @link https://developer.themoviedb.org/reference/configuration-countries

@@ -1,6 +1,6 @@
 import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
-import TMDBUrlParser from "../../../urlParser"
+import TMDBUrlParser from "../../../parsers"
 
 /**
  * @link https://developer.themoviedb.org/reference/discover-movie
@@ -106,6 +106,8 @@ export interface TMDBDiscoverMovieRequest {
 	with_people?: string
 	/**
 	 * possible values are: [1, 2, 3, 4, 5, 6] can be a comma (`AND`) or pipe (`OR`) separated query, can be used in conjunction with `region`
+	 *
+	 * @see for explanation of these values look at https://developer.themoviedb.org/reference/movie-release-dates
 	 */
 	with_release_type?: string
 	/**
