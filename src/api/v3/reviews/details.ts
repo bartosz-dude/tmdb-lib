@@ -1,8 +1,11 @@
 import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
-import TMDBUrlParser from "../../../urlParser"
+import TMDBUrlParser from "../../../parsers"
 
-interface Request {
+/**
+ * @link https://developer.themoviedb.org/reference/review-details
+ */
+interface TMDBReviewsDetailsRequest {
 	review_id: string
 }
 
@@ -12,38 +15,77 @@ type PathParams = {
 
 type QueryParams = null
 
-interface Response {
-	id: string,
-	author: string,
+/**
+ * @link https://developer.themoviedb.org/reference/review-details
+ */
+interface TMDBReviewsDetailsResponse {
+	id: string
+	author: string
 	author_details: {
-		name: string,
-		username: string,
-		avatar_path: string,
-		rating: string
-	},
-	content: string,
-	created_at: string,
-	iso_639_1: string,
-	media_id: string,
-	media_title: string,
-	media_type: string,
-	update_at: string,
+		name: string
+		username: string
+		avatar_path: string
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		rating: number
+	}
+	content: string
+	created_at: string
+	iso_639_1: string
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	media_id: number
+	media_title: string
+	media_type: string
+	update_at: string
 	url: string
 }
 
-export function TMDBReviewsDetails(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBReviewsDetails(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Retrieve the details of a movie or TV show review.
+ *
+ * @link https://developer.themoviedb.org/reference/review-details
+ */
+export function TMDBReviewsDetails(
+	request: TMDBReviewsDetailsRequest,
+	fetcher: Fetcher,
+): Promise<TMDBReviewsDetailsResponse>
+/**
+ * Retrieve the details of a movie or TV show review.
+ *
+ * @link https://developer.themoviedb.org/reference/review-details
+ */
+export function TMDBReviewsDetails(
+	request: TMDBReviewsDetailsRequest,
+	readAccessToken: string,
+): Promise<TMDBReviewsDetailsResponse>
 
-export default function TMDBReviewsDetails(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.REVIEW, "{review_id}", {
-		path: {
-			review_id: request.review_id
-		}
-	})
+/**
+ * Retrieve the details of a movie or TV show review.
+ *
+ * @link https://developer.themoviedb.org/reference/review-details
+ */
+export default function TMDBReviewsDetails(
+	request: TMDBReviewsDetailsRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBReviewsDetailsResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.REVIEW,
+		"{review_id}",
+		{
+			path: {
+				review_id: request.review_id,
+			},
+		},
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBReviewsDetailsResponse>(url)
 	}
 }

@@ -1,5 +1,12 @@
-import { TMDBReviewsDetails } from "./details";
+import { TMDBReviewsDetails } from "./details"
 
-export const TMDBReviews = {
-	details: TMDBReviewsDetails
+const TMDBReviews = {
+	/**
+	 * Retrieve the details of a movie or TV show review.
+	 *
+	 * @link https://developer.themoviedb.org/reference/review-details
+	 */
+	details: TMDBReviewsDetails,
 }
+
+export default TMDBReviews
