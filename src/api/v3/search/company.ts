@@ -1,41 +1,95 @@
 import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
-import TMDBUrlParser from "../../../urlParser"
+import TMDBUrlParser from "../../../parsers"
 
-interface Request {
-	query: string,
+/**
+ * @link https://developer.themoviedb.org/reference/search-company
+ */
+export interface TMDBSearchCompanyRequest {
+	query: string
+	/**
+	 * @type int32
+	 * @default 1
+	 */
 	page?: number
 }
 
 type PathParams = null
 
 type QueryParams = {
-	[ key in keyof Request ]: Request[ key ]
+	[key in keyof TMDBSearchCompanyRequest]: TMDBSearchCompanyRequest[key]
 }
 
-interface Response {
-	page: number,
+/**
+ * @link https://developer.themoviedb.org/reference/search-company
+ */
+export interface TMDBSearchCompanyResponse {
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	page: number
 	results: {
-		id: number,
-		logo_path: string,
-		name: string,
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		id: number
+		logo_path: string
+		name: string
 		origin_country: string
-	}[],
-	total_pages: number,
+	}[]
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	total_pages: number
+	/**
+	 * @type int
+	 * @default 0
+	 */
 	total_results: number
 }
 
-export function TMDBSearchCompany(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBSearchCompany(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Search for companies by their original and alternative names.
+ *
+ * @link https://developer.themoviedb.org/reference/search-company
+ */
+export function TMDBSearchCompany(
+	request: TMDBSearchCompanyRequest,
+	fetcher: Fetcher,
+): Promise<TMDBSearchCompanyResponse>
+/**
+ * Search for companies by their original and alternative names.
+ *
+ * @link https://developer.themoviedb.org/reference/search-company
+ */
+export function TMDBSearchCompany(
+	request: TMDBSearchCompanyRequest,
+	readAccessToken: string,
+): Promise<TMDBSearchCompanyResponse>
 
-export default function TMDBSearchCompany(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.SEARCH, "company", {
-		query: request
-	})
+/**
+ * Search for companies by their original and alternative names.
+ *
+ * @link https://developer.themoviedb.org/reference/search-company
+ */
+export default function TMDBSearchCompany(
+	request: TMDBSearchCompanyRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBSearchCompanyResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.SEARCH,
+		"company",
+		{
+			query: request,
+		},
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBSearchCompanyResponse>(url)
 	}
 }

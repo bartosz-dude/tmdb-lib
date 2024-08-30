@@ -1,48 +1,108 @@
 import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
-import TMDBUrlParser from "../../../urlParser"
+import TMDBUrlParser from "../../../parsers"
 
-interface Request {
-	query: string,
-	include_adult?: boolean,
-	language?: string,
-	page?: number,
+/**
+ * @link https://developer.themoviedb.org/reference/search-collection
+ */
+export interface TMDBSearchCollectionRequest {
+	query: string
+	/**
+	 * @default false
+	 */
+	include_adult?: boolean
+	/**
+	 * @default "en-US"
+	 */
+	language?: string
+	/**
+	 * @type int32
+	 * @default 1
+	 */
+	page?: number
 	region?: string
 }
 
 type PathParams = null
 
 type QueryParams = {
-	[ key in keyof Request ]: Request[ key ]
+	[key in keyof TMDBSearchCollectionRequest]: TMDBSearchCollectionRequest[key]
 }
 
-interface Response {
-	page: number,
+/**
+ * @link https://developer.themoviedb.org/reference/search-collection
+ */
+export interface TMDBSearchCollectionResponse {
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	page: number
 	results: {
-		adult: boolean,
-		backdrop_path: string,
-		id: number,
-		name: string,
-		original_language: string,
-		original_name: string,
-		overview: string,
+		adult: boolean
+		backdrop_path: string
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		id: number
+		name: string
+		original_language: string
+		original_name: string
+		overview: string
 		poster_path: string
-	}[],
-	total_pages: number,
+	}[]
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	total_pages: number
+	/**
+	 * @type int
+	 * @default 0
+	 */
 	total_results: number
 }
 
-export function TMDBSearchCollection(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBSearchCollection(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Search for collections by their original, translated and alternative names.
+ *
+ * @link https://developer.themoviedb.org/reference/search-collection
+ */
+export function TMDBSearchCollection(
+	request: TMDBSearchCollectionRequest,
+	fetcher: Fetcher,
+): Promise<TMDBSearchCollectionResponse>
+/**
+ * Search for collections by their original, translated and alternative names.
+ *
+ * @link https://developer.themoviedb.org/reference/search-collection
+ */
+export function TMDBSearchCollection(
+	request: TMDBSearchCollectionRequest,
+	readAccessToken: string,
+): Promise<TMDBSearchCollectionResponse>
 
-export default function TMDBSearchCollection(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.SEARCH, "collection", {
-		query: request
-	})
+/**
+ * Search for collections by their original, translated and alternative names.
+ *
+ * @link https://developer.themoviedb.org/reference/search-collection
+ */
+export default function TMDBSearchCollection(
+	request: TMDBSearchCollectionRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBSearchCollectionResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.SEARCH,
+		"collection",
+		{
+			query: request,
+		},
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBSearchCollectionResponse>(url)
 	}
 }

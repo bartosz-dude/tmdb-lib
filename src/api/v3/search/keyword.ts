@@ -1,39 +1,93 @@
 import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
-import TMDBUrlParser from "../../../urlParser"
+import TMDBUrlParser from "../../../parsers"
 
-interface Request {
-	query: string,
+/**
+ * @link https://developer.themoviedb.org/reference/search-company
+ */
+export interface TMDBSearchKeywordRequest {
+	query: string
+	/**
+	 * @type int32
+	 * @default 1
+	 */
 	page?: number
 }
 
 type PathParams = null
 
 type QueryParams = {
-	[ key in keyof Request ]: Request[ key ]
+	[key in keyof TMDBSearchKeywordRequest]: TMDBSearchKeywordRequest[key]
 }
 
-interface Response {
-	page: number,
+/**
+ * @link https://developer.themoviedb.org/reference/search-company
+ */
+export interface TMDBSearchKeywordResponse {
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	page: number
 	results: {
-		id: number,
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		id: number
 		name: string
-	}[],
-	total_pages: number,
+	}[]
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	total_pages: number
+	/**
+	 * @type int
+	 * @default 0
+	 */
 	total_results: number
 }
 
-export function TMDBSearchKeyword(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBSearchKeyword(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Search for keywords by their name.
+ *
+ * @link https://developer.themoviedb.org/reference/search-company
+ */
+export function TMDBSearchKeyword(
+	request: TMDBSearchKeywordRequest,
+	fetcher: Fetcher,
+): Promise<TMDBSearchKeywordResponse>
+/**
+ * Search for keywords by their name.
+ *
+ * @link https://developer.themoviedb.org/reference/search-company
+ */
+export function TMDBSearchKeyword(
+	request: TMDBSearchKeywordRequest,
+	readAccessToken: string,
+): Promise<TMDBSearchKeywordResponse>
 
-export default function TMDBSearchKeyword(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.SEARCH, "keyword", {
-		query: request
-	})
+/**
+ * Search for keywords by their name.
+ *
+ * @link https://developer.themoviedb.org/reference/search-company
+ */
+export default function TMDBSearchKeyword(
+	request: TMDBSearchKeywordRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBSearchKeywordResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.SEARCH,
+		"keyword",
+		{
+			query: request,
+		},
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBSearchKeywordResponse>(url)
 	}
 }

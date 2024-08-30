@@ -1,54 +1,127 @@
 import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
-import TMDBUrlParser from "../../../urlParser"
+import TMDBUrlParser from "../../../parsers"
 
-interface Request {
-	query: string,
-	include_adult?: boolean,
-	language?: string,
-	page?: number,
+/**
+ * @link https://developer.themoviedb.org/reference/search-multi
+ */
+export interface TMDBSearchMultiRequest {
+	query: string
+	/**
+	 * @default false
+	 */
+	include_adult?: boolean
+	/**
+	 * @default "en-US"
+	 */
+	language?: string
+	/**
+	 * @type int32
+	 * @default 1
+	 */
+	page?: number
 }
 
 type PathParams = null
 
 type QueryParams = {
-	[ key in keyof Request ]: Request[ key ]
+	[key in keyof TMDBSearchMultiRequest]: TMDBSearchMultiRequest[key]
 }
 
-interface Response {
-	page: number,
+/**
+ * @link https://developer.themoviedb.org/reference/search-multi
+ */
+export interface TMDBSearchMultiResponse {
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	page: number
 	results: {
-		adult: boolean,
-		backdrop_path: string,
-		id: number,
-		title: string,
-		original_language: string,
-		original_title: string,
-		overview: string,
-		poster_path: string,
-		media_type: string,
+		/**
+		 * @default true
+		 */
+		adult: boolean
+		backdrop_path: string
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		id: number
+		title: string
+		original_language: string
+		original_title: string
+		overview: string
+		poster_path: string
+		media_type: string
+		/**
+		 * @type int[]
+		 */
 		genre_ids: number
-		popularity: number,
-		release_date: string,
-		video: boolean,
-		vote_average: number,
+		/**
+		 * @type number
+		 * @default 0
+		 */
+		popularity: number
+		release_date: string
+		/**
+		 * @default true
+		 */
+		video: boolean
+		/**
+		 * @type number
+		 * @default 0
+		 */
+		vote_average: number
 		vote_count: number
-	}[],
-	total_pages: number,
+	}[]
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	total_pages: number
+	/**
+	 * @type int
+	 * @default 0
+	 */
 	total_results: number
 }
 
-export function TMDBSearchMulti(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBSearchMulti(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Use multi search when you want to search for movies, TV shows and people in a single request.
+ *
+ * @link https://developer.themoviedb.org/reference/search-multi
+ */
+export function TMDBSearchMulti(
+	request: TMDBSearchMultiRequest,
+	fetcher: Fetcher,
+): Promise<TMDBSearchMultiResponse>
+/**
+ * Use multi search when you want to search for movies, TV shows and people in a single request.
+ *
+ * @link https://developer.themoviedb.org/reference/search-multi
+ */
+export function TMDBSearchMulti(
+	request: TMDBSearchMultiRequest,
+	readAccessToken: string,
+): Promise<TMDBSearchMultiResponse>
 
-export default function TMDBSearchMulti(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
+/**
+ * Use multi search when you want to search for movies, TV shows and people in a single request.
+ *
+ * @link https://developer.themoviedb.org/reference/search-multi
+ */
+export default function TMDBSearchMulti(
+	request: TMDBSearchMultiRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBSearchMultiResponse> {
 	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.SEARCH, "multi", {
-		query: request
+		query: request,
 	})
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBSearchMultiResponse>(url)
 	}
 }
