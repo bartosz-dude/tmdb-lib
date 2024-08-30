@@ -1,5 +1,12 @@
-import { TMDBPeopleListsPopular } from "./popular";
+import { TMDBPeopleListsPopular } from "./popular"
 
-export const TMDBPeopleLists = {
-	popular: TMDBPeopleListsPopular
+const TMDBPeopleLists = {
+	/**
+	 * Get a list of people ordered by popularity.
+	 *
+	 * @link https://developer.themoviedb.org/reference/person-popular-list
+	 */
+	popular: TMDBPeopleListsPopular,
 }
+
+export default TMDBPeopleLists
