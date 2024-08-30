@@ -1,10 +1,17 @@
 import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
-import TMDBUrlParser from "../../../urlParser"
+import TMDBUrlParser from "../../../parsers"
 
-interface Request {
-	time_window: "day" | "week",
-	language?: string,
+/**
+ * @link https://developer.themoviedb.org/reference/trending-tv
+ */
+export interface TMDBTrendingTvRequest {
+	time_window: "day" | "week"
+	/**
+	 * `ISO-639-1` - `ISO-3166-1` code
+	 * @default "en-US"
+	 */
+	language?: string
 }
 
 type PathParams = {
@@ -12,48 +19,113 @@ type PathParams = {
 }
 
 type QueryParams = {
-	language?: string,
+	language?: string
 }
 
-interface Response {
-	page: number,
+/**
+ * @link https://developer.themoviedb.org/reference/trending-tv
+ */
+export interface TMDBTrendingTvResponse {
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	page: number
 	results: {
-		adult: boolean,
-		backdrop_path: string,
-		id: number,
-		name: string,
-		original_language: string,
-		original_name: string,
-		overview: string,
-		poster_path: string,
-		media_type: string,
-		genre_ids: number[],
-		popularity: number,
-		first_air_date: string,
-		vote_average: number,
-		vote_count: number,
+		/**
+		 * @default true
+		 */
+		adult: boolean
+		backdrop_path: string
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		id: number
+		name: string
+		original_language: string
+		original_name: string
+		overview: string
+		poster_path: string
+		media_type: string
+		/**
+		 * @type int[]
+		 */
+		genre_ids: number[]
+		/**
+		 * @type number
+		 * @default 0
+		 */
+		popularity: number
+		first_air_date: string
+		/**
+		 * @type number
+		 * @default 0
+		 */
+		vote_average: number
+		/**
+		 * @type int
+		 * @default 0
+		 */
+		vote_count: number
 		origin_country: string[]
-	}[],
-	total_pages: number,
+	}[]
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	total_pages: number
+	/**
+	 * @type int
+	 * @default 0
+	 */
 	total_results: number
 }
 
-export function TMDBTrendingTv(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBTrendingTv(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Get the trending TV shows on TMDB.
+ *
+ * @link https://developer.themoviedb.org/reference/trending-tv
+ */
+export function TMDBTrendingTv(
+	request: TMDBTrendingTvRequest,
+	fetcher: Fetcher,
+): Promise<TMDBTrendingTvResponse>
+/**
+ * Get the trending TV shows on TMDB.
+ *
+ * @link https://developer.themoviedb.org/reference/trending-tv
+ */
+export function TMDBTrendingTv(
+	request: TMDBTrendingTvRequest,
+	readAccessToken: string,
+): Promise<TMDBTrendingTvResponse>
 
-export default function TMDBTrendingTv(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.TRENDING, "tv/{time_window}", {
-		path: {
-			time_window: request.time_window
+/**
+ * Get the trending TV shows on TMDB.
+ *
+ * @link https://developer.themoviedb.org/reference/trending-tv
+ */
+export default function TMDBTrendingTv(
+	request: TMDBTrendingTvRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBTrendingTvResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.TRENDING,
+		"tv/{time_window}",
+		{
+			path: {
+				time_window: request.time_window,
+			},
+			query: {
+				language: request.language,
+			},
 		},
-		query: {
-			language: request.language
-		}
-	})
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBTrendingTvResponse>(url)
 	}
 }
