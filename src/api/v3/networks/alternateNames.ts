@@ -1,8 +1,14 @@
 import TMDBFetcher, { Fetcher } from "../../../fetcher"
 import { URLPaths } from "../../../tmdb"
-import TMDBUrlParser from "../../../urlParser"
+import TMDBUrlParser from "../../../parsers"
 
-interface Request {
+/**
+ * @link https://developer.themoviedb.org/reference/details-copy
+ */
+interface TMDBNetworksAlternateNamesRequest {
+	/**
+	 * @type int32
+	 */
 	network_id: number
 }
 
@@ -12,27 +18,62 @@ type PathParams = {
 
 type QueryParams = null
 
-interface Response {
-	id: number,
+/**
+ * @link https://developer.themoviedb.org/reference/details-copy
+ */
+interface TMDBNetworksAlternateNamesResponse {
+	/**
+	 * @type int
+	 * @default 0
+	 */
+	id: number
 	results: {
-		name: string,
+		name: string
 		type: string
 	}[]
 }
 
-export function TMDBNetworksAlternateNames(request: Request, fetcher: Fetcher): Promise<Response>
-export function TMDBNetworksAlternateNames(request: Request, readAccessToken: string): Promise<Response>
+/**
+ * Get the alternative names of a network.
+ *
+ * @link https://developer.themoviedb.org/reference/details-copy
+ */
+export function TMDBNetworksAlternateNames(
+	request: TMDBNetworksAlternateNamesRequest,
+	fetcher: Fetcher,
+): Promise<TMDBNetworksAlternateNamesResponse>
+/**
+ * Get the alternative names of a network.
+ *
+ * @link https://developer.themoviedb.org/reference/details-copy
+ */
+export function TMDBNetworksAlternateNames(
+	request: TMDBNetworksAlternateNamesRequest,
+	readAccessToken: string,
+): Promise<TMDBNetworksAlternateNamesResponse>
 
-export default function TMDBNetworksAlternateNames(request: Request, fetcherOrApi: Fetcher | string): Promise<Response> {
-	const url = TMDBUrlParser<PathParams, QueryParams>(URLPaths.NETWORK, "{network_id}/alternative_names", {
-		path: {
-			network_id: request.network_id
-		}
-	})
+/**
+ * Get the alternative names of a network.
+ *
+ * @link https://developer.themoviedb.org/reference/details-copy
+ */
+export default function TMDBNetworksAlternateNames(
+	request: TMDBNetworksAlternateNamesRequest,
+	fetcherOrApi: Fetcher | string,
+): Promise<TMDBNetworksAlternateNamesResponse> {
+	const url = TMDBUrlParser<PathParams, QueryParams>(
+		URLPaths.NETWORK,
+		"{network_id}/alternative_names",
+		{
+			path: {
+				network_id: request.network_id,
+			},
+		},
+	)
 
 	if (typeof fetcherOrApi == "string") {
 		return TMDBFetcher(url, fetcherOrApi)
 	} else {
-		return fetcherOrApi<Response>(url)
+		return fetcherOrApi<TMDBNetworksAlternateNamesResponse>(url)
 	}
 }
