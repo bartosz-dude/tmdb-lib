@@ -132,7 +132,6 @@ export interface TMDBPeopleDetailsResponse {
 	birthday: string
 	deathday: string
 	/**
-	 *
 	 * | Value | Gender                  |
 	 * |-------|-------------------------|
 	 * |   0   | Not set / not specified |
