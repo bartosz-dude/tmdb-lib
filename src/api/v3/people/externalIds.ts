@@ -78,7 +78,7 @@ export default function TMDBPeopleExternalIds(
 ): Promise<TMDBPeopleExternalIdsResponse> {
 	const url = TMDBUrlParser<PathParams, QueryParams>(
 		URLPaths.PERSON,
-		"popular",
+		"{person_id}/external_ids",
 		{
 			query: {},
 			path: {

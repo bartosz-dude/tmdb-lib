@@ -89,7 +89,7 @@ export default function TMDBPeopleLatest(
 ): Promise<TMDBPeopleLatestResponse> {
 	const url = TMDBUrlParser<PathParams, QueryParams>(
 		URLPaths.PERSON,
-		"popular",
+		"latest",
 		{
 			query: {},
 			path: {},

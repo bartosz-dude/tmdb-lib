@@ -166,7 +166,7 @@ export default function TMDBPeopleCombinedCredits(
 ): Promise<TMDBPeopleCombinedCreditsResponse> {
 	const url = TMDBUrlParser<PathParams, QueryParams>(
 		URLPaths.PERSON,
-		"popular",
+		"{person_id}/combined_credits",
 		{
 			query: {
 				language: request.language,

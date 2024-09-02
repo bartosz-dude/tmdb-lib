@@ -80,7 +80,7 @@ export default function TMDBPeopleTranslations(
 ): Promise<TMDBPeopleTranslationsResponse> {
 	const url = TMDBUrlParser<PathParams, QueryParams>(
 		URLPaths.PERSON,
-		"popular",
+		"{person_id}/translations",
 		{
 			query: {},
 			path: {

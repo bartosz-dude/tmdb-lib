@@ -99,7 +99,7 @@ export default function TMDBPeopleImages(
 ): Promise<TMDBPeopleImagesResponse> {
 	const url = TMDBUrlParser<PathParams, QueryParams>(
 		URLPaths.PERSON,
-		"popular",
+		"{person_id}/images",
 		{
 			query: {},
 			path: {

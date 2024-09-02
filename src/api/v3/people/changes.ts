@@ -87,7 +87,7 @@ export default function TMDBPeopleChanges(
 ): Promise<TMDBPeopleChangesResponse> {
 	const url = TMDBUrlParser<PathParams, QueryParams>(
 		URLPaths.PERSON,
-		"popular",
+		"{person_id}/changes",
 		{
 			query: {
 				page: request.page,

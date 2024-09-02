@@ -171,7 +171,7 @@ export default function TMDBPeopleTvCredits(
 ): Promise<TMDBPeopleTvCreditsResponse> {
 	const url = TMDBUrlParser<PathParams, QueryParams>(
 		URLPaths.PERSON,
-		"popular",
+		"{person_id}/tv_credits",
 		{
 			query: {
 				language: request.language,

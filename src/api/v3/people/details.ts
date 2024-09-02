@@ -227,7 +227,7 @@ export default function TMDBPeopleDetails(
 ): Promise<TMDBPeopleDetailsResponse> {
 	const url = TMDBUrlParser<PathParams, QueryParams>(
 		URLPaths.PERSON,
-		"popular",
+		"{person_id}",
 		{
 			query: {
 				language: request.language,
