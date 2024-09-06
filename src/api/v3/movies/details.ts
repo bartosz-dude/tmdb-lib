@@ -294,7 +294,6 @@ export interface TMDBMovieDetailsResponse {
 	 * @default 0
 	 */
 	vote_count: number
-	// TODO add other endpoints when using `append_to_response`
 	/**
 	 * Requires `account_states` added to `append_to_response`
 	 */
