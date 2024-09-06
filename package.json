@@ -28,6 +28,7 @@
 	],
 	"license": "ISC",
 	"scripts": {
+		"format": "prettier . --write",
 		"build": "tsc",
 		"build --watch": "tsc --watch",
 		"test": "echo no test configured"
