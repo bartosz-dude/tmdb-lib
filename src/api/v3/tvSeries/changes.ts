@@ -11,13 +11,13 @@ export interface TMDBTvSeriesChangesRequest {
 	 * @type int32
 	 */
 	series_id: number
-	end_date?: string
+	end_date?: Date
 	/**
 	 * @type int32
 	 * @default 1
 	 */
 	page?: number
-	start_date?: string
+	start_date?: Date
 }
 
 type PathParams = {
