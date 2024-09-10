@@ -21,6 +21,7 @@ import TMDBReviews from "./api/v3/reviews"
 import TMDBSearch from "./api/v3/search"
 import TMDBTrending from "./api/v3/trending"
 import { TMDBTvEpisodeGroups } from "./api/v3/tvEpisodeGroups"
+import TMDBTvEpisodes from "./api/v3/tvEpisodes"
 import TMDBTvSeasons from "./api/v3/tvSeasons"
 import TMDBTvSeries from "./api/v3/tvSeries"
 import TMDBTvSeriesLists from "./api/v3/tvSeriesLists"
@@ -62,6 +63,7 @@ export const TMDB = {
 	tvSeriesLists: TMDBTvSeriesLists,
 	tvSeries: TMDBTvSeries,
 	tvSeasons: TMDBTvSeasons,
+	tvEpisodes: TMDBTvEpisodes,
 	tvEpisodeGroups: TMDBTvEpisodeGroups,
 	watchProviders: TMDBWatchProviders,
 	v4: {
