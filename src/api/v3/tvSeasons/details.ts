@@ -46,7 +46,6 @@ export interface TMDBTvSeasonsDetailsRequest {
 	/**
 	 * comma separated list of endpoints within this namespace, 20 items ma
 	 */
-	// TODO add supported endpoints here
 	append_to_response?:
 		| string
 		| {
